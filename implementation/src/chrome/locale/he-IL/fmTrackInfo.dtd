@@ -1,0 +1,8 @@
+<!ENTITY firefm.trackInfo.dropdown.tooltip "הצגת פריטי הקטע">
+<!ENTITY firefm.trackInfo.buffering.label "מבודד...">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "לך אל דף הקטע בLast.fm">
+<!ENTITY firefm.trackInfo.artist.tooltip "לך אל דף האמן בLast.fm">
+<!ENTITY firefm.trackInfo.album.tooltip "לך אל דף האלבום בLast.fm">
+<!ENTITY firefm.trackInfo.free.label "חינם">
+<!ENTITY firefm.trackInfo.free.tooltip "הורדת קטע זה בחינם">
+<!ENTITY firefm.trackInfo.amazon.label "קניית קטע זה דרך Amazon">

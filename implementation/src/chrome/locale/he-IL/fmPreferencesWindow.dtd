@@ -1,0 +1,46 @@
+<!ENTITY firefm.preferences.pane.main.title "כללי">
+<!ENTITY firefm.preferences.playback.label "פלייבק">
+<!ENTITY firefm.preferences.autoplay.label "ניגון אוטומטי של התחנה שהאזינו לה לאחרונה כאשר &brandShortName; מתחיל">
+<!ENTITY firefm.preferences.autoplay.accesskey "א">
+<!ENTITY firefm.preferences.scrobble.label "בניית פרופיל באתר לכל הקטעים שניגנתי">
+<!ENTITY firefm.preferences.scrobble.accesskey "ב">
+<!ENTITY firefm.preferences.learnMore.label "מידע נוסף...">
+<!ENTITY firefm.preferences.learnMore.accesskey "ל">
+<!ENTITY firefm.preferences.volume.mode.label "כאשר לוחצים על כפתור הווליום:">
+<!ENTITY firefm.preferences.volume.mode.accesskey "כ">
+<!ENTITY firefm.preferences.volume.mode.simple "הצגת שליטה על הקול">
+<!ENTITY firefm.preferences.volume.mode.advanced "השתקת הקול">
+<!ENTITY firefm.preferences.history.label "היסטוריה">
+<!ENTITY firefm.preferences.storeArtists.label "אחסון בהיסטוריית הדפדפן שלי את האמנים והתחנות שניגנתי">
+<!ENTITY firefm.preferences.storeArtists.accesskey "ח">
+<!ENTITY firefm.preferences.clearPlaces.label "ניקוי היסטוריית Fire.fm">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "ק">
+<!ENTITY firefm.preferences.recentHistory.label "אחסון התחנות שנוגנו לאחרונה בתפריט התחנה">
+<!ENTITY firefm.preferences.recentHistory.accesskey "ס">
+<!ENTITY firefm.preferences.clearRecent.label "ניקוי תחנות שנשמעו לאחרונה">
+<!ENTITY firefm.preferences.clearRecent.accesskey "ה">
+<!ENTITY firefm.preferences.enablePrivateMode.label "נטרול היסטוריית התחנה ובניית פרופיל כאשר &brandShortName; במצב פרטי">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "ט">
+<!ENTITY firefm.preferences.notifications.title "הודעות">
+<!ENTITY firefm.preferences.notifications.mode.label "הודע לי כאשר קטע מנוגן:">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "ע">
+<!ENTITY firefm.preferences.notifications.mode.off "לעולם לא">
+<!ENTITY firefm.preferences.notifications.mode.focus "כאשר &brandShortName; לא ממוקד">
+<!ENTITY firefm.preferences.notifications.mode.on "תמיד">
+<!ENTITY firefm.preferences.pane.appearance.title "מראה">
+<!ENTITY firefm.preferences.showToolbar.label "הצגת סרגל הכלים של Fire.fm">
+<!ENTITY firefm.preferences.showToolbar.accesskey "ג">
+<!ENTITY firefm.preferences.showStatusbar.label "הצגת כפתורים בשורת המצב">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "ג">
+<!ENTITY firefm.preferences.status.play.label "נגן \ עצור">
+<!ENTITY firefm.preferences.status.play.accesskey "נ">
+<!ENTITY firefm.preferences.smallSize.label "גודל קטן">
+<!ENTITY firefm.preferences.smallSize.accesskey "ט">
+<!ENTITY firefm.preferences.pane.accounts.title "חשבונות">
+<!ENTITY firefm.preferences.removeAccount.label "הסרת חשבון...">
+<!ENTITY firefm.preferences.removeAccount.accesskey "ס">
+<!ENTITY firefm.preferences.addAccount.label "הוספת חשבון...">
+<!ENTITY firefm.preferences.addAccount.accesskey "פ">
+<!ENTITY firefm.preferences.pane.advanced.title "מתקדם">
+<!ENTITY firefm.preferences.enableGestures.label "אפשור מחוות עכבר (דורש אתחול)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "ע">

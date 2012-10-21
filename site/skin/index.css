@@ -1,0 +1,40 @@
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Trebuchet MS,Arial,sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+#all {
+  text-align: left;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#columns {
+  text-align: center;
+  -moz-column-width: 140px;
+  -moz-column-gap: 1em;
+}
+
+.index-link {
+  color: inherit;
+  font-weight: bold;
+  font-size: 2.7em;
+  text-decoration: none;
+}
+
+.index-link:hover {
+  color: #F0D052;
+}
+
+a.disabled,
+a.disabled:hover {
+  color: #dddddd;
+  text-decoration: line-through;
+}

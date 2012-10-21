@@ -1,0 +1,46 @@
+<!ENTITY firefm.preferences.pane.main.title "Ogólne">
+<!ENTITY firefm.preferences.playback.label "Odtwarzanie">
+<!ENTITY firefm.preferences.autoplay.label "Po uruchomieniu programu &brandShortName; automatycznie wznawiaj odtwarzanie ostatnio słuchanej stacji.">
+<!ENTITY firefm.preferences.autoplay.accesskey "w">
+<!ENTITY firefm.preferences.scrobble.label "Dodawaj utwory, których słucham do mojego profilu w Last.fm">
+<!ENTITY firefm.preferences.scrobble.accesskey "D">
+<!ENTITY firefm.preferences.learnMore.label "Więcej informacji…">
+<!ENTITY firefm.preferences.learnMore.accesskey "i">
+<!ENTITY firefm.preferences.volume.mode.label "Po naciśnięciu przycisku głośności:">
+<!ENTITY firefm.preferences.volume.mode.accesskey "g">
+<!ENTITY firefm.preferences.volume.mode.simple "Wyświetl kontrolę głośności">
+<!ENTITY firefm.preferences.volume.mode.advanced "Wycisz dźwięk">
+<!ENTITY firefm.preferences.history.label "Historia">
+<!ENTITY firefm.preferences.storeArtists.label "Zapisuj informacje o wykonawcach i stacjach, których słucham w historii przeglądarki">
+<!ENTITY firefm.preferences.storeArtists.accesskey "h">
+<!ENTITY firefm.preferences.clearPlaces.label "Wyczyść historię Fire.fm">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "y">
+<!ENTITY firefm.preferences.recentHistory.label "Przechowuj moje ostatnio słuchane stacje w menu Stacje">
+<!ENTITY firefm.preferences.recentHistory.accesskey "P">
+<!ENTITY firefm.preferences.clearRecent.label "Wyczyść listę ostatnio słuchanych stacji">
+<!ENTITY firefm.preferences.clearRecent.accesskey "c">
+<!ENTITY firefm.preferences.enablePrivateMode.label "Wyłącz historię stacji i scrobbluj, kiedy &brandShortName; jest w trybie prywatnym">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "W">
+<!ENTITY firefm.preferences.notifications.title "Powiadomienia">
+<!ENTITY firefm.preferences.notifications.mode.label "Powiadamiaj mnie o zmianie utworu">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "z">
+<!ENTITY firefm.preferences.notifications.mode.off "nigdy">
+<!ENTITY firefm.preferences.notifications.mode.focus "kiedy &brandShortName; jest nieaktywny">
+<!ENTITY firefm.preferences.notifications.mode.on "zawsze">
+<!ENTITY firefm.preferences.pane.appearance.title "Wygląd">
+<!ENTITY firefm.preferences.showToolbar.label "Wyświetl pasek Fire.fm">
+<!ENTITY firefm.preferences.showToolbar.accesskey "a">
+<!ENTITY firefm.preferences.showStatusbar.label "Wyświetl przyciski w pasku stanu">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "k">
+<!ENTITY firefm.preferences.status.play.label "Odtwarzaj / Zatrzymaj">
+<!ENTITY firefm.preferences.status.play.accesskey "t">
+<!ENTITY firefm.preferences.smallSize.label "Mały rozmiar">
+<!ENTITY firefm.preferences.smallSize.accesskey "M">
+<!ENTITY firefm.preferences.pane.accounts.title "Konta">
+<!ENTITY firefm.preferences.removeAccount.label "Usuń konto...">
+<!ENTITY firefm.preferences.removeAccount.accesskey "U">
+<!ENTITY firefm.preferences.addAccount.label "Dodaj konto...">
+<!ENTITY firefm.preferences.addAccount.accesskey "D">
+<!ENTITY firefm.preferences.pane.advanced.title "Zaawansowane">
+<!ENTITY firefm.preferences.enableGestures.label "Włącz gesty myszy (wymaga ponownego uruchomienia)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "g">

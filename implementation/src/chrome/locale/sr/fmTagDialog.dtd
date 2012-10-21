@@ -1,0 +1,7 @@
+<!---->
+<!ENTITY firefm.tag.acceptButton.label "Ознака">
+<!ENTITY firefm.tag.acceptButton.accesskey "О">
+<!ENTITY firefm.tag.typeMenu.artist "Означи извођача">
+<!ENTITY firefm.tag.typeMenu.track "Означи песму">
+<!ENTITY firefm.tag.typeMenu.album "Означи албум">
+<!ENTITY firefm.tag.help "Користи запету за раздвајање ознака">

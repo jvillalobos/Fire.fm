@@ -1,0 +1,7 @@
+<!--  -->
+<!ENTITY firefm.tag.acceptButton.label "Marqueur">
+<!ENTITY firefm.tag.acceptButton.accesskey "M">
+<!ENTITY firefm.tag.typeMenu.artist "Marquer l&apos;artiste">
+<!ENTITY firefm.tag.typeMenu.track "Marquer le titre">
+<!ENTITY firefm.tag.typeMenu.album "Marquer l&apos;album">
+<!ENTITY firefm.tag.help "Utilisez des virgules pour séparer les marqueurs">

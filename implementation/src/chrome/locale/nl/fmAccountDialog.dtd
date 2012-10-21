@@ -1,0 +1,7 @@
+<!ENTITY firefm.account.dialog.title "Account toevoegen">
+<!ENTITY firefm.account.enter.label "Voer de informatie in die u gebruikt om u aan te melden bij Last.fm.">
+<!ENTITY firefm.account.privacy.label "Uw wachtwoord wordt alleen gebruikt om uw identiteit bij Last.fm te controleren en wordt niet opgeslagen of met iemand gedeeld.">
+<!ENTITY firefm.account.username.label "Gebruikersnaam:">
+<!ENTITY firefm.account.password.label "Wachtwoord:">
+<!ENTITY firefm.account.donthave.label "Geen gebruikersnaam?">
+<!ENTITY firefm.account.create.label "Account bij Last.fm aanmaken">

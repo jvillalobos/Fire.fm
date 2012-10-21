@@ -1,0 +1,6 @@
+<!ENTITY firefm.tag.acceptButton.label "Etiket">
+<!ENTITY firefm.tag.acceptButton.accesskey "T">
+<!ENTITY firefm.tag.typeMenu.artist "Etiket listesi">
+<!ENTITY firefm.tag.typeMenu.track "Parçayı etiketle">
+<!ENTITY firefm.tag.typeMenu.album "Albümü etiketle">
+<!ENTITY firefm.tag.help "Etiketleri ayırmak için virgül kullanınız">

@@ -1,0 +1,13 @@
+<!--  -->
+<!ENTITY firefm.error.dialog.title "Fire.fm-virheilmoitus">
+<!ENTITY firefm.error.accept.label "Lähetä virheilmoitus">
+<!ENTITY firefm.error.accept.accesskey "S">
+<!ENTITY firefm.error.cancel.label "Jatka lähettämättä">
+<!ENTITY firefm.error.cancel.accesskey "C">
+<!ENTITY firefm.error.header "Olemme pahoillamme">
+<!ENTITY firefm.error.unableToLoad "Fire.fm-soitinta ei voitu ladata oikein. Yritä käynnistää uudelleen &brandShortName;.">
+<!ENTITY firefm.error.sendReport "Helpottaaksesi meitä tunnistamaan ja korjaamaan ongelman voit lähettää meille virheilmoituksen.">
+<!ENTITY firefm.error.comment.label "Anna lisätietoja, jotka voivat auttaa ongelman korjaamisessa:">
+<!ENTITY firefm.error.exception.label "Virheen tiedot:">
+<!ENTITY firefm.error.email.label "Vastatkaa minulle sähköpostitse, kun lisätietoa ongelmasta on saatavana">
+<!ENTITY firefm.error.email.help "Kirjoita sähköpostiosoitteesi tähän">

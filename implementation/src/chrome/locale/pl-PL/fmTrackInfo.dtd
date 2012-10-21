@@ -1,0 +1,8 @@
+<!ENTITY firefm.trackInfo.dropdown.tooltip "Wyświetl informacje o utworze">
+<!ENTITY firefm.trackInfo.buffering.label "Buforowanie…">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "Przejdź na stronę utworu w Last.fm">
+<!ENTITY firefm.trackInfo.artist.tooltip "Przejdź na stronę wykonawcy w Last.fm">
+<!ENTITY firefm.trackInfo.album.tooltip "Przejdź na stronę albumu w Last.fm">
+<!ENTITY firefm.trackInfo.free.label "Darmowy">
+<!ENTITY firefm.trackInfo.free.tooltip "Pobierz ten utwór za darmo">
+<!ENTITY firefm.trackInfo.amazon.label "Kup ten utwór na Amazon">

@@ -1,0 +1,6 @@
+<!ENTITY firefm.startStation.artist.label "אמן">
+<!ENTITY firefm.startStation.tag.label "תווית">
+<!ENTITY firefm.startStation.user.label "שם משתמש">
+<!ENTITY firefm.startStation.chooseArtist.label "להתחלה, יש לרשום את האמן המועדף">
+<!ENTITY firefm.startStation.chooseTag.label "יש להקליד תווית (ז'אנר או מילת מפתח)">
+<!ENTITY firefm.startStation.chooseUser.label "יש להקליד שם משתמש של Last.fm">

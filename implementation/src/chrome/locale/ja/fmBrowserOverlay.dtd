@@ -1,0 +1,105 @@
+<!--
+  - Copyright (c) 2008, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+-->
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Last.fm ホーム">
+<!ENTITY firefm.home.tooltip "Last.fm のホームへ移動します">
+<!ENTITY firefm.home.accesskey "H">
+<!ENTITY firefm.station.label "ステーション">
+<!ENTITY firefm.station.tooltip "再生するステーションを選択します">
+<!ENTITY firefm.station.accesskey "t">
+<!ENTITY firefm.startStation.label "ステーションを開始">
+<!ENTITY firefm.startStation.accesskey "S">
+<!ENTITY firefm.myStations.label "マイステーション">
+<!ENTITY firefm.myStations.accesskey "M">
+<!ENTITY firefm.recommendations.label "マイリコメンド">
+<!ENTITY firefm.recommendations.accesskey "R">
+<!ENTITY firefm.myLibrary.label "マイライブラリー">
+<!ENTITY firefm.myLibrary.accesskey "L">
+<!ENTITY firefm.neighborhood.label "マイご近所さん">
+<!ENTITY firefm.neighborhood.accesskey "N">
+<!ENTITY firefm.friends.label "友だち">
+<!ENTITY firefm.friends.accesskey "F">
+<!ENTITY firefm.neighbors.label "ご近所さん">
+<!ENTITY firefm.neighbors.accesskey "N">
+<!ENTITY firefm.topArtists.label "マイベストアーティスト">
+<!ENTITY firefm.topArtists.accesskey "T">
+<!ENTITY firefm.similarArtists.label "似ているアーティスト">
+<!ENTITY firefm.similarArtists.accesskey "i">
+<!ENTITY firefm.onThisPage.label "このページのアーティスト">
+<!ENTITY firefm.onThisPage.accesskey "p">
+<!ENTITY firefm.recentStations.label "最近のステーション">
+<!ENTITY firefm.recentStations.accesskey "R">
+<!ENTITY firefm.loginLogout.label "ログイン・ログアウト">
+<!ENTITY firefm.loginLogout.accesskey "L">
+<!ENTITY firefm.play.label "再生">
+<!ENTITY firefm.manageAccounts.label "アカウント管理">
+<!ENTITY firefm.manageAccounts.accesskey "A">
+<!ENTITY firefm.skip.label "飛ばす">
+<!ENTITY firefm.skip.accesskey "k">
+<!ENTITY firefm.volume.label "音量">
+<!ENTITY firefm.volume.tooltip "音量を調節します">
+<!ENTITY firefm.volume.accesskey "u">
+<!ENTITY firefm.volume.mute.label "消音">
+<!ENTITY firefm.volume.mute.accesskey "M">
+<!ENTITY firefm.amazon.label "Amazon で買う">
+<!ENTITY firefm.amazon.accesskey "z">
+<!ENTITY firefm.tag.label "タグ">
+<!ENTITY firefm.tag.accesskey "g">
+<!ENTITY firefm.love.label "Love">
+<!ENTITY firefm.love.accesskey "v">
+<!ENTITY firefm.ban.label "禁止">
+<!ENTITY firefm.ban.accesskey "B">
+<!ENTITY firefm.feed.fullList.label "全一覧を見る...">
+<!ENTITY firefm.feed.fullList.accesskey "f">
+<!ENTITY firefm.welcomeMessage2.label "ようこそ！ログインしてステーションを開始">
+<!ENTITY firefm.nowPlaying.label "再生中">
+<!ENTITY firefm.nowPlaying.accesskey "N">
+<!ENTITY firefm.nowPlaying.track.label "Last.fm の曲ページ">
+<!ENTITY firefm.nowPlaying.track.accesskey "T">
+<!ENTITY firefm.nowPlaying.artist.label "Last.fm のアーティストページ">
+<!ENTITY firefm.nowPlaying.artist.accesskey "A">
+<!ENTITY firefm.nowPlaying.album.label "Last.fm のアルバムページ">
+<!ENTITY firefm.nowPlaying.album.accesskey "b">
+<!ENTITY firefm.nowPlaying.downloadFree.label "無料でこの曲をダウンロード">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "D">
+<!ENTITY firefm.customize.label "カスタマイズ...">
+<!ENTITY firefm.customize.accesskey "C">
+<!-- XXX we do this because Babelzilla doesn't support the install.rdf way of
+     localizing extension descriptions. This way we can get the string and use
+     it in install.rdf.
+
+
+-->
+<!ENTITY firefm.extensionDescription.label "Last.fm から日々音楽を聴こう。">

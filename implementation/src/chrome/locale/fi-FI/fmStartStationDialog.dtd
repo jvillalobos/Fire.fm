@@ -1,0 +1,7 @@
+<!--  -->
+<!ENTITY firefm.startStation.artist.label "Artisti">
+<!ENTITY firefm.startStation.tag.label "Tunniste">
+<!ENTITY firefm.startStation.user.label "Käyttäjätunnus">
+<!ENTITY firefm.startStation.chooseArtist.label "Aloita kirjoittamalla suosikkiartistisi">
+<!ENTITY firefm.startStation.chooseTag.label "Kirjoita tunniste (tyyli tai avainsana)">
+<!ENTITY firefm.startStation.chooseUser.label "Kirjoita Last.fm-käyttäjätunnus">

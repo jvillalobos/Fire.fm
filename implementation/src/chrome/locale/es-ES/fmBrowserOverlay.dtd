@@ -1,0 +1,123 @@
+<!--
+  - Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<!ENTITY firefm.toolbarName.label  "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey  "F">
+
+<!ENTITY firefm.menu.label      "Fire.fm">
+<!ENTITY firefm.menu.accesskey  "F">
+
+<!ENTITY firefm.home.label      "Página de inicio de Last.fm">
+<!ENTITY firefm.home.tooltip    "Ir a la página de inicio de Last.fm">
+<!ENTITY firefm.home.accesskey  "g">
+
+<!ENTITY firefm.station.label       "Estación">
+<!ENTITY firefm.station.tooltip     "Escoja una estación para escuchar">
+<!ENTITY firefm.station.accesskey   "E">
+
+<!ENTITY firefm.startStation.label      "Iniciar una estación">
+<!ENTITY firefm.startStation.accesskey  "I">
+
+<!ENTITY firefm.myStations.label           "Mis Estaciones">
+<!ENTITY firefm.myStations.accesskey       "M">
+<!ENTITY firefm.recommendations.label      "Mis Recomendaciones">
+<!ENTITY firefm.recommendations.accesskey  "R">
+<!ENTITY firefm.myLibrary.label            "Mi Colección">
+<!ENTITY firefm.myLibrary.accesskey        "C">
+<!ENTITY firefm.neighborhood.label         "Mi Vecindario">
+<!ENTITY firefm.neighborhood.accesskey     "V">
+
+<!ENTITY firefm.friends.label              "Amigos">
+<!ENTITY firefm.friends.accesskey          "A">
+<!ENTITY firefm.neighbors.label            "Vecinos">
+<!ENTITY firefm.neighbors.accesskey        "V">
+<!ENTITY firefm.topArtists.label           "Mis Artistas Preferidos">
+<!ENTITY firefm.topArtists.accesskey       "P">
+<!ENTITY firefm.similarArtists.label       "Artistas Similares">
+<!ENTITY firefm.similarArtists.accesskey   "t">
+
+<!ENTITY firefm.onThisPage.label      "Artistas en esta página">
+<!ENTITY firefm.onThisPage.accesskey  "g">
+
+<!ENTITY firefm.recentStations.label      "Estaciones Recientes">
+<!ENTITY firefm.recentStations.accesskey  "R">
+
+<!ENTITY firefm.loginLogout.label      "Ingresar / salir">
+<!ENTITY firefm.loginLogout.accesskey  "I">
+<!ENTITY firefm.play.label       "Reproducir">
+
+<!ENTITY firefm.manageAccounts.label      "Administrar cuentas...">
+<!ENTITY firefm.manageAccounts.accesskey  "A">
+
+<!ENTITY firefm.skip.label      "Siguiente">
+<!ENTITY firefm.skip.accesskey  "S">
+
+<!ENTITY firefm.volume.label      "Volumen">
+<!ENTITY firefm.volume.tooltip    "Ajustar volumen">
+<!ENTITY firefm.volume.accesskey  "l">
+
+<!ENTITY firefm.volume.mute.label      "Silenciar">
+<!ENTITY firefm.volume.mute.accesskey  "S">
+
+<!ENTITY firefm.amazon.label      "Comprar en Amazon">
+<!ENTITY firefm.amazon.accesskey  "z">
+
+<!ENTITY firefm.tag.label      "Tag">
+<!ENTITY firefm.tag.accesskey  "g">
+
+<!ENTITY firefm.love.label      "Favorito">
+<!ENTITY firefm.love.accesskey  "F">
+
+<!ENTITY firefm.ban.label      "Vetar">
+<!ENTITY firefm.ban.accesskey  "V">
+
+<!ENTITY firefm.feed.fullList.label      "Ver lista completa...">
+<!ENTITY firefm.feed.fullList.accesskey  "l">
+
+<!ENTITY firefm.welcomeMessage2.label    "Bienvenido! Ingrese y escoja una estación para empezar">
+
+<!ENTITY firefm.nowPlaying.label              "Reproduciendo">
+<!ENTITY firefm.nowPlaying.accesskey          "R">
+<!ENTITY firefm.nowPlaying.track.label        "Página del tema en Last.fm">
+<!ENTITY firefm.nowPlaying.track.accesskey    "t">
+<!ENTITY firefm.nowPlaying.artist.label       "Página del artista en Last.fm">
+<!ENTITY firefm.nowPlaying.artist.accesskey   "a">
+<!ENTITY firefm.nowPlaying.album.label        "Página del album en Last.fm">
+<!ENTITY firefm.nowPlaying.album.accesskey    "b">
+
+<!ENTITY firefm.nowPlaying.downloadFree.label       "Descargar este tema gratis">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey   "D">
+
+<!ENTITY firefm.customize.label       "Personalizar...">
+<!ENTITY firefm.customize.accesskey   "P">
+
+<!-- XXX we do this because Babelzilla doesn't support the install.rdf way of
+     localizing extension descriptions. This way we can get the string and use
+     it in install.rdf. -->
+<!ENTITY firefm.extensionDescription.label  "Escucha la música que quieres de Last.fm.">

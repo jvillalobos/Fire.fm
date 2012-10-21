@@ -1,0 +1,5 @@
+<!ENTITY firefm.trackInfo.dropdown.tooltip "Exibir detalhes da faixa">
+<!ENTITY firefm.trackInfo.buffering.label "Carregando…">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "Ir para a página da faixa no Last.fm">
+<!ENTITY firefm.trackInfo.artist.tooltip "Ir para a página do artista no Last.fm">
+<!ENTITY firefm.trackInfo.album.tooltip "Ir para a página do álbum no Last.fm">

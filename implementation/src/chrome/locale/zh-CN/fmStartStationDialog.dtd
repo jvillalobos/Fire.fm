@@ -1,0 +1,6 @@
+<!ENTITY firefm.startStation.artist.label "艺术家">
+<!ENTITY firefm.startStation.tag.label "标签">
+<!ENTITY firefm.startStation.user.label "用户名">
+<!ENTITY firefm.startStation.chooseArtist.label "请输入您喜爱的艺术家名字以便开始">
+<!ENTITY firefm.startStation.chooseTag.label "请输入一个标签(风格或关键字)">
+<!ENTITY firefm.startStation.chooseUser.label "请输入一个 Last.fm 用户名">

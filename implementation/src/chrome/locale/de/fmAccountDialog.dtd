@@ -1,0 +1,7 @@
+<!ENTITY firefm.account.dialog.title "Konto hinzufügen">
+<!ENTITY firefm.account.enter.label "Geben Sie Ihre Zugangsdaten für Last.fm ein.">
+<!ENTITY firefm.account.privacy.label "Ihr Passwort wird nur verwendet, um Ihre Identität zu bestätigen, und wird nicht gespeichert oder weitergegeben.">
+<!ENTITY firefm.account.username.label "Benutzername:">
+<!ENTITY firefm.account.password.label "Passwort:">
+<!ENTITY firefm.account.donthave.label "Sie haben keinen Benutzernamen?">
+<!ENTITY firefm.account.create.label "Erstellen Sie ein Last.fm-Konto">

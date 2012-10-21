@@ -1,0 +1,68 @@
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "עמוד הבית של Last.fm">
+<!ENTITY firefm.home.tooltip "לך אל הבית של Last.fm">
+<!ENTITY firefm.home.accesskey "ש">
+<!ENTITY firefm.station.label "תחנה">
+<!ENTITY firefm.station.tooltip "בחירת תחנה לניגון">
+<!ENTITY firefm.station.accesskey "נ">
+<!ENTITY firefm.startStation.label "התחלת תחנה">
+<!ENTITY firefm.startStation.accesskey "ה">
+<!ENTITY firefm.myStations.label "התחנות שלי">
+<!ENTITY firefm.myStations.accesskey "ח">
+<!ENTITY firefm.recommendations.label "המלצותיי">
+<!ENTITY firefm.recommendations.accesskey "צ">
+<!ENTITY firefm.myLibrary.label "הספרייה שלי">
+<!ENTITY firefm.myLibrary.accesskey "פ">
+<!ENTITY firefm.neighborhood.label "הסביבה שלי">
+<!ENTITY firefm.neighborhood.accesskey "ס">
+<!ENTITY firefm.friends.label "חברים">
+<!ENTITY firefm.friends.accesskey "ב">
+<!ENTITY firefm.neighbors.label "שכנים">
+<!ENTITY firefm.neighbors.accesskey "נ">
+<!ENTITY firefm.topArtists.label "האמנים המועדפים עליי">
+<!ENTITY firefm.topArtists.accesskey "א">
+<!ENTITY firefm.similarArtists.label "אמנים דומים">
+<!ENTITY firefm.similarArtists.accesskey "ו">
+<!ENTITY firefm.onThisPage.label "אמנים בעמוד זה">
+<!ENTITY firefm.onThisPage.accesskey "ם">
+<!ENTITY firefm.recentStations.label "תחנות אחרונות">
+<!ENTITY firefm.recentStations.accesskey "ח">
+<!ENTITY firefm.loginLogout.label "התחברות/התנתקות">
+<!ENTITY firefm.loginLogout.accesskey "ת">
+<!ENTITY firefm.play.label "נגן">
+<!ENTITY firefm.manageAccounts.label "ניהול חשבונות...">
+<!ENTITY firefm.manageAccounts.accesskey "ל">
+<!ENTITY firefm.skip.label "דלג">
+<!ENTITY firefm.skip.accesskey "ג">
+<!ENTITY firefm.volume.label "ווליום">
+<!ENTITY firefm.volume.tooltip "התאמת ווליום">
+<!ENTITY firefm.volume.accesskey "י">
+<!ENTITY firefm.volume.mute.label "השתק">
+<!ENTITY firefm.volume.mute.accesskey "ק">
+<!ENTITY firefm.amazon.label "קנייה דרך Amazon">
+<!ENTITY firefm.amazon.accesskey "A">
+<!ENTITY firefm.tag.label "תווית">
+<!ENTITY firefm.tag.accesskey "ת">
+<!ENTITY firefm.love.label "אוהב">
+<!ENTITY firefm.love.accesskey "ב">
+<!ENTITY firefm.ban.label "החרם">
+<!ENTITY firefm.ban.accesskey "ר">
+<!ENTITY firefm.feed.fullList.label "הצגת רשימה מלאה...">
+<!ENTITY firefm.feed.fullList.accesskey "צ">
+<!ENTITY firefm.welcomeMessage2.label "ברוך הבא! התחברו ונגנו תחנה כדי להתחיל">
+<!ENTITY firefm.nowPlaying.label "מנוגן כעת">
+<!ENTITY firefm.nowPlaying.accesskey "ע">
+<!ENTITY firefm.nowPlaying.track.label "מעקב אחר עמוד בLast.fm">
+<!ENTITY firefm.nowPlaying.track.accesskey "א">
+<!ENTITY firefm.nowPlaying.artist.label "עמוד האמן בLast.fm">
+<!ENTITY firefm.nowPlaying.artist.accesskey "מ">
+<!ENTITY firefm.nowPlaying.album.label "עמוד האלבום בLast.fm">
+<!ENTITY firefm.nowPlaying.album.accesskey "ל">
+<!ENTITY firefm.nowPlaying.downloadFree.label "הורדת קטע זה בחינם">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "ו">
+<!ENTITY firefm.customize.label "התאמה אישית...">
+<!ENTITY firefm.customize.accesskey "י">
+<!ENTITY firefm.extensionDescription.label "השגת ההזרקה המוזיקלית היומית מLast.fm.">

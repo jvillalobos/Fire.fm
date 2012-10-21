@@ -1,0 +1,84 @@
+###
+# Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#
+#  * Redistributions of source code must retain the above copyright notice,
+#    this list of conditions and the following disclaimer.
+#  * Redistributions in binary form must reproduce the above copyright notice,
+#    this list of conditions and the following disclaimer in the documentation
+#    and/or other materials provided with the distribution.
+#  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names of
+#    its contributors may be used to endorse or promote products derived from
+#    this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+# "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+# LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+# OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+# PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+# LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+# NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+###
+
+content   firefm              jar:chrome/firefm.jar!/content/
+
+# We have a common skin and then os-specific skins.
+skin      firefm     classic/1.0 jar:chrome/firefm.jar!/skin/all/
+# The default OS theme is the Unix theme.
+skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/unix/
+skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/win/   os=WINNT
+skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/win/   os=OS2
+skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/win/   os=BeOS
+skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/win/   os=riscos
+skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/win/   os=NTO
+skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/mac/     os=Darwin
+
+locale    firefm  bg-BG       jar:chrome/firefm.jar!/locale/bg-BG/
+locale    firefm  de          jar:chrome/firefm.jar!/locale/de/
+locale    firefm  en-GB       jar:chrome/firefm.jar!/locale/en-GB/
+locale    firefm  en-US       jar:chrome/firefm.jar!/locale/en-US/
+locale    firefm  es-AR       jar:chrome/firefm.jar!/locale/es-ES/
+locale    firefm  es-CL       jar:chrome/firefm.jar!/locale/es-ES/
+locale    firefm  es-ES       jar:chrome/firefm.jar!/locale/es-ES/
+#locale    firefm  fi-FI       jar:chrome/firefm.jar!/locale/fi-FI/
+locale    firefm  fr          jar:chrome/firefm.jar!/locale/fr/
+locale    firefm  gl-ES          jar:chrome/firefm.jar!/locale/gl-ES/
+locale    firefm  he-IL       jar:chrome/firefm.jar!/locale/he-IL/
+locale    firefm  hu          jar:chrome/firefm.jar!/locale/hu/
+#locale    firefm  id-ID       jar:chrome/firefm.jar!/locale/id-ID/
+locale    firefm  nl          jar:chrome/firefm.jar!/locale/nl/
+#locale    firefm  ja          jar:chrome/firefm.jar!/locale/ja/
+locale    firefm  pl          jar:chrome/firefm.jar!/locale/pl-PL/
+#locale    firefm  pt-BR       jar:chrome/firefm.jar!/locale/pt-BR/
+#locale    firefm  ro-RO       jar:chrome/firefm.jar!/locale/ro-RO/
+locale    firefm  ru-RU       jar:chrome/firefm.jar!/locale/ru-RU/
+locale    firefm  sr          jar:chrome/firefm.jar!/locale/sr/
+locale    firefm  sv-SE       jar:chrome/firefm.jar!/locale/sv-SE/
+#locale    firefm  tr-TR       jar:chrome/firefm.jar!/locale/tr-TR/
+locale    firefm  zh-CN       jar:chrome/firefm.jar!/locale/zh-CN/
+
+resource  firefm              resources/
+
+overlay chrome://browser/content/browser.xul      chrome://firefm/content/fmBrowserOverlay.xul
+overlay chrome://navigator/content/navigator.xul  chrome://firefm/content/fmBrowserOverlay.xul  application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+overlay chrome://navigator/content/navigator.xul  chrome://firefm/content/fmNavigatorOverlay.xul  application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+overlay chrome://global/content/alerts/alert.xul  chrome://firefm/content/fmAlertOverlay.xul
+
+style chrome://global/content/customizeToolbar.xul      chrome://firefm-os/skin/fmToolbar.css
+style chrome://global/content/customizeToolbar.xul      chrome://firefm/content/bindings.css
+style chrome://firefm/content/fmPreferencesWindow.xul   chrome://firefm-os/skin/fmSeaMonkeyPrefs.css  application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+
+# Firefox 4 styles
+style chrome://global/content/customizeToolbar.xul  chrome://firefm-os/skin/fmToolbar4.css  os=Darwin application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=4.0b1
+style chrome://browser/content/browser.xul          chrome://firefm-os/skin/fmToolbar4.css  os=Darwin application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=4.0b1
+
+# Component registration for Firefox 4 support
+component   {AE6C9422-FB46-4C0A-86D2-9C10A2E9B5CB}        components/fmProtocolHandler.js
+contract    @mozilla.org/network/protocol;1?name=firefm   {AE6C9422-FB46-4C0A-86D2-9C10A2E9B5CB}

@@ -1,0 +1,13 @@
+<!---->
+<!ENTITY firefm.error.dialog.title "Fire.fm извештач о грешкама">
+<!ENTITY firefm.error.accept.label "Пошаљи извештај о грешци">
+<!ENTITY firefm.error.accept.accesskey "П">
+<!ENTITY firefm.error.cancel.label "Настави без слања извештаја">
+<!ENTITY firefm.error.cancel.accesskey "Н">
+<!ENTITY firefm.error.header "Жао нам је">
+<!ENTITY firefm.error.unableToLoad "Fire.fm не може да се учита. Покушајте поново да учитате плејер ресетовањем &brandShortName;-а.">
+<!ENTITY firefm.error.sendReport "Да бисте нам помогли у откривању и решавању проблема, можете нам послати извештај о грешци.">
+<!ENTITY firefm.error.comment.label "Напишите било какву напомену која може да нам помогне у решавању проблема:">
+<!ENTITY firefm.error.exception.label "Подаци о грешци:">
+<!ENTITY firefm.error.email.label "Обавести ме и-мејлом када буде доступно више података о овом проблему">
+<!ENTITY firefm.error.email.help "Овде упишите своју и-мејл адресу:">

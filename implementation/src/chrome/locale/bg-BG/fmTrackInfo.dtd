@@ -1,0 +1,9 @@
+<!--  -->
+<!ENTITY firefm.trackInfo.dropdown.tooltip "Показване на инфо за песента">
+<!ENTITY firefm.trackInfo.buffering.label "Буфериране...">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "Отваряне на страницата за песента в Last.fm">
+<!ENTITY firefm.trackInfo.artist.tooltip "Отваряне страницата на изпълнителя в Last.fm">
+<!ENTITY firefm.trackInfo.album.tooltip "Отваряне страницата на албума в Last.fm">
+<!ENTITY firefm.trackInfo.free.label "Безплатна">
+<!ENTITY firefm.trackInfo.free.tooltip "Безплатно сваляне">
+<!ENTITY firefm.trackInfo.amazon.label "Купуване на тази песен от Amazon">

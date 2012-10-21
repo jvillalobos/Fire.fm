@@ -1,0 +1,51 @@
+<!--  -->
+<!--  -->
+<!ENTITY firefm.preferences.pane.main.title "Основни">
+<!ENTITY firefm.preferences.playback.label "Възпроизвеждане">
+<!ENTITY firefm.preferences.autoplay.label "Автоматично стартиране при отваряне на &brandShortName;">
+<!ENTITY firefm.preferences.autoplay.accesskey "А">
+<!ENTITY firefm.preferences.scrobble.label "Скробване на песните, които слушам">
+<!ENTITY firefm.preferences.scrobble.accesskey "С">
+<!ENTITY firefm.preferences.learnMore.label "Повече сведения...">
+<!ENTITY firefm.preferences.learnMore.accesskey "о">
+<!ENTITY firefm.preferences.volume.mode.label "Когато натисна бутона за усилване:">
+<!ENTITY firefm.preferences.volume.mode.accesskey "у">
+<!ENTITY firefm.preferences.volume.mode.simple "показване на плъзгача">
+<!ENTITY firefm.preferences.volume.mode.advanced "без звук">
+<!ENTITY firefm.preferences.history.label "История">
+<!ENTITY firefm.preferences.storeArtists.label "Запазване на изпълнителите и радиостанциите в историята на браузъра">
+<!ENTITY firefm.preferences.storeArtists.accesskey "З">
+<!ENTITY firefm.preferences.clearPlaces.label "Изчистване на Fire.fm историята">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "ч">
+<!ENTITY firefm.preferences.recentHistory.label "Създаване на списък с последно слушаните радиостанции">
+<!ENTITY firefm.preferences.recentHistory.accesskey "о">
+<!ENTITY firefm.preferences.clearRecent.label "Изчистване на списъка">
+<!ENTITY firefm.preferences.clearRecent.accesskey "в">
+<!ENTITY firefm.preferences.enablePrivateMode.label "Изключване на История и Скробване, когато &brandShortName; е в поверителен режим">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "п">
+<!ENTITY firefm.preferences.notifications.title "Известявания">
+<!ENTITY firefm.preferences.notifications.mode.label "Известяване при започване на нова песен:">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "И">
+<!ENTITY firefm.preferences.notifications.mode.off "Никога">
+<!ENTITY firefm.preferences.notifications.mode.focus "Когато &brandShortName; не е фокусиран">
+<!ENTITY firefm.preferences.notifications.mode.on "Винаги">
+<!--  -->
+<!ENTITY firefm.preferences.pane.appearance.title "Изглед">
+<!ENTITY firefm.preferences.showToolbar.label "Показване на лентата на Fire.fm">
+<!ENTITY firefm.preferences.showToolbar.accesskey "л">
+<!ENTITY firefm.preferences.showStatusbar.label "Показване на Fire.fm бутони в лентата за състоянието">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "с">
+<!ENTITY firefm.preferences.status.play.label "Старт/Стоп">
+<!ENTITY firefm.preferences.status.play.accesskey "С">
+<!ENTITY firefm.preferences.smallSize.label "Малък размер">
+<!ENTITY firefm.preferences.smallSize.accesskey "М">
+<!--  -->
+<!ENTITY firefm.preferences.pane.accounts.title "Профили">
+<!ENTITY firefm.preferences.removeAccount.label "Премахване...">
+<!ENTITY firefm.preferences.removeAccount.accesskey "П">
+<!ENTITY firefm.preferences.addAccount.label "Добавяне...">
+<!ENTITY firefm.preferences.addAccount.accesskey "Д">
+<!---->
+<!ENTITY firefm.preferences.pane.advanced.title "Разширени">
+<!ENTITY firefm.preferences.enableGestures.label "Разрешаване на жестове с мишката (изисква рестарт)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "ж">

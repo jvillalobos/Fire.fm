@@ -1,0 +1,537 @@
+<?xml version="1.0"?>
+
+<!--
+  - Copyright (c) 2008-2011, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://firefm/skin/fmBrowserOverlay.css" ?>
+<?xml-stylesheet type="text/css" href="chrome://firefm-os/skin/fmToolbar.css" ?>
+<?xml-stylesheet type="text/css" href="chrome://firefm/content/bindings.css" ?>
+
+<!DOCTYPE overlay [
+  <!ENTITY % overlayDTD SYSTEM "chrome://firefm/locale/fmBrowserOverlay.dtd" >
+  %overlayDTD;
+]>
+
+<overlay id="firefm-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://firefm/content/fmBrowserOverlay.js" />
+  <script type="application/x-javascript"
+    src="chrome://firefm/content/fmUIState.js" />
+  <script type="application/x-javascript"
+    src="chrome://firefm/content/fmFeeds.js" />
+
+  <menupopup id="menu_ToolsPopup">
+    <menu id="firefm-menu" insertafter="javascriptConsole,devToolsSeparator"
+      label="&firefm.menu.label;" accesskey="&firefm.menu.accesskey;"
+      image="chrome://firefm/skin/logo16.png">
+      <menupopup>
+        <menuitem id="firefm-home-menu" command="firefm-home-cmd" />
+        <menu id="firefm-login-logout-menu"
+          accesskey="&firefm.loginLogout.accesskey;"
+          command="firefm-login-logout-cmd">
+          <menupopup
+            onpopupshowing="FireFMChrome.BrowserOverlay.loadUserList(event);">
+            <menuseparator />
+            <menuitem id="firefm-menu-manage-accounts"
+              label="&firefm.manageAccounts.label;"
+              accesskey="&firefm.manageAccounts.accesskey;"
+              command="firefm-manage-accounts-cmd" />
+          </menupopup>
+        </menu>
+        <menuseparator />
+        <menu id="firefm-menu-now-playing" label="&firefm.nowPlaying.label;"
+          accesskey="&firefm.nowPlaying.accesskey;" disabled="true">
+          <menupopup>
+            <menuitem id="firefm-menu-playing-info"
+              class="menuitem-iconic firefm-menuitem-iconic" disabled="true" />
+            <menuitem id="firefm-menu-playing-time-left" disabled="true" />
+            <menuseparator />
+            <menuitem command="firefm-tag-cmd"
+              accesskey="&firefm.tag.accesskey;" />
+            <menuitem command="firefm-love-cmd"
+              accesskey="&firefm.love.accesskey;" />
+            <menuitem command="firefm-ban-cmd"
+              accesskey="&firefm.ban.accesskey;" />
+            <menuseparator />
+            <menuitem id="firefm-menu-playing-track"
+              label="&firefm.nowPlaying.track.label;"
+              accesskey="&firefm.nowPlaying.track.accesskey;"
+              observes="firefm-open-track-page-broadcaster" />
+            <menuitem id="firefm-menu-playing-artist"
+              label="&firefm.nowPlaying.artist.label;"
+              accesskey="&firefm.nowPlaying.artist.accesskey;"
+              observes="firefm-open-track-page-broadcaster" />
+            <menuitem id="firefm-menu-playing-album"
+              label="&firefm.nowPlaying.album.label;"
+              accesskey="&firefm.nowPlaying.album.accesskey;"
+              observes="firefm-open-track-page-broadcaster" />
+            <menuseparator />
+            <menuitem id="firefm-menu-playing-free"
+              label="&firefm.nowPlaying.downloadFree.label;"
+              accesskey="&firefm.nowPlaying.downloadFree.accesskey;"
+              observes="firefm-open-track-page-broadcaster" />
+            <menuseparator />
+            <menuitem label="&firefm.amazon.label;"
+              accesskey="&firefm.amazon.accesskey;"
+              command="firefm-amazon-cmd" />
+          </menupopup>
+        </menu>
+        <menuseparator />
+        <menu label="&firefm.station.label;"
+          accesskey="&firefm.station.accesskey;">
+          <menupopup>
+            <menuitem command="firefm-start-station-cmd" />
+            <menu command="firefm-recent-station-cmd">
+              <menupopup />
+            </menu>
+            <menuseparator />
+            <menu label="&firefm.myStations.label;"
+              accesskey="&firefm.myStations.accesskey;"
+              observes="firefm-logged-in-broadcaster">
+              <menupopup>
+                <menuitem label="&firefm.myLibrary.label;"
+                  accesskey="&firefm.myLibrary.accesskey;"
+                  oncommand=
+                    "FireFMChrome.BrowserOverlay.startMyLibrary(event);" />
+                <menuitem label="&firefm.recommendations.label;"
+                  accesskey="&firefm.recommendations.accesskey;"
+                  oncommand=
+                    "FireFMChrome.BrowserOverlay.startRecommendations(event);" />
+                <menuitem label="&firefm.neighborhood.label;"
+                  accesskey="&firefm.neighborhood.accesskey;"
+                  oncommand=
+                    "FireFMChrome.BrowserOverlay.startNeighborhood(event);" />
+              </menupopup>
+            </menu>
+            <menuseparator />
+            <menu id="firefm-mm-station-similar-artists"
+              label="&firefm.similarArtists.label;"
+              accesskey="&firefm.similarArtists.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startArtistStation(event);" />
+            <menu id="firefm-mm-station-top-artists"
+              label="&firefm.topArtists.label;"
+              accesskey="&firefm.topArtists.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startArtistStation(event);" />
+            <menu id="firefm-mm-station-friends" label="&firefm.friends.label;"
+              accesskey="&firefm.friends.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startUserStation(event);" />
+            <menu id="firefm-mm-station-neighbors"
+              label="&firefm.neighbors.label;"
+              accesskey="&firefm.neighbors.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startUserStation(event);" />
+            <menuseparator />
+            <menu label="&firefm.onThisPage.label;"
+              accesskey="&firefm.onThisPage.accesskey;"
+              observes="firefm-logged-in-broadcaster">
+              <menupopup
+                onpopupshowing=
+                  "FireFMChrome.BrowserOverlay.loadAudioMicroformats(this);" />
+            </menu>
+          </menupopup>
+        </menu>
+        <menuseparator />
+        <menuitem id="firefm-play-stop-menu" command="firefm-play-stop-cmd" />
+        <menuitem label="&firefm.skip.label;"
+          accesskey="&firefm.skip.accesskey;" command="firefm-skip-cmd" />
+        <menuseparator />
+        <menu label="&firefm.volume.label;"
+          accesskey="&firefm.volume.accesskey;"
+          observes="firefm-volume-broadcaster">
+          <menupopup
+            onpopupshowing=
+              "FireFMChrome.BrowserOverlay.checkVolumeItem(event);">
+            <menuitem label="100" accesskey="0" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(100, true);" />
+            <menuitem label="90" accesskey="9" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(90, true);" />
+            <menuitem label="80" accesskey="8" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(80, true);" />
+            <menuitem label="70" accesskey="7" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(70, true);" />
+            <menuitem label="60" accesskey="6" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(60, true);" />
+            <menuitem label="50" accesskey="5" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(50, true);" />
+            <menuitem label="40" accesskey="4" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(40, true);" />
+            <menuitem label="30" accesskey="3" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(30, true);" />
+            <menuitem label="20" accesskey="2" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(20, true);" />
+            <menuitem label="10" accesskey="1" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(10, true);" />
+            <menuitem label="&firefm.volume.mute.label;"
+              accesskey="&firefm.volume.mute.accesskey;"
+              type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(0, true);" />
+          </menupopup>
+        </menu>
+        <menuseparator />
+        <menuitem command="firefm-preferences-cmd" />
+      </menupopup>
+    </menu>
+  </menupopup>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="firefm-home-button"
+      class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+      command="firefm-home-cmd" />
+    <toolbarbutton id="firefm-login-logout-button" type="menu-button"
+      command="firefm-login-logout-cmd"
+      class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+      label="&firefm.loginLogout.label;"
+      tooltiptext="&firefm.loginLogout.label;"
+      oncommand="this.firstChild.openPopup(this, 'after_start');">
+      <menupopup command="firefm-login-logout-cmd"
+        onpopupshowing="FireFMChrome.BrowserOverlay.loadUserList(event);">
+        <menuseparator />
+        <menuitem id="firefm-manage-accounts"
+          label="&firefm.manageAccounts.label;"
+          accesskey="&firefm.manageAccounts.accesskey;"
+          command="firefm-manage-accounts-cmd" />
+      </menupopup>
+    </toolbarbutton>
+    <toolbarbutton id="firefm-station-button" label="&firefm.station.label;"
+      tooltiptext="&firefm.station.tooltip;" type="menu-button"
+      class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+      oncommand="this.firstChild.openPopup(this, 'after_start');">
+      <menupopup>
+        <menuitem command="firefm-start-station-cmd" />
+        <menu command="firefm-recent-station-cmd">
+          <menupopup />
+        </menu>
+        <menuseparator />
+        <menu label="&firefm.myStations.label;"
+          accesskey="&firefm.myStations.accesskey;"
+          observes="firefm-logged-in-broadcaster">
+            <menupopup>
+              <menuitem label="&firefm.myLibrary.label;"
+                accesskey="&firefm.myLibrary.accesskey;"
+                oncommand=
+                  "FireFMChrome.BrowserOverlay.startMyLibrary(event);" />
+              <menuitem label="&firefm.recommendations.label;"
+                accesskey="&firefm.recommendations.accesskey;"
+                oncommand=
+                  "FireFMChrome.BrowserOverlay.startRecommendations(event);" />
+              <menuitem label="&firefm.neighborhood.label;"
+                accesskey="&firefm.neighborhood.accesskey;"
+                oncommand=
+                  "FireFMChrome.BrowserOverlay.startNeighborhood(event);" />
+            </menupopup>
+        </menu>
+        <menuseparator />
+        <menu id="firefm-tb-station-similar-artists"
+          label="&firefm.similarArtists.label;"
+          accesskey="&firefm.similarArtists.accesskey;"
+          observes="firefm-logged-in-broadcaster"
+          oncommand="FireFMChrome.BrowserOverlay.startArtistStation(event);" />
+        <menu id="firefm-tb-station-top-artists"
+          label="&firefm.topArtists.label;"
+          accesskey="&firefm.topArtists.accesskey;"
+          observes="firefm-logged-in-broadcaster"
+          oncommand="FireFMChrome.BrowserOverlay.startArtistStation(event);" />
+        <menu id="firefm-tb-station-friends" label="&firefm.friends.label;"
+          accesskey="&firefm.friends.accesskey;"
+          observes="firefm-logged-in-broadcaster"
+          oncommand="FireFMChrome.BrowserOverlay.startUserStation(event);" />
+        <menu id="firefm-tb-station-neighbors" label="&firefm.neighbors.label;"
+          accesskey="&firefm.neighbors.accesskey;"
+          observes="firefm-logged-in-broadcaster"
+          oncommand="FireFMChrome.BrowserOverlay.startUserStation(event);" />
+      </menupopup>
+    </toolbarbutton>
+    <toolbarbutton id="firefm-play-stop-button" label="&firefm.play.label;"
+      class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+      command="firefm-play-stop-cmd" />
+    <toolbarbutton id="firefm-skip-button" label="&firefm.skip.label;"
+      class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+      command="firefm-skip-cmd" />
+    <toolbaritem id="firefm-track-info" title="&firefm.nowPlaying.label;"
+      flex="1">
+      <fmtrackinfo flex="1" observes="firefm-now-playing-broadcaster" />
+    </toolbaritem>
+    <toolbarbutton id="firefm-volume-button" label="&firefm.volume.label;"
+      tooltiptext="&firefm.volume.tooltip;" type="menu-button"
+      class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+      oncommand="FireFMChrome.BrowserOverlay.onVolumeCommand(event);"
+      observes="firefm-volume-broadcaster">
+      <menupopup>
+        <scale id="firefm-volume-scale" min="0" max="100" orient="vertical"
+          dir="reverse" observes="firefm-volume-broadcaster"
+          onchange="FireFMChrome.BrowserOverlay.setVolume(this.value, true);" />
+      </menupopup>
+    </toolbarbutton>
+    <toolbarbutton id="firefm-amazon-button"
+      class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+      command="firefm-amazon-cmd" />
+    <toolbarbutton id="firefm-tag-button"
+      class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+      command="firefm-tag-cmd" />
+    <toolbarbutton id="firefm-love-button"
+      class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+      command="firefm-love-cmd" />
+    <toolbarbutton id="firefm-ban-button"
+      class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+      command="firefm-ban-cmd" />
+  </toolbarpalette>
+
+  <toolbox id="navigator-toolbox">
+    <toolbar id="firefm-toolbar" toolbarname="&firefm.toolbarName.label;"
+      accesskey="&firefm.toolbar.accesskey;" customizable="true" mode="icons"
+      defaulticonsize="small" context="toolbar-context-menu"
+      defaultset=
+        "firefm-home-button,firefm-login-logout-button,spacer,spring,spring,firefm-station-button,firefm-play-stop-button,firefm-skip-button,firefm-track-info,firefm-volume-button,separator,firefm-amazon-button,separator,firefm-tag-button,firefm-love-button,firefm-ban-button"
+      insertbefore="PersonalToolbar" />
+  </toolbox>
+
+  <window id="main-window">
+    <stringbundleset id="stringbundleset">
+      <stringbundle id="firefm-string-bundle"
+        src="chrome://firefm/locale/fmBrowserOverlay.properties" />
+    </stringbundleset>
+
+    <popupset id="mainPopupSet">
+      <popup id="contentAreaContextMenu">
+        <menuitem id="firefm-context-menu-start-station"
+          insertbefore="context-sep-properties"
+          image="chrome://firefm/skin/logo16.png"
+          oncommand=
+            "FireFMChrome.BrowserOverlay.verifyStation(
+               this.getAttribute('selection'), FireFM.Station.TYPE_ARTIST);" />
+        <menu id="firefm-context-menu-artists"
+          insertafter="context-bookmarkpage" hidden="true"
+          image="chrome://firefm/skin/logo16.png"
+          label="&firefm.onThisPage.label;"
+          accesskey="&firefm.onThisPage.accesskey;">
+          <menupopup id="firefm-context-menu-artists-popup" />
+        </menu>
+      </popup>
+      <popup id="firefm-customize-popup">
+        <menuitem label="&firefm.customize.label;"
+          accesskey="&firefm.customize.accesskey;"
+          oncommand=
+            "FireFMChrome.BrowserOverlay.openPreferences('firefm-appearance-pane');" />
+      </popup>
+    </popupset>
+
+    <broadcasterset id="firefm-broadcasterset">
+      <broadcaster id="firefm-volume-broadcaster" value="100" volume="high" />
+      <broadcaster id="firefm-logged-in-broadcaster" disabled="true" />
+      <broadcaster id="firefm-now-playing-broadcaster"
+        message="&firefm.welcomeMessage2.label;" />
+      <!-- XXX: these don't work as a command because the target of the event
+           is almost always the command and not the menu item! -->
+      <broadcaster id="firefm-full-list-broadcaster"
+        label="&firefm.feed.fullList.label;"
+        accesskey="&firefm.feed.fullList.accesskey;"
+        oncommand=
+          "FireFMChrome.Feeds.showFullList(event); event.stopPropagation();" />
+      <broadcaster id="firefm-open-track-page-broadcaster"
+        oncommand="FireFMChrome.BrowserOverlay.openTrackPage(event);"
+        onclick="checkForMiddleClick(this, event);" />
+    </broadcasterset>
+
+    <commandset id="firefm-commandset">
+      <command id="firefm-home-cmd" label="&firefm.home.label;"
+        tooltiptext="&firefm.home.tooltip;"
+        oncommand="FireFMChrome.BrowserOverlay.openHome(event);"
+        onclick="checkForMiddleClick(this, event);" />
+      <command id="firefm-login-logout-cmd" label="&firefm.loginLogout.label;"
+        disabled="true"
+        oncommand="FireFMChrome.BrowserOverlay.loginLogout(event);" />
+      <command id="firefm-manage-accounts-cmd"
+        label="&firefm.manageAccounts.label;"
+        oncommand="FireFMChrome.BrowserOverlay.openPreferences('firefm-accounts-pane');" />
+      <command id="firefm-start-station-cmd"
+        label="&firefm.startStation.label;"
+        accesskey="&firefm.startStation.accesskey;"
+        oncommand="FireFMChrome.BrowserOverlay.startStation(event);" />
+      <command id="firefm-recent-station-cmd" disabled="true"
+        label="&firefm.recentStations.label;"
+        accesskey="&firefm.recentStations.accesskey;"
+        onpopupshowing="FireFMChrome.BrowserOverlay.fillRecentStations(event);"
+        oncommand="FireFMChrome.BrowserOverlay.startRecentStation(event);" />
+      <command id="firefm-amazon-cmd" label="&firefm.amazon.label;"
+         disabled="true"
+        oncommand="FireFMChrome.BrowserOverlay.buyOnAmazon(event);" />
+      <command id="firefm-tag-cmd" label="&firefm.tag.label;" disabled="true"
+        oncommand="FireFMChrome.BrowserOverlay.tagTrack(event);" />
+      <command id="firefm-love-cmd" label="&firefm.love.label;" disabled="true"
+        oncommand="FireFMChrome.BrowserOverlay.loveTrack(event);" />
+      <command id="firefm-ban-cmd" label="&firefm.ban.label;" disabled="true"
+        oncommand="FireFMChrome.BrowserOverlay.banTrack(event);" />
+      <command id="firefm-play-stop-cmd" disabled="true"
+        oncommand="FireFMChrome.BrowserOverlay.playStop(event);" />
+      <command id="firefm-skip-cmd" disabled="true"
+        oncommand="FireFMChrome.BrowserOverlay.skip(event);" />
+      <command id="firefm-preferences-cmd"
+        oncommand="FireFMChrome.BrowserOverlay.openPreferences();" />
+    </commandset>
+
+    <keyset id="firefm-keyset">
+      <key id="firefm-start-station-key" modifiers="control,shift" key="O"
+        command="firefm-start-station-cmd" />
+      <key id="firefm-play-stop-key" modifiers="control,shift" key="F"
+        command="firefm-play-stop-cmd" />
+    </keyset>
+  </window>
+
+  <statusbar id="status-bar">
+    <statusbarpanel id="firefm-statusbar-panel" hidden="true"
+      insertbefore="statusbar-updates">
+      <toolbar id="firefm-statusbar-toolbar"
+        toolbarname="&firefm.toolbarName.label;"
+        accesskey="&firefm.toolbar.accesskey;" mode="icons"
+        defaulticonsize="small" context="firefm-customize-popup">
+        <toolbarbutton id="firefm-status-home-button"
+          class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+          command="firefm-home-cmd" />
+        <toolbarbutton id="firefm-status-login-logout-button" type="menu-button"
+          class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+          tooltiptext="&firefm.loginLogout.label;"
+          oncommand="this.firstChild.openPopup(this, 'after_start');">
+          <menupopup command="firefm-login-logout-cmd"
+            onpopupshowing="FireFMChrome.BrowserOverlay.loadUserList(event);">
+            <menuseparator />
+            <menuitem id="firefm-status-manage-accounts"
+              label="&firefm.manageAccounts.label;"
+              accesskey="&firefm.manageAccounts.accesskey;"
+              command="firefm-manage-accounts-cmd" />
+          </menupopup>
+        </toolbarbutton>
+        <toolbarbutton id="firefm-status-station-button"
+          label="&firefm.station.label;" tooltiptext="&firefm.station.tooltip;"
+          type="menu-button"
+          class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+          oncommand="this.firstChild.openPopup(this, 'after_start');">
+          <menupopup>
+            <menuitem command="firefm-start-station-cmd" />
+            <menu command="firefm-recent-station-cmd">
+              <menupopup />
+            </menu>
+            <menuseparator />
+            <menu label="&firefm.myStations.label;"
+              accesskey="&firefm.myStations.accesskey;"
+              observes="firefm-logged-in-broadcaster">
+              <menupopup>
+                <menuitem label="&firefm.myLibrary.label;"
+                  accesskey="&firefm.myLibrary.accesskey;"
+                  oncommand=
+                    "FireFMChrome.BrowserOverlay.startMyLibrary(event);" />
+                <menuitem label="&firefm.recommendations.label;"
+                  accesskey="&firefm.recommendations.accesskey;"
+                  oncommand=
+                    "FireFMChrome.BrowserOverlay.startRecommendations(event);" />
+                <menuitem label="&firefm.neighborhood.label;"
+                  accesskey="&firefm.neighborhood.accesskey;"
+                  oncommand=
+                    "FireFMChrome.BrowserOverlay.startNeighborhood(event);" />
+              </menupopup>
+            </menu>
+            <menuseparator />
+            <menu id="firefm-status-tb-station-similar-artists"
+              label="&firefm.similarArtists.label;"
+              accesskey="&firefm.similarArtists.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startArtistStation(event);" />
+            <menu id="firefm-status-tb-station-top-artists"
+              label="&firefm.topArtists.label;"
+              accesskey="&firefm.topArtists.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startArtistStation(event);" />
+            <menu id="firefm-status-tb-station-friends"
+              label="&firefm.friends.label;"
+              accesskey="&firefm.friends.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startUserStation(event);" />
+            <menu id="firefm-status-tb-station-neighbors"
+              label="&firefm.neighbors.label;"
+              accesskey="&firefm.neighbors.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startUserStation(event);" />
+          </menupopup>
+        </toolbarbutton>
+        <toolbarbutton id="firefm-status-play-stop-button"
+          label="&firefm.play.label;"
+          class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+          command="firefm-play-stop-cmd" />
+        <toolbarbutton id="firefm-status-skip-button"
+          label="&firefm.skip.label;"
+          class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+          command="firefm-skip-cmd" />
+        <toolbaritem id="firefm-status-track-info"
+          title="&firefm.nowPlaying.label;" flex="1">
+          <fmtrackinfo flex="1" observes="firefm-now-playing-broadcaster" />
+        </toolbaritem>
+        <toolbarbutton id="firefm-status-volume-button"
+          label="&firefm.volume.label;" tooltiptext="&firefm.volume.tooltip;"
+          type="menu-button"
+          class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+          oncommand="FireFMChrome.BrowserOverlay.onVolumeCommand(event);"
+          observes="firefm-volume-broadcaster">
+          <menupopup>
+            <scale id="firefm-status-volume-scale" min="0" max="100"
+              orient="vertical" dir="reverse"
+              observes="firefm-volume-broadcaster"
+              onchange="FireFMChrome.BrowserOverlay.setVolume(this.value, true);" />
+          </menupopup>
+        </toolbarbutton>
+        <toolbarbutton id="firefm-status-amazon-button"
+          class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+          command="firefm-amazon-cmd" />
+        <toolbarbutton id="firefm-status-tag-button"
+          class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+          command="firefm-tag-cmd" />
+        <toolbarbutton id="firefm-status-love-button"
+          class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+          command="firefm-love-cmd" />
+        <toolbarbutton id="firefm-status-ban-button"
+          class="toolbarbutton-1 chromeclass-toolbar-additional fm-button"
+          command="firefm-ban-cmd" />
+      </toolbar>
+    </statusbarpanel>
+  </statusbar>
+
+</overlay>

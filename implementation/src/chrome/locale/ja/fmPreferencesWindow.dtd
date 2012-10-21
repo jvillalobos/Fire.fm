@@ -1,0 +1,80 @@
+<!--
+  - Copyright (c) 2008, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+-->
+<!-- Main pane -->
+<!ENTITY firefm.preferences.pane.main.title "全般">
+<!ENTITY firefm.preferences.playback.label "プレイバック">
+<!ENTITY firefm.preferences.autoplay.label "&brandShortName; の起動時に最近のステーションを自動再生する">
+<!ENTITY firefm.preferences.autoplay.accesskey "A">
+<!ENTITY firefm.preferences.scrobble.label "再生するすべての曲を Scrobble">
+<!ENTITY firefm.preferences.scrobble.accesskey "b">
+<!ENTITY firefm.preferences.learnMore.label "さらに知る...">
+<!ENTITY firefm.preferences.learnMore.accesskey "L">
+<!ENTITY firefm.preferences.volume.mode.label "音量ボタンをクリックした時:">
+<!ENTITY firefm.preferences.volume.mode.accesskey "v">
+<!ENTITY firefm.preferences.volume.mode.simple "音量制御を表示する">
+<!ENTITY firefm.preferences.volume.mode.advanced "消音する">
+<!ENTITY firefm.preferences.history.label "履歴">
+<!ENTITY firefm.preferences.storeArtists.label "再生するアーティストとステーションをブラウザ履歴に記録する">
+<!ENTITY firefm.preferences.storeArtists.accesskey "h">
+<!ENTITY firefm.preferences.clearPlaces.label "Fire.fm の履歴を消去する">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "C">
+<!ENTITY firefm.preferences.recentHistory.label "最後に再生したステーションをステーションメニューに記録する">
+<!ENTITY firefm.preferences.recentHistory.accesskey "t">
+<!ENTITY firefm.preferences.clearRecent.label "最近のステーションを消去する">
+<!ENTITY firefm.preferences.clearRecent.accesskey "R">
+<!ENTITY firefm.preferences.enablePrivateMode.label "&brandShortName; がプライベートモードの時はステーションの履歴と Scrobble を無効にする">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "P">
+<!ENTITY firefm.preferences.notifications.title "通知">
+<!ENTITY firefm.preferences.notifications.mode.label "曲再生時の通知:">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "N">
+<!ENTITY firefm.preferences.notifications.mode.off "しない">
+<!ENTITY firefm.preferences.notifications.mode.focus "&brandShortName; が前面でない時にする">
+<!ENTITY firefm.preferences.notifications.mode.on "常にする">
+<!-- Appearance pane -->
+<!ENTITY firefm.preferences.pane.appearance.title "外観">
+<!ENTITY firefm.preferences.showToolbar.label "Fire.fm ツールバーを表示する">
+<!ENTITY firefm.preferences.showToolbar.accesskey "h">
+<!ENTITY firefm.preferences.showStatusbar.label "ステータスバーにボタンを表示する">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "S">
+<!ENTITY firefm.preferences.status.play.label "再生・停止">
+<!ENTITY firefm.preferences.status.play.accesskey "P">
+<!ENTITY firefm.preferences.smallSize.label "小さいサイズ">
+<!ENTITY firefm.preferences.smallSize.accesskey "m">
+<!-- Advanced pane -->
+<!ENTITY firefm.preferences.pane.accounts.title "アカウント">
+<!ENTITY firefm.preferences.removeAccount.label "アカウント削除...">
+<!ENTITY firefm.preferences.removeAccount.accesskey "R">
+<!ENTITY firefm.preferences.addAccount.label "アカウント追加...">
+<!ENTITY firefm.preferences.addAccount.accesskey "A">
+<!ENTITY firefm.preferences.pane.advanced.title "詳細">
+<!ENTITY firefm.preferences.enableGestures.label "マウスジェスチャーを有効にする (要再起動)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "g">

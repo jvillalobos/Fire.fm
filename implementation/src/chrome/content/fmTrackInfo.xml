@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+
+<!--
+  - Copyright (c) 2008, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<!DOCTYPE binding [
+  <!ENTITY % fmTrackInfoDTD SYSTEM
+    "chrome://firefm/locale/fmTrackInfo.dtd" >
+  %fmTrackInfoDTD;
+]>
+
+<bindings xmlns="http://www.mozilla.org/xbl"
+  xmlns:xbl="http://www.mozilla.org/xbl"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <!-- Track Info widget -->
+  <binding id="firefm-track-info">
+    <resources>
+      <stylesheet src="chrome://firefm-os/skin/fmTrackInfo.css" />
+    </resources>
+    <content>
+
+      <xul:stringbundleset>
+        <xul:stringbundle anonid="stringBundle"
+          src="chrome://firefm/locale/fmTrackInfo.properties" />
+      </xul:stringbundleset>
+
+      <xul:hbox class="firefm-info-outer-box">
+        <xul:stack flex="1">
+
+          <xul:hbox class="firefm-info-progress-box" flex="1"
+            xbl:inherits="progress">
+            <xul:hbox
+              class="firefm-info-progress-elapsed firefm-info-progress-space" />
+            <xul:hbox anonid="elapsed-progress"
+              class="firefm-info-progress-elapsed" flex="0" />
+            <xul:hbox class="firefm-info-progress-playhead" />
+            <xul:hbox anonid="remaining-progress"
+              class="firefm-info-progress-remaining" flex="1" />
+            <xul:hbox class=
+                "firefm-info-progress-remaining firefm-info-progress-space" />
+          </xul:hbox>
+
+          <xul:deck anonid="info-deck" class="firefm-info-deck" flex="1"
+            selectedIndex="0">
+            <xul:hbox flex="1">
+              <xul:image anonid="throbber" class="firefm-info-throbber"
+                hidden="true" />
+              <xul:label class="firefm-info-message" crop="center"
+                xbl:inherits="value=message" />
+            </xul:hbox>
+            <xul:hbox flex="1">
+              <xul:toolbarbutton type="menu" class="firefm-info-panel-button"
+                tooltiptext="&firefm.trackInfo.dropdown.tooltip;"
+                onclick="_openTrackPanel(this.parentNode)" />
+              <xul:label anonid="info-track" class="text-link firefm-track-info"
+                tooltiptext="&firefm.trackInfo.trackTitle.tooltip;" crop="end"
+                xbl:inherits="value=tracktitle,url=trackurl"
+                onclick="_openURL(this, event)" />
+              <xul:label value=" - " class="firefm-track-info" />
+              <xul:label anonid="info-artist"
+                class="text-link firefm-track-info"
+                tooltiptext="&firefm.trackInfo.artist.tooltip;" crop="start"
+                xbl:inherits="value=artist,url=artisturl"
+                onclick="_openURL(this, event)" />
+              <xul:spacer flex="1" />
+              <xul:deck anonid="buffering-deck" class="firefm-buffering-deck"
+                selectedIndex="0">
+                <xul:hbox align="center">
+                  <xul:spacer flex="1" />
+                  <xul:label anonid="info-free"
+                    value="&firefm.trackInfo.free.label;"
+                    tooltiptext="&firefm.trackInfo.free.tooltip;"
+                    class="freeLabel text-link"
+                    xbl:inherits="url=freetrackurl"
+                    onclick="_openURL(this, event)" />
+                  <xul:label class="timeLabel" value="-0:00"
+                    xbl:inherits="value=remainingtime" />
+                </xul:hbox>
+                <xul:hbox align="center">
+                  <xul:label class="buffering-label"
+                    value="&firefm.trackInfo.buffering.label;" />
+                </xul:hbox>
+              </xul:deck>
+            </xul:hbox>
+          </xul:deck>
+
+        </xul:stack>
+      </xul:hbox>
+
+      <xul:panel anonid="trackPanel" >
+        <xul:hbox class="firefm-info-panel-outer-box">
+          <xul:vbox class="firefm-info-panel-image-box">
+            <xul:image xbl:inherits="src=trackimage" />
+          </xul:vbox>
+          <xul:vbox class="firefm-info-panel-info-box">
+            <xul:hbox align="center">
+              <xul:label anonid="panel-track"
+                class="text-link firefm-info-panel-track"
+                tooltiptext="&firefm.trackInfo.trackTitle.tooltip;"
+                xbl:inherits="value=tracktitle,url=trackurl"
+                onclick="_openURL(this, event)" />
+              <xul:spacer flex="1" />
+              <xul:label xbl:inherits="value=remainingtime" />
+            </xul:hbox>
+            <xul:label anonid="panel-artist"
+              class="text-link firefm-info-panel-artist"
+              tooltiptext="&firefm.trackInfo.artist.tooltip;"
+              xbl:inherits="value=artist,url=artisturl"
+              onclick="_openURL(this, event)" />
+            <xul:spacer flex="1" />
+            <xul:label anonid="panel-album"
+              class="text-link firefm-info-panel-album"
+              tooltiptext="&firefm.trackInfo.album.tooltip;"
+              xbl:inherits="value=album,url=albumurl"
+              onclick="_openURL(this, event)" />
+            <xul:deck anonid="panel-buy" selectedIndex="0">
+              <xul:hbox anonid="panel-amazon" class="firefm-info-panel-amazon">
+                <xul:label
+                  class="text-link"
+                  value="&firefm.trackInfo.amazon.label;"
+                  xbl:inherits="url=amazonurl"
+                  onclick="_openURL(this, event)" />
+                <xul:image/>
+              </xul:hbox>
+              <xul:label anonid="panel-free"
+                class="text-link firefm-info-panel-free"
+                value="&firefm.trackInfo.free.tooltip;"
+                xbl:inherits="url=freetrackurl"
+                onclick="_openURL(this, event)" />
+            </xul:deck>
+            <xul:spacer flex="1" />
+          </xul:vbox>
+        </xul:hbox>
+      </xul:panel>
+
+    </content>
+
+    <implementation>
+      <!-- Logger for this object. -->
+      <field name="_logger" />
+      <!--  Elements that keep track of elapsed and remaining time. -->
+      <field name="_elapsed" />
+      <field name="_remaining" />
+      <field name="_bufferingDeck" />
+
+      <constructor><![CDATA[
+        let attributes =
+          [ "message", "trackimage", "tracktitle", "trackurl", "artist",
+            "artisturl", "albumurl", "albumtitle", "remainingtime", "progress",
+            "isbuffering", "freetrackurl", "amazonurl" ];
+        let attName;
+        let attValue;
+
+        this._logger = FireFM.getLogger("FireFM.trackinfo");
+        this._logger.debug("init");
+
+        this._elapsed =
+          document.getAnonymousElementByAttribute(
+            this, "anonid","elapsed-progress");
+        this._remaining =
+          document.getAnonymousElementByAttribute(
+            this, "anonid","remaining-progress");
+        this._bufferingDeck =
+          document.getAnonymousElementByAttribute(
+            this, "anonid","buffering-deck");
+
+        // refresh all attribute values so that the DOMAttrModified event is
+        // fired.
+        for (let i = 0; i < attributes.length; i++) {
+          attName = attributes[i];
+          attValue = this.getAttribute(attName);
+          this.setAttribute(attName, "");
+          this.setAttribute(attName, attValue);
+        }
+      ]]>
+      </constructor>
+
+      <method name="_openTrackPanel">
+        <parameter name="aButton" />
+        <body><![CDATA[
+          this._logger.trace("_openTrackPanel");
+
+          var panel = document.
+            getAnonymousElementByAttribute(this, "anonid", "trackPanel");
+          panel.openPopup(aButton, 'after_start');
+        ]]>
+        </body>
+      </method>
+
+      <method name="_openURL">
+        <parameter name="aSubject" />
+        <parameter name="aEvent" />
+        <body><![CDATA[
+          this._logger.trace("_openURL");
+
+          var panel = document.
+            getAnonymousElementByAttribute(this, "anonid", "trackPanel");
+          panel.hidePopup();
+
+          if (1 != aEvent.button) {
+            window.openUILink(aSubject.getAttribute('url'), aEvent);
+          } else {
+            // checkMiddleClick doesn't work for us in this case.
+            window.openUILinkIn(aSubject.getAttribute('url'), "tab");
+          }
+        ]]>
+        </body>
+      </method>
+    </implementation>
+    <handlers>
+      <handler event="DOMAttrModified"><![CDATA[
+        let panelAlbum;
+
+        switch (event.attrName) {
+          case "message":
+            let showMessage = (0 < event.newValue.length);
+            let infoDeck =
+              document.getAnonymousElementByAttribute(
+                this, "anonid","info-deck");
+
+            if (showMessage) {
+              infoDeck.selectedIndex = 0;
+            } else {
+              infoDeck.selectedIndex = 1;
+            }
+
+            if ("true" == this.getAttribute("small")) {
+              document.getAnonymousElementByAttribute(
+                this, "anonid", "throbber").hidden =
+                  (!FireFM.Station.isSearchingStation &&
+                   !FireFM.Station.isLoadingStation);
+            }
+            break;
+
+          case "tracktitle":
+            if (0 < event.newValue.length) {
+              document.getAnonymousElementByAttribute(
+                this, "anonid", "info-deck").
+                  selectedIndex = 1;
+
+              if ("true" == this.getAttribute("small")) {
+                document.getAnonymousElementByAttribute(
+                  this, "anonid", "throbber").hidden = true;
+              }
+            }
+            break;
+
+          case "trackurl":
+            let infoTrack =
+              document.getAnonymousElementByAttribute(
+                this, "anonid", "info-track");
+            let panelTrack =
+              document.getAnonymousElementByAttribute(
+                this, "anonid", "panel-track");
+
+            infoTrack.disabled = (0 == event.newValue.length);
+            panelTrack.disabled = (0 == event.newValue.length);
+            break;
+
+          case "freetrackurl":
+            let freeLabel =
+              document.getAnonymousElementByAttribute(
+                this, "anonid", "info-free");
+            let buyPanel =
+              document.getAnonymousElementByAttribute(
+                this, "anonid", "panel-buy");
+            if (0 == event.newValue.length) {
+              freeLabel.setAttribute("hidden", true);
+              buyPanel.selectedIndex = 0;
+            } else {
+              freeLabel.removeAttribute("hidden");
+              buyPanel.selectedIndex = 1;
+            }
+            break;
+
+          case "artisturl":
+            let infoArtist =
+              document.getAnonymousElementByAttribute(
+                this, "anonid","info-artist");
+            let panelArtist =
+              document.getAnonymousElementByAttribute(
+                this, "anonid","panel-artist");
+
+            infoArtist.disabled = (0 == event.newValue.length);
+            panelArtist.disabled = (0 == event.newValue.length);
+            break;
+
+          case "albumurl":
+            panelAlbum =
+              document.getAnonymousElementByAttribute(
+                this, "anonid","panel-album");
+            panelAlbum.disabled = (0 == event.newValue.length);
+            break;
+
+          case "album":
+            panelAlbum =
+              document.getAnonymousElementByAttribute(
+                this, "anonid","panel-album");
+            panelAlbum.hidden = (0 == event.newValue.length);
+            break;
+
+          case "progress":
+            // We use a more finely grained progress rate so that the progress
+            // bar moves along smoothly.
+            let newValue = event.newValue;
+            let progress;
+
+            newValue =
+              (((null != newValue) && (0 < newValue.length)) ? newValue : "0");
+
+            progress = Math.round(parseFloat(newValue) * 300);
+            this._elapsed.setAttribute("flex", progress);
+            this._remaining.setAttribute("flex", (30000 - progress));
+            break;
+
+          case "isbuffering":
+            this._bufferingDeck.selectedIndex =
+              (("true" == event.newValue) ? 1 : 0);
+
+            if ("true" == this.getAttribute("small")) {
+              document.getAnonymousElementByAttribute(
+                this, "anonid", "throbber").hidden = ("true" != event.newValue);
+            }
+
+            break;
+        }
+
+       ]]></handler>
+    </handlers>
+  </binding>
+
+</bindings>

@@ -1,0 +1,108 @@
+<!--
+  - Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution och use in source och binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions och the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions och the following disclaimer in the documentation
+  -    och/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  
+-->
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Last.fms webbplats">
+<!ENTITY firefm.home.tooltip "Gå till Last.fms webbplats">
+<!ENTITY firefm.home.accesskey "w">
+<!ENTITY firefm.station.label "Stationer">
+<!ENTITY firefm.station.tooltip "Välj en radiostation att spela">
+<!ENTITY firefm.station.accesskey "t">
+<!ENTITY firefm.startStation.label "Starta en radiostation">
+<!ENTITY firefm.startStation.accesskey "S">
+<!ENTITY firefm.myStations.label "Mina radiostationer">
+<!ENTITY firefm.myStations.accesskey "d">
+<!ENTITY firefm.recommendations.label "Mina rekommendationer">
+<!ENTITY firefm.recommendations.accesskey "r">
+<!ENTITY firefm.myLibrary.label "Mitt bibliotek">
+<!ENTITY firefm.myLibrary.accesskey "b">
+<!ENTITY firefm.lovedTracks.label "Mina älskade låtar">
+<!ENTITY firefm.lovedTracks.accesskey "ä">
+<!ENTITY firefm.neighborhood.label "Mitt grannskap">
+<!ENTITY firefm.neighborhood.accesskey "k">
+<!ENTITY firefm.friends.label "Vänner">
+<!ENTITY firefm.friends.accesskey "V">
+<!ENTITY firefm.neighbors.label "Grannar">
+<!ENTITY firefm.neighbors.accesskey "G">
+<!ENTITY firefm.topArtists.label "Mina favoritartister">
+<!ENTITY firefm.topArtists.accesskey "t">
+<!ENTITY firefm.similarArtists.label "Liknande artister">
+<!ENTITY firefm.similarArtists.accesskey "i">
+<!ENTITY firefm.onThisPage.label "Artister på den här sidan">
+<!ENTITY firefm.onThisPage.accesskey "p">
+<!ENTITY firefm.recentStations.label "Senast spelade stationer">
+<!ENTITY firefm.recentStations.accesskey "e">
+<!ENTITY firefm.loginLogout.label "Logga in / Logga ut">
+<!ENTITY firefm.loginLogout.accesskey "L">
+<!ENTITY firefm.play.label "Spela">
+<!ENTITY firefm.manageAccounts.label "Hantera konton...">
+<!ENTITY firefm.manageAccounts.accesskey "k">
+<!ENTITY firefm.skip.label "Hoppa över">
+<!ENTITY firefm.skip.accesskey "ö">
+<!ENTITY firefm.volume.label "Volym">
+<!ENTITY firefm.volume.tooltip "Justera volymen">
+<!ENTITY firefm.volume.accesskey "y">
+<!ENTITY firefm.volume.mute.label "Ljud av">
+<!ENTITY firefm.volume.mute.accesskey "j">
+<!ENTITY firefm.amazon.label "Köp på Amazon">
+<!ENTITY firefm.amazon.accesskey "z">
+<!ENTITY firefm.share.label "Dela">
+<!ENTITY firefm.share.accesskey "D">
+<!ENTITY firefm.tag.label "Tagga">
+<!ENTITY firefm.tag.accesskey "g">
+<!ENTITY firefm.love.label "Älska">
+<!ENTITY firefm.love.accesskey "Ä">
+<!ENTITY firefm.ban.label "Blockera">
+<!ENTITY firefm.ban.accesskey "B">
+<!ENTITY firefm.video.label "Se på video">
+<!ENTITY firefm.video.accesskey "å">
+<!ENTITY firefm.video.tooltip "Se den här låtens video">
+<!ENTITY firefm.feed.fullList.label "Se hela listan...">
+<!ENTITY firefm.feed.fullList.accesskey "h">
+<!ENTITY firefm.welcomeMessage2.label "Välkommen! Logga in och starta en station för att sätta igång">
+<!ENTITY firefm.nowPlaying.label "Nu spelas">
+<!ENTITY firefm.nowPlaying.accesskey "N">
+<!ENTITY firefm.nowPlaying.track.label "Låtens sida på Last.fm">
+<!ENTITY firefm.nowPlaying.track.accesskey "T">
+<!ENTITY firefm.nowPlaying.artist.label "Artistens sida på Last.fm">
+<!ENTITY firefm.nowPlaying.artist.accesskey "A">
+<!ENTITY firefm.nowPlaying.album.label "Albumets sida på Last.fm">
+<!ENTITY firefm.nowPlaying.album.accesskey "b">
+<!ENTITY firefm.nowPlaying.downloadFree.label "Ladda ner den här låten gratis">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "d">
+<!ENTITY firefm.customize.label "Anpassa...">
+<!ENTITY firefm.customize.accesskey "p">
+<!-- XXX we do this because Babelzilla doesn't support the install.rdf way of
+     localizing extension descriptions. This way we can get the string och use
+     it in install.rdf. 
+-->
+<!ENTITY firefm.extensionDescription.label "Få din dagliga musikdos från Last.fm.">

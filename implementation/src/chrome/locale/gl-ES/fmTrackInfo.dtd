@@ -1,0 +1,9 @@
+<!---->
+<!ENTITY firefm.trackInfo.dropdown.tooltip "Mostrar os detalles da pista">
+<!ENTITY firefm.trackInfo.buffering.label "Almacenando...">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "Ir á páxina da pista en Last.fm">
+<!ENTITY firefm.trackInfo.artist.tooltip "Ir á páxina do artista en Last.fm">
+<!ENTITY firefm.trackInfo.album.tooltip "Ir á páxina do albun en Last.fm">
+<!ENTITY firefm.trackInfo.free.label "De balde">
+<!ENTITY firefm.trackInfo.free.tooltip "Descarga esta pista de balde">
+<!ENTITY firefm.trackInfo.amazon.label "Comprar este tema en Amazon">

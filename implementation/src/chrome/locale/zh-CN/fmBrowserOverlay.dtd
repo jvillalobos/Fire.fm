@@ -1,0 +1,68 @@
+<!ENTITY firefm.toolbarName.label "Fire.fm(F)">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm(F)">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Last.fm 主页">
+<!ENTITY firefm.home.tooltip "访问 Last.fm 主页(H)">
+<!ENTITY firefm.home.accesskey "H">
+<!ENTITY firefm.station.label "电台">
+<!ENTITY firefm.station.tooltip "选择一个电台来播放(t)">
+<!ENTITY firefm.station.accesskey "t">
+<!ENTITY firefm.startStation.label "启动一个电台(S)">
+<!ENTITY firefm.startStation.accesskey "S">
+<!ENTITY firefm.myStations.label "我的电台(M)">
+<!ENTITY firefm.myStations.accesskey "M">
+<!ENTITY firefm.recommendations.label "我的建议(R)">
+<!ENTITY firefm.recommendations.accesskey "M">
+<!ENTITY firefm.myLibrary.label "我的音乐库(L)">
+<!ENTITY firefm.myLibrary.accesskey "L">
+<!ENTITY firefm.neighborhood.label "我的街坊(N)">
+<!ENTITY firefm.neighborhood.accesskey "N">
+<!ENTITY firefm.friends.label "好友(F)">
+<!ENTITY firefm.friends.accesskey "F">
+<!ENTITY firefm.neighbors.label "邻居(N)">
+<!ENTITY firefm.neighbors.accesskey "N">
+<!ENTITY firefm.topArtists.label "我喜爱的艺术家">
+<!ENTITY firefm.topArtists.accesskey "T">
+<!ENTITY firefm.similarArtists.label "相似艺术家(i)">
+<!ENTITY firefm.similarArtists.accesskey "i">
+<!ENTITY firefm.onThisPage.label "在此页面的艺术家(P)">
+<!ENTITY firefm.onThisPage.accesskey "P">
+<!ENTITY firefm.recentStations.label "最近收听过的电台(R)">
+<!ENTITY firefm.recentStations.accesskey "R">
+<!ENTITY firefm.loginLogout.label "登录/注销(L)">
+<!ENTITY firefm.loginLogout.accesskey "L">
+<!ENTITY firefm.play.label "播放">
+<!ENTITY firefm.manageAccounts.label "管理账户(A)...">
+<!ENTITY firefm.manageAccounts.accesskey "A">
+<!ENTITY firefm.skip.label "跳过(k)">
+<!ENTITY firefm.skip.accesskey "k">
+<!ENTITY firefm.volume.label "音量">
+<!ENTITY firefm.volume.tooltip "调节音量(u)">
+<!ENTITY firefm.volume.accesskey "u">
+<!ENTITY firefm.volume.mute.label "静音(M)">
+<!ENTITY firefm.volume.mute.accesskey "M">
+<!ENTITY firefm.amazon.label "通过 Amazon 购买(z)">
+<!ENTITY firefm.amazon.accesskey "z">
+<!ENTITY firefm.tag.label "标签(g)">
+<!ENTITY firefm.tag.accesskey "g">
+<!ENTITY firefm.love.label "喜欢(v)">
+<!ENTITY firefm.love.accesskey "v">
+<!ENTITY firefm.ban.label "禁止(B)">
+<!ENTITY firefm.ban.accesskey "B">
+<!ENTITY firefm.feed.fullList.label "查看全部列表(f)">
+<!ENTITY firefm.feed.fullList.accesskey "f">
+<!ENTITY firefm.welcomeMessage2.label "欢迎！登录并启动一个电台来开始您的音乐之旅">
+<!ENTITY firefm.nowPlaying.label "正在播放(N)">
+<!ENTITY firefm.nowPlaying.accesskey "N">
+<!ENTITY firefm.nowPlaying.track.label "在 Last.fm 上显示该曲目页面(T)">
+<!ENTITY firefm.nowPlaying.track.accesskey "T">
+<!ENTITY firefm.nowPlaying.artist.label "在 Last.fm 上显示该艺术家专栏(A)">
+<!ENTITY firefm.nowPlaying.artist.accesskey "A">
+<!ENTITY firefm.nowPlaying.album.label "在 Last.fm 上显示该唱片(b)">
+<!ENTITY firefm.nowPlaying.album.accesskey "b">
+<!ENTITY firefm.nowPlaying.downloadFree.label "免费下载这个曲目(D)">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "D">
+<!ENTITY firefm.customize.label "自定义(C)...">
+<!ENTITY firefm.customize.accesskey "C">
+<!ENTITY firefm.extensionDescription.label "从 Last.fm 获得您的日常音乐安排。">

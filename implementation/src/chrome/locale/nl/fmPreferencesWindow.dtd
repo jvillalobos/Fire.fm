@@ -1,0 +1,46 @@
+<!ENTITY firefm.preferences.pane.main.title "Algemeen">
+<!ENTITY firefm.preferences.playback.label "Afspelen">
+<!ENTITY firefm.preferences.autoplay.label "Automatisch het meest recente station afspelen bij het starten van &brandShortName;">
+<!ENTITY firefm.preferences.autoplay.accesskey "S">
+<!ENTITY firefm.preferences.scrobble.label "Alle nummers die ik afspeel scrobblen">
+<!ENTITY firefm.preferences.scrobble.accesskey "c">
+<!ENTITY firefm.preferences.learnMore.label "Meer info…">
+<!ENTITY firefm.preferences.learnMore.accesskey "M">
+<!ENTITY firefm.preferences.volume.mode.label "Als ik op de volumeknop druk:">
+<!ENTITY firefm.preferences.volume.mode.accesskey "A">
+<!ENTITY firefm.preferences.volume.mode.simple "Volumepaneel weergeven">
+<!ENTITY firefm.preferences.volume.mode.advanced "Geluid dempen">
+<!ENTITY firefm.preferences.history.label "Geschiedenis">
+<!ENTITY firefm.preferences.storeArtists.label "Artiesten en stations die ik afspeel opslaan in mijn browsergeschiedenis">
+<!ENTITY firefm.preferences.storeArtists.accesskey "l">
+<!ENTITY firefm.preferences.clearPlaces.label "Fire.fm-geschiedenis wissen">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "W">
+<!ENTITY firefm.preferences.recentHistory.label "Mijn onlangs afgespeelde stations opslaan in het menu Station">
+<!ENTITY firefm.preferences.recentHistory.accesskey "t">
+<!ENTITY firefm.preferences.clearRecent.label "Recente stations wissen">
+<!ENTITY firefm.preferences.clearRecent.accesskey "s">
+<!ENTITY firefm.preferences.enablePrivateMode.label "Stationgeschiedenis en scrobblen uitschakelen wanneer  &brandShortName; in privémodus staat">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "P">
+<!ENTITY firefm.preferences.notifications.title "Informatie">
+<!ENTITY firefm.preferences.notifications.mode.label "Mij informeren als een nummer speelt:">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "I">
+<!ENTITY firefm.preferences.notifications.mode.off "Nooit">
+<!ENTITY firefm.preferences.notifications.mode.focus "Als &brandShortName; niet in focus is">
+<!ENTITY firefm.preferences.notifications.mode.on "Altijd">
+<!ENTITY firefm.preferences.pane.appearance.title "Weergave">
+<!ENTITY firefm.preferences.showToolbar.label "Fire.fm-werkbalk weergeven">
+<!ENTITY firefm.preferences.showToolbar.accesskey "G">
+<!ENTITY firefm.preferences.showStatusbar.label "Knoppen in de statusbalk weergeven">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "S">
+<!ENTITY firefm.preferences.status.play.label "Afspelen / Stoppen">
+<!ENTITY firefm.preferences.status.play.accesskey "P">
+<!ENTITY firefm.preferences.smallSize.label "Klein">
+<!ENTITY firefm.preferences.smallSize.accesskey "K">
+<!ENTITY firefm.preferences.pane.accounts.title "Accounts">
+<!ENTITY firefm.preferences.removeAccount.label "Account verwijderen…">
+<!ENTITY firefm.preferences.removeAccount.accesskey "w">
+<!ENTITY firefm.preferences.addAccount.label "Account toevoegen…">
+<!ENTITY firefm.preferences.addAccount.accesskey "A">
+<!ENTITY firefm.preferences.pane.advanced.title "Geavanceerd">
+<!ENTITY firefm.preferences.enableGestures.label "Muisbewegingen inschakelen (vereist herstart)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "b">

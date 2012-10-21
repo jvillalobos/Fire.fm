@@ -1,0 +1,8 @@
+<!ENTITY firefm.trackInfo.dropdown.tooltip "Details van het nummer weergeven">
+<!ENTITY firefm.trackInfo.buffering.label "Bufferen…">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "Naar de pagina van het nummer op Last.fm">
+<!ENTITY firefm.trackInfo.artist.tooltip "Naar de pagina van de artiest op Last.fm">
+<!ENTITY firefm.trackInfo.album.tooltip "Naar de pagina van het album op Last.fm">
+<!ENTITY firefm.trackInfo.free.label "Gratis">
+<!ENTITY firefm.trackInfo.free.tooltip "Download dit nummer gratis">
+<!ENTITY firefm.trackInfo.amazon.label "Koop dit nummer op Amazon">

@@ -1,0 +1,9 @@
+<!--  -->
+<!ENTITY firefm.trackInfo.dropdown.tooltip "Zeige Lieddetails">
+<!ENTITY firefm.trackInfo.buffering.label "Puffert...">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "Gehe zur Seite des Liedes auf Last.fm">
+<!ENTITY firefm.trackInfo.artist.tooltip "Gehe zur Seite des Interpreten auf Last.fm">
+<!ENTITY firefm.trackInfo.album.tooltip "Gehe zur Seite des Albums auf Last.fm">
+<!ENTITY firefm.trackInfo.free.label "Kostenlos">
+<!ENTITY firefm.trackInfo.free.tooltip "Laden Sie dieses Stück gratis herunter">
+<!ENTITY firefm.trackInfo.amazon.label "Dieses Lied auf Amazon kaufen">

@@ -1,0 +1,7 @@
+<!--  -->
+<!ENTITY firefm.tag.acceptButton.label "Етикет">
+<!ENTITY firefm.tag.acceptButton.accesskey "Е">
+<!ENTITY firefm.tag.typeMenu.artist "Етикет изпълнител">
+<!ENTITY firefm.tag.typeMenu.track "Етикет песен">
+<!ENTITY firefm.tag.typeMenu.album "Етикет албум">
+<!ENTITY firefm.tag.help "Използвайте запетайки за разделяне на етикетите">

@@ -1,0 +1,8 @@
+<!ENTITY firefm.trackInfo.dropdown.tooltip "查看曲目细节">
+<!ENTITY firefm.trackInfo.buffering.label "缓冲中...">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "在 Last.fm 上显示该曲目页面">
+<!ENTITY firefm.trackInfo.artist.tooltip "在 Last.fm 上显示该艺术家页面">
+<!ENTITY firefm.trackInfo.album.tooltip "在 Last.fm 上显示该专辑页面">
+<!ENTITY firefm.trackInfo.free.label "免费">
+<!ENTITY firefm.trackInfo.free.tooltip "免费下载此曲目">
+<!ENTITY firefm.trackInfo.amazon.label "通过 Amazon 购买该曲目">

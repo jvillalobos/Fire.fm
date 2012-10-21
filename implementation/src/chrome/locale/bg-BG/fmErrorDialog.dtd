@@ -1,0 +1,13 @@
+<!--  -->
+<!ENTITY firefm.error.dialog.title "Fire.fm доклад за грешки">
+<!ENTITY firefm.error.accept.label "Изпращане на доклада с грешките">
+<!ENTITY firefm.error.accept.accesskey "И">
+<!ENTITY firefm.error.cancel.label "Продължаване без изпращане">
+<!ENTITY firefm.error.cancel.accesskey "П">
+<!ENTITY firefm.error.header "За съжаление">
+<!ENTITY firefm.error.unableToLoad "Fire.fm не успя да се зареди правилно. Може да поправите това, рестартирайки &brandShortName;.">
+<!ENTITY firefm.error.sendReport "За да ни помогнете да разберем и поправим проблема, може да ни изпратите доклад за грешката.">
+<!ENTITY firefm.error.comment.label "Добавете коментар, който би ни помогнал да отстраним тази грешка:">
+<!ENTITY firefm.error.exception.label "Сведения за грешката:">
+<!ENTITY firefm.error.email.label "Изпратете ми имейл, когато има допълнителни сведения за тази грешка">
+<!ENTITY firefm.error.email.help "Въведете електронната си поща">

@@ -1,0 +1,51 @@
+<!---->
+<!---->
+<!ENTITY firefm.preferences.pane.main.title "Опште">
+<!ENTITY firefm.preferences.playback.label "Пуштање">
+<!ENTITY firefm.preferences.autoplay.label "Аутоматски пусти последњу слушану радио станицу при покретању &brandShortName;-a">
+<!ENTITY firefm.preferences.autoplay.accesskey "А">
+<!ENTITY firefm.preferences.scrobble.label "Скроблуј све песме које слушам">
+<!ENTITY firefm.preferences.scrobble.accesskey "С">
+<!ENTITY firefm.preferences.learnMore.label "Више информација...">
+<!ENTITY firefm.preferences.learnMore.accesskey "В">
+<!ENTITY firefm.preferences.volume.mode.label "Када притиснем дугме за контролу јачине звука">
+<!ENTITY firefm.preferences.volume.mode.accesskey "д">
+<!ENTITY firefm.preferences.volume.mode.simple "Прикажи контроле јачине звука">
+<!ENTITY firefm.preferences.volume.mode.advanced "Искључи звук">
+<!ENTITY firefm.preferences.history.label "Историјат">
+<!ENTITY firefm.preferences.storeArtists.label "Чувај извођаче и станице које слушам у историјату веб-прегледача">
+<!ENTITY firefm.preferences.storeArtists.accesskey "и">
+<!ENTITY firefm.preferences.clearPlaces.label "Очисти Fire.fm историјат">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "О">
+<!ENTITY firefm.preferences.recentHistory.label "Сачувај недавно слушане радио станице у менију Станице">
+<!ENTITY firefm.preferences.recentHistory.accesskey "н">
+<!ENTITY firefm.preferences.clearRecent.label "Почисти скорашње станице">
+<!ENTITY firefm.preferences.clearRecent.accesskey "с">
+<!ENTITY firefm.preferences.enablePrivateMode.label "Онемогући историју станица и скробловање кад је &brandShortName; у приватном режиму">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "п">
+<!ENTITY firefm.preferences.notifications.title "Обавештења">
+<!ENTITY firefm.preferences.notifications.mode.label "Обавести ме када је песма пуштена">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "б">
+<!ENTITY firefm.preferences.notifications.mode.off "Никад">
+<!ENTITY firefm.preferences.notifications.mode.focus "Када &brandShortName; није фокусиран">
+<!ENTITY firefm.preferences.notifications.mode.on "Увек">
+<!---->
+<!ENTITY firefm.preferences.pane.appearance.title "Изглед">
+<!ENTITY firefm.preferences.showToolbar.label "Прикажи Fire.fm линију с алаткама">
+<!ENTITY firefm.preferences.showToolbar.accesskey "л">
+<!ENTITY firefm.preferences.showStatusbar.label "Прикажи дугмад у статусној линији">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "р">
+<!ENTITY firefm.preferences.status.play.label "Пусти/заустави">
+<!ENTITY firefm.preferences.status.play.accesskey "П">
+<!ENTITY firefm.preferences.smallSize.label "Мања величина">
+<!ENTITY firefm.preferences.smallSize.accesskey "М">
+<!---->
+<!ENTITY firefm.preferences.pane.accounts.title "Налози">
+<!ENTITY firefm.preferences.removeAccount.label "Уклони налог...">
+<!ENTITY firefm.preferences.removeAccount.accesskey "У">
+<!ENTITY firefm.preferences.addAccount.label "Додај налог...">
+<!ENTITY firefm.preferences.addAccount.accesskey "Д">
+<!---->
+<!ENTITY firefm.preferences.pane.advanced.title "Напредно">
+<!ENTITY firefm.preferences.enableGestures.label "Омогући гестове мишем (захтева поновно покретање)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "г">

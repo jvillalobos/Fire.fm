@@ -1,0 +1,74 @@
+/**
+ * Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *  * Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ *  * Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ *  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+ *    of its contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+ * OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ **/
+
+dialog {
+  max-width: 500px;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#firefm-account-form {
+  margin: 1em 0em 1em 0em;
+  padding: 1.2em;
+  border: thin solid #D9D9D9;
+  background-color: #F0F0F0;
+}
+
+#firefm-account-form row {
+  -moz-box-align: center;
+}
+
+#firefm-account-form textbox {
+  margin-left: 1.5em;
+}
+
+#firefm-account-form label,
+#firefm-account-form textbox {
+  font-size: 1.2em;
+}
+
+#firefm-account-throbber {
+  list-style-image: url("chrome://global/skin/icons/loading_16.png");
+}
+
+#firefm-account-message {
+  font-weight: bold;
+}
+
+#firefm-account-noAccountBox {
+  -moz-box-align: baseline;
+  margin-bottom: 0.5em;
+}
+
+#firefm-account-noAccountBox > label.text-link {
+  margin-left: 0em;
+}

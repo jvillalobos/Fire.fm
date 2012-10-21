@@ -1,0 +1,68 @@
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Last.fm startpagina">
+<!ENTITY firefm.home.tooltip "Naar de Last.fm startpagina">
+<!ENTITY firefm.home.accesskey "G">
+<!ENTITY firefm.station.label "Station">
+<!ENTITY firefm.station.tooltip "Kies een station om te spelen">
+<!ENTITY firefm.station.accesskey "K">
+<!ENTITY firefm.startStation.label "Station starten">
+<!ENTITY firefm.startStation.accesskey "S">
+<!ENTITY firefm.myStations.label "Mijn stations">
+<!ENTITY firefm.myStations.accesskey "M">
+<!ENTITY firefm.recommendations.label "Mijn aanbevelingen">
+<!ENTITY firefm.recommendations.accesskey "A">
+<!ENTITY firefm.myLibrary.label "Mijn bibliotheek">
+<!ENTITY firefm.myLibrary.accesskey "B">
+<!ENTITY firefm.neighborhood.label "Mijn omgeving">
+<!ENTITY firefm.neighborhood.accesskey "O">
+<!ENTITY firefm.friends.label "Vrienden">
+<!ENTITY firefm.friends.accesskey "i">
+<!ENTITY firefm.neighbors.label "Buren">
+<!ENTITY firefm.neighbors.accesskey "u">
+<!ENTITY firefm.topArtists.label "Mijn topartiesten">
+<!ENTITY firefm.topArtists.accesskey "T">
+<!ENTITY firefm.similarArtists.label "Vergelijkbare artiesten">
+<!ENTITY firefm.similarArtists.accesskey "j">
+<!ENTITY firefm.onThisPage.label "Artiesten op deze pagina">
+<!ENTITY firefm.onThisPage.accesskey "P">
+<!ENTITY firefm.recentStations.label "Recente stations">
+<!ENTITY firefm.recentStations.accesskey "R">
+<!ENTITY firefm.loginLogout.label "Aanmelden / afmelden">
+<!ENTITY firefm.loginLogout.accesskey "l">
+<!ENTITY firefm.play.label "Afspelen">
+<!ENTITY firefm.manageAccounts.label "Accounts beheren…">
+<!ENTITY firefm.manageAccounts.accesskey "c">
+<!ENTITY firefm.skip.label "Overslaan">
+<!ENTITY firefm.skip.accesskey "e">
+<!ENTITY firefm.volume.label "Volume">
+<!ENTITY firefm.volume.tooltip "Volume aanpassen">
+<!ENTITY firefm.volume.accesskey "V">
+<!ENTITY firefm.volume.mute.label "Dempen">
+<!ENTITY firefm.volume.mute.accesskey "D">
+<!ENTITY firefm.amazon.label "Op Amazon kopen">
+<!ENTITY firefm.amazon.accesskey "z">
+<!ENTITY firefm.tag.label "Label">
+<!ENTITY firefm.tag.accesskey "a">
+<!ENTITY firefm.love.label "Houden van">
+<!ENTITY firefm.love.accesskey "H">
+<!ENTITY firefm.ban.label "Nooit meer spelen">
+<!ENTITY firefm.ban.accesskey "N">
+<!ENTITY firefm.feed.fullList.label "Volledige lijst…">
+<!ENTITY firefm.feed.fullList.accesskey "V">
+<!ENTITY firefm.welcomeMessage2.label "Welkom! Meld u aan en start een station om te beginnen">
+<!ENTITY firefm.nowPlaying.label "Speelt nu">
+<!ENTITY firefm.nowPlaying.accesskey "N">
+<!ENTITY firefm.nowPlaying.track.label "Pagina van het nummer op Last.fm">
+<!ENTITY firefm.nowPlaying.track.accesskey "P">
+<!ENTITY firefm.nowPlaying.artist.label "Pagina van de artiest op Last.fm">
+<!ENTITY firefm.nowPlaying.artist.accesskey "a">
+<!ENTITY firefm.nowPlaying.album.label "Pagina van het album op Last.fm">
+<!ENTITY firefm.nowPlaying.album.accesskey "g">
+<!ENTITY firefm.nowPlaying.downloadFree.label "Download dit nummer gratis">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "D">
+<!ENTITY firefm.customize.label "Aanpassen…">
+<!ENTITY firefm.customize.accesskey "A">
+<!ENTITY firefm.extensionDescription.label "Krijg uw dagelijkse muziekkick van Last.fm.">

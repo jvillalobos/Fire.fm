@@ -1,0 +1,12 @@
+<!ENTITY firefm.error.dialog.title "Fire.fm Hata Raportörü">
+<!ENTITY firefm.error.accept.label "Hata raporu gönder">
+<!ENTITY firefm.error.accept.accesskey "S">
+<!ENTITY firefm.error.cancel.label "Göndermeden devam et">
+<!ENTITY firefm.error.cancel.accesskey "C">
+<!ENTITY firefm.error.header "Özür dileriz">
+<!ENTITY firefm.error.unableToLoad "Fire.fm doğru biçimde yüklenemedi. &amp;markadüzenisim; i yeniden başlatarak oynatıcıyı yüklemeyi deneyebilirsiniz.">
+<!ENTITY firefm.error.sendReport "Problemi tanımlayıp çözmemiz için bize bir hata raporu gönderebilirsiniz.">
+<!ENTITY firefm.error.comment.label "Bu hatayı çözmemize yardımcı olabilecek yorumlarınızı ekleyebilirsiniz:">
+<!ENTITY firefm.error.exception.label "Hata bilgisi">
+<!ENTITY firefm.error.email.label "Bu hata hakkında daha fazla bilgi mümkün olduğunda bana e-posta gönder">
+<!ENTITY firefm.error.email.help "E-posta adresinizi buraya yazınız">

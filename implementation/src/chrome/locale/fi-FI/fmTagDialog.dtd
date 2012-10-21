@@ -1,0 +1,7 @@
+<!--  -->
+<!ENTITY firefm.tag.acceptButton.label "Tunniste">
+<!ENTITY firefm.tag.acceptButton.accesskey "T">
+<!ENTITY firefm.tag.typeMenu.artist "Lisää tunniste artistiin">
+<!ENTITY firefm.tag.typeMenu.track "Lisää tunniste kappaleeseen">
+<!ENTITY firefm.tag.typeMenu.album "Lisää tunniste albumiin">
+<!ENTITY firefm.tag.help "Erottele tunnisteet pilkulla">

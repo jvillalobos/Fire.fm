@@ -1,0 +1,12 @@
+<!ENTITY firefm.error.dialog.title "Fire.fm – zgłaszanie błędów">
+<!ENTITY firefm.error.accept.label "Wyślij raport o błędzie">
+<!ENTITY firefm.error.accept.accesskey "W">
+<!ENTITY firefm.error.cancel.label "Kontynuuj bez wysyłania">
+<!ENTITY firefm.error.cancel.accesskey "K">
+<!ENTITY firefm.error.header "Przepraszamy">
+<!ENTITY firefm.error.unableToLoad "Nie można było poprawnie wczytać Fire.fm. Ponowne uruchomienie programu &brandShortName; może naprawić ten problem.">
+<!ENTITY firefm.error.sendReport "Aby pomóc nam go zdiagnozować, możesz wysłać do nas raport o błędzie.">
+<!ENTITY firefm.error.comment.label "Jeżeli masz jakiekolwiek komentarze mogące pomóc w jego naprawie, prosimy o ich wprowadzenie:">
+<!ENTITY firefm.error.exception.label "Informacja o błędzie:">
+<!ENTITY firefm.error.email.label "Powiadom mnie, gdy będzie dostępne więcej informacji na temat tego błędu">
+<!ENTITY firefm.error.email.help "Wprowadź swój adres e-mail">

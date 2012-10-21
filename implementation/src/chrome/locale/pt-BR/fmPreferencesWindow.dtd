@@ -1,0 +1,27 @@
+<!ENTITY firefm.preferences.playback.label "Reproduzir">
+<!ENTITY firefm.preferences.autoplay.label "Reproduzir automaticamente a estação recente quando &brandShortName; iniciar">
+<!ENTITY firefm.preferences.autoplay.accesskey "A">
+<!ENTITY firefm.preferences.scrobble.label "Scrobble todas as faixas que eu tocar">
+<!ENTITY firefm.preferences.scrobble.accesskey "b">
+<!ENTITY firefm.preferences.learnMore.label "Saiba mais…">
+<!ENTITY firefm.preferences.learnMore.accesskey "L">
+<!ENTITY firefm.preferences.history.label "Histórico">
+<!ENTITY firefm.preferences.storeArtists.label "Armazenar artista e estações que eu tocar no meu histórico do navegador">
+<!ENTITY firefm.preferences.storeArtists.accesskey "h">
+<!ENTITY firefm.preferences.clearPlaces.label "Limpar histórico do Fire.fm">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "C">
+<!ENTITY firefm.preferences.clearRecent.label "Limpar estações recentes">
+<!ENTITY firefm.preferences.clearRecent.accesskey "R">
+<!ENTITY firefm.preferences.notifications.title "Notificações">
+<!ENTITY firefm.preferences.notifications.mode.label "Notificar-me quando uma faixa estiver tocando">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "N">
+<!ENTITY firefm.preferences.notifications.mode.off "Nunca">
+<!ENTITY firefm.preferences.notifications.mode.focus "Quando &brandShortName; não está focada">
+<!ENTITY firefm.preferences.notifications.mode.on "Sempre">
+<!ENTITY firefm.preferences.pane.appearance.title "Aparência">
+<!ENTITY firefm.preferences.showToolbar.label "Exibir barra de ferramentas do Fire.fm">
+<!ENTITY firefm.preferences.showToolbar.accesskey "h">
+<!ENTITY firefm.preferences.status.play.label "Reproduzir / Parar">
+<!ENTITY firefm.preferences.status.play.accesskey "P">
+<!ENTITY firefm.preferences.smallSize.label "Tamanho pequeno">
+<!ENTITY firefm.preferences.smallSize.accesskey "m">

@@ -1,0 +1,13 @@
+<!--  -->
+<!ENTITY firefm.error.dialog.title "Signalement d&apos;erreur Fire.fm">
+<!ENTITY firefm.error.accept.label "Envoyer le rapport d&apos;erreur">
+<!ENTITY firefm.error.accept.accesskey "E">
+<!ENTITY firefm.error.cancel.label "Continuer sans envoyer">
+<!ENTITY firefm.error.cancel.accesskey "C">
+<!ENTITY firefm.error.header "Nous sommes désolés">
+<!ENTITY firefm.error.unableToLoad "Fire.fm n&apos;a pu être chargée correctement. Vous pouvez essayer de recharger le lecteur en redémarrant &brandShortName;.">
+<!ENTITY firefm.error.sendReport "Pour nous aider à résoudre le problème vous pouvez nous envoyer un rapport d&apos;erreur.">
+<!ENTITY firefm.error.comment.label "Veuillez faire tout commentaire susceptible de nous aider à résoudre le problème :">
+<!ENTITY firefm.error.exception.label "Information sur l&apos;erreur :">
+<!ENTITY firefm.error.email.label "Me contacter par courriel si des informations complémentaires à propos de cette erreur sont disponibles">
+<!ENTITY firefm.error.email.help "Indiquez ici votre adresse électronique">

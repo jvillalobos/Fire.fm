@@ -1,0 +1,12 @@
+<!ENTITY firefm.error.dialog.title "Relatório de erro do Fire.fm">
+<!ENTITY firefm.error.accept.label "Enviar relatório de erro">
+<!ENTITY firefm.error.accept.accesskey "S">
+<!ENTITY firefm.error.cancel.label "Continuar sem enviar">
+<!ENTITY firefm.error.cancel.accesskey "C">
+<!ENTITY firefm.error.header "Nós nos desculpamos">
+<!ENTITY firefm.error.unableToLoad "Não foi possível carregar corretamente o Fire.fm. Você pode tentar recarregar o tocador reiniciando &brandShortName;.">
+<!ENTITY firefm.error.sendReport "Para ajudar a diagnosticar e corrigir o problema você pode nos enviar um relatório de erro.">
+<!ENTITY firefm.error.comment.label "Adicionar qualquer comentário que você">
+<!ENTITY firefm.error.exception.label "Informação de erro:">
+<!ENTITY firefm.error.email.label "Envie-me uma mensagem quando maiores informações sobre este erro estiver disponível">
+<!ENTITY firefm.error.email.help "Digite seu endereço de e-mail aqui">

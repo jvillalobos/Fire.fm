@@ -1,0 +1,6 @@
+<!ENTITY firefm.tag.acceptButton.label "Тег">
+<!ENTITY firefm.tag.acceptButton.accesskey "г">
+<!ENTITY firefm.tag.typeMenu.artist "Тег для исполнителя">
+<!ENTITY firefm.tag.typeMenu.track "Тег для трека">
+<!ENTITY firefm.tag.typeMenu.album "Тег для альбома">
+<!ENTITY firefm.tag.help "Используйте запятые для разделения тегов">

@@ -1,0 +1,6 @@
+<!ENTITY firefm.tag.acceptButton.label "תווית">
+<!ENTITY firefm.tag.acceptButton.accesskey "ת">
+<!ENTITY firefm.tag.typeMenu.artist "תיוג אמן">
+<!ENTITY firefm.tag.typeMenu.track "תיוג קטע">
+<!ENTITY firefm.tag.typeMenu.album "תיוג אלבום">
+<!ENTITY firefm.tag.help "שימוש בפסיק להפרדת תוויות">

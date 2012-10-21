@@ -1,0 +1,62 @@
+<!--  -->
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Last.fm-kotisivu">
+<!ENTITY firefm.home.tooltip "Siirry Last.fm-kotisivulle">
+<!ENTITY firefm.home.accesskey "H">
+<!ENTITY firefm.station.label "Asema">
+<!ENTITY firefm.station.tooltip "Valitse toistettava asema">
+<!ENTITY firefm.station.accesskey "t">
+<!ENTITY firefm.startStation.label "Avaa asema">
+<!ENTITY firefm.startStation.accesskey "S">
+<!ENTITY firefm.myStations.label "Omat asemat">
+<!ENTITY firefm.myStations.accesskey "M">
+<!ENTITY firefm.recommendations.label "Omat suositukset">
+<!ENTITY firefm.recommendations.accesskey "M">
+<!ENTITY firefm.myLibrary.label "Oma kirjasto">
+<!ENTITY firefm.myLibrary.accesskey "L">
+<!ENTITY firefm.neighborhood.label "Oma naapurusto">
+<!ENTITY firefm.neighborhood.accesskey "N">
+<!ENTITY firefm.friends.label "Ystävät">
+<!ENTITY firefm.friends.accesskey "F">
+<!ENTITY firefm.neighbors.label "Naapurit">
+<!ENTITY firefm.neighbors.accesskey "N">
+<!ENTITY firefm.topArtists.label "Omat suosikkiartistit">
+<!ENTITY firefm.topArtists.accesskey "T">
+<!ENTITY firefm.similarArtists.label "Samanlaiset artistit">
+<!ENTITY firefm.similarArtists.accesskey "i">
+<!ENTITY firefm.onThisPage.label "artistia tällä sivulla">
+<!ENTITY firefm.onThisPage.accesskey "p">
+<!ENTITY firefm.recentStations.label "Viimeksi soitetut asemat">
+<!ENTITY firefm.recentStations.accesskey "R">
+<!ENTITY firefm.play.label "Toista">
+<!ENTITY firefm.skip.label "Ohita">
+<!ENTITY firefm.skip.accesskey "k">
+<!ENTITY firefm.volume.label "Voimakkuus">
+<!ENTITY firefm.volume.tooltip "Säädä voimakkuutta">
+<!ENTITY firefm.volume.accesskey "u">
+<!ENTITY firefm.volume.mute.label "Vaienna">
+<!ENTITY firefm.volume.mute.accesskey "M">
+<!ENTITY firefm.tag.label "Tunniste">
+<!ENTITY firefm.tag.accesskey "g">
+<!ENTITY firefm.love.label "Rakasta">
+<!ENTITY firefm.love.accesskey "v">
+<!ENTITY firefm.ban.label "Estä">
+<!ENTITY firefm.ban.accesskey "B">
+<!ENTITY firefm.feed.fullList.label "Näytä koko lista...">
+<!ENTITY firefm.feed.fullList.accesskey "f">
+<!ENTITY firefm.welcomeMessage2.label "Tervetuloa! Kirjaudu sisään ja avaa asema">
+<!ENTITY firefm.nowPlaying.label "Nyt soi">
+<!ENTITY firefm.nowPlaying.accesskey "N">
+<!ENTITY firefm.nowPlaying.track.label "Kappaleen Last.fm-sivu">
+<!ENTITY firefm.nowPlaying.track.accesskey "T">
+<!ENTITY firefm.nowPlaying.artist.label "Artistin Last.fm-sivu">
+<!ENTITY firefm.nowPlaying.artist.accesskey "A">
+<!ENTITY firefm.nowPlaying.album.label "Albumin Last.fm-sivu">
+<!ENTITY firefm.nowPlaying.album.accesskey "b">
+<!ENTITY firefm.nowPlaying.downloadFree.label "Lataa kappale ilmaiseksi">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "D">
+<!--  -->
+<!ENTITY firefm.extensionDescription.label "Hae päivittäinen musiikkiannoksesi Last.fm:stä.">

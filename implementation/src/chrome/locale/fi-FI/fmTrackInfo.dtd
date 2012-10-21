@@ -1,0 +1,8 @@
+<!--  -->
+<!ENTITY firefm.trackInfo.dropdown.tooltip "Näytä kappaleen tiedot">
+<!ENTITY firefm.trackInfo.buffering.label "Puskuroidaan...">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "Siirry kappaleen Last.fm-sivulle">
+<!ENTITY firefm.trackInfo.artist.tooltip "Siirry artistin Last.fm-sivulle">
+<!ENTITY firefm.trackInfo.album.tooltip "Siirry albumin Last.fm-sivulle">
+<!ENTITY firefm.trackInfo.free.label "Ilmainen">
+<!ENTITY firefm.trackInfo.free.tooltip "Lataa tämä kappale ilmaiseksi">

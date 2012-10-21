@@ -1,0 +1,7 @@
+<!--  -->
+<!ENTITY firefm.startStation.artist.label "Изпълнител">
+<!ENTITY firefm.startStation.tag.label "Етикет">
+<!ENTITY firefm.startStation.user.label "Потребителско име">
+<!ENTITY firefm.startStation.chooseArtist.label "За да започнете, напишете любим изпълнител">
+<!ENTITY firefm.startStation.chooseTag.label "Напишете етикет (жанр или ключова дума)">
+<!ENTITY firefm.startStation.chooseUser.label "Напишете потребителско име в Last.fm">

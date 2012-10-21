@@ -1,0 +1,31 @@
+<!ENTITY firefm.preferences.playback.label "Tekrar çal">
+<!ENTITY firefm.preferences.autoplay.label "En yeni istasyonu &brandShortName; başladığında otomatik çal">
+<!ENTITY firefm.preferences.autoplay.accesskey "A">
+<!ENTITY firefm.preferences.scrobble.label "Çaldığım tüm parçaları Scrobble la">
+<!ENTITY firefm.preferences.scrobble.accesskey "b">
+<!ENTITY firefm.preferences.learnMore.label "Daha fazla bilgi...">
+<!ENTITY firefm.preferences.learnMore.accesskey "L">
+<!ENTITY firefm.preferences.volume.mode.label "Ses butonuna tıkladığımda:">
+<!ENTITY firefm.preferences.volume.mode.accesskey "v">
+<!ENTITY firefm.preferences.volume.mode.simple "Ses kontrolünü göster">
+<!ENTITY firefm.preferences.volume.mode.advanced "Sesi kapat">
+<!ENTITY firefm.preferences.history.label "Geçmiş">
+<!ENTITY firefm.preferences.storeArtists.label "Dinlediğim sanatçı ve istasyonları tarayıcı geçmişime kaydet">
+<!ENTITY firefm.preferences.storeArtists.accesskey "h">
+<!ENTITY firefm.preferences.clearPlaces.label "Fire.fm geçmişini temizle">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "C">
+<!ENTITY firefm.preferences.clearRecent.label "Son çalınan istasyonları temizle">
+<!ENTITY firefm.preferences.clearRecent.accesskey "R">
+<!ENTITY firefm.preferences.notifications.title "Duyurular">
+<!ENTITY firefm.preferences.notifications.mode.label "Bir parça çaldığında bana bildir">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "N">
+<!ENTITY firefm.preferences.notifications.mode.off "Asla">
+<!ENTITY firefm.preferences.notifications.mode.focus "&amp;brandShortName&apos;e odaklanılmadığında">
+<!ENTITY firefm.preferences.notifications.mode.on "Her zaman">
+<!ENTITY firefm.preferences.pane.appearance.title "Görünüm">
+<!ENTITY firefm.preferences.showToolbar.label "Fire.fm araç çubuğunu göster">
+<!ENTITY firefm.preferences.showToolbar.accesskey "h">
+<!ENTITY firefm.preferences.status.play.label "Çal/Durdur">
+<!ENTITY firefm.preferences.status.play.accesskey "P">
+<!ENTITY firefm.preferences.smallSize.label "Küçük boyut">
+<!ENTITY firefm.preferences.smallSize.accesskey "m">

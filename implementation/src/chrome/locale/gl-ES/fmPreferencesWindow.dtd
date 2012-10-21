@@ -1,0 +1,51 @@
+<!---->
+<!---->
+<!ENTITY firefm.preferences.pane.main.title "Xeral">
+<!ENTITY firefm.preferences.playback.label "Reproducir">
+<!ENTITY firefm.preferences.autoplay.label "Reproducir a emisora máis recente ao iniciar &brandShortName;">
+<!ENTITY firefm.preferences.autoplay.accesskey "A">
+<!ENTITY firefm.preferences.scrobble.label "Facer scrobble con todas as pistas que escoito">
+<!ENTITY firefm.preferences.scrobble.accesskey "b">
+<!ENTITY firefm.preferences.learnMore.label "Aprender máis...">
+<!ENTITY firefm.preferences.learnMore.accesskey "L">
+<!ENTITY firefm.preferences.volume.mode.label "Cando prema no botón de volume:">
+<!ENTITY firefm.preferences.volume.mode.accesskey "v">
+<!ENTITY firefm.preferences.volume.mode.simple "amosar o control de volume">
+<!ENTITY firefm.preferences.volume.mode.advanced "apagar o son">
+<!ENTITY firefm.preferences.history.label "Historial">
+<!ENTITY firefm.preferences.storeArtists.label "Almacenar os artistas e emisoras escoitados no historial do navegador">
+<!ENTITY firefm.preferences.storeArtists.accesskey "h">
+<!ENTITY firefm.preferences.clearPlaces.label "Borrar historial">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "C">
+<!ENTITY firefm.preferences.recentHistory.label "Almacenar as miñas emisoras reproducidas recentemente no menú Emisoras">
+<!ENTITY firefm.preferences.recentHistory.accesskey "t">
+<!ENTITY firefm.preferences.clearRecent.label "Borrar emisoras recentes">
+<!ENTITY firefm.preferences.clearRecent.accesskey "R">
+<!ENTITY firefm.preferences.enablePrivateMode.label "Desactivar o historial da emisora e o scrobble cando &brandShortName; estea en modo privado">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "P">
+<!ENTITY firefm.preferences.notifications.title "Avisos">
+<!ENTITY firefm.preferences.notifications.mode.label "Avisarme cando se reproduza unha pista:">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "N">
+<!ENTITY firefm.preferences.notifications.mode.off "nunca">
+<!ENTITY firefm.preferences.notifications.mode.focus "se &brandShortName; non ten o foco">
+<!ENTITY firefm.preferences.notifications.mode.on "sempre">
+<!---->
+<!ENTITY firefm.preferences.pane.appearance.title "Aparencia">
+<!ENTITY firefm.preferences.showToolbar.label "Mostrar Fire.fm na barra de ferramentas">
+<!ENTITY firefm.preferences.showToolbar.accesskey "h">
+<!ENTITY firefm.preferences.showStatusbar.label "Amosar os botóns na barra de estado">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "S">
+<!ENTITY firefm.preferences.status.play.label "Reproducir / Deter">
+<!ENTITY firefm.preferences.status.play.accesskey "P">
+<!ENTITY firefm.preferences.smallSize.label "Tamaño pequeno">
+<!ENTITY firefm.preferences.smallSize.accesskey "m">
+<!---->
+<!ENTITY firefm.preferences.pane.accounts.title "Contas">
+<!ENTITY firefm.preferences.removeAccount.label "Eliminar unha conta...">
+<!ENTITY firefm.preferences.removeAccount.accesskey "R">
+<!ENTITY firefm.preferences.addAccount.label "Engadir unha conta...">
+<!ENTITY firefm.preferences.addAccount.accesskey "A">
+<!---->
+<!ENTITY firefm.preferences.pane.advanced.title "Avanzado">
+<!ENTITY firefm.preferences.enableGestures.label "Activar xestos do rato (precisa reinicio)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "g">

@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+
+<!--
+  - Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://firefm/skin/fmBrowserOverlay.css" ?>
+
+<!DOCTYPE overlay [
+  <!ENTITY % overlayDTD SYSTEM "chrome://firefm/locale/fmBrowserOverlay.dtd" >
+  %overlayDTD;
+]>
+
+<!-- XXX: SeaMonkey overlay. We need this because the tools menu is in a
+    different location. -->
+<overlay id="firefm-sm-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <!-- XXX: insertafter isn't working? -->
+  <menupopup id="taskPopup">
+    <menu id="firefm-menu" insertafter="addonsmgr"
+      label="&firefm.menu.label;" accesskey="&firefm.menu.accesskey;"
+      image="chrome://firefm/skin/logo16.png">
+      <menupopup>
+        <menuitem id="firefm-home-menu" command="firefm-home-cmd" />
+        <menu id="firefm-login-logout-menu"
+          accesskey="&firefm.loginLogout.accesskey;"
+          command="firefm-login-logout-cmd">
+          <menupopup
+            onpopupshowing="FireFMChrome.BrowserOverlay.loadUserList(event);">
+            <menuseparator />
+            <menuitem id="firefm-menu-manage-accounts"
+              accesskey="&firefm.manageAccounts.accesskey;"
+              command="firefm-manage-accounts" />
+          </menupopup>
+        </menu>
+        <menuseparator />
+        <menu id="firefm-menu-now-playing" label="&firefm.nowPlaying.label;"
+          accesskey="&firefm.nowPlaying.accesskey;" disabled="true">
+          <menupopup>
+            <menuitem id="firefm-menu-playing-info"
+              class="menuitem-iconic firefm-menuitem-iconic" disabled="true" />
+            <menuitem id="firefm-menu-playing-time-left" disabled="true" />
+            <menuseparator />
+            <menuitem command="firefm-tag-cmd"
+              accesskey="&firefm.tag.accesskey;" />
+            <menuitem command="firefm-love-cmd"
+              accesskey="&firefm.love.accesskey;" />
+            <menuitem command="firefm-ban-cmd"
+              accesskey="&firefm.ban.accesskey;" />
+            <menuseparator />
+            <menuitem id="firefm-menu-playing-track"
+              label="&firefm.nowPlaying.track.label;"
+              accesskey="&firefm.nowPlaying.track.accesskey;"
+              observes="firefm-open-track-page-broadcaster" />
+            <menuitem id="firefm-menu-playing-artist"
+              label="&firefm.nowPlaying.artist.label;"
+              accesskey="&firefm.nowPlaying.artist.accesskey;"
+              observes="firefm-open-track-page-broadcaster" />
+            <menuitem id="firefm-menu-playing-album"
+              label="&firefm.nowPlaying.album.label;"
+              accesskey="&firefm.nowPlaying.album.accesskey;"
+              observes="firefm-open-track-page-broadcaster" />
+            <menuseparator />
+            <menuitem id="firefm-menu-playing-free"
+              label="&firefm.nowPlaying.downloadFree.label;"
+              accesskey="&firefm.nowPlaying.downloadFree.accesskey;"
+              observes="firefm-open-track-page-broadcaster" />
+            <menuseparator />
+            <menuitem label="&firefm.amazon.label;"
+              accesskey="&firefm.amazon.accesskey;"
+              command="firefm-amazon-cmd" />
+          </menupopup>
+        </menu>
+        <menuseparator />
+        <menu label="&firefm.station.label;"
+          accesskey="&firefm.station.accesskey;">
+          <menupopup>
+            <menuitem command="firefm-start-station-cmd" />
+            <menu observes="firefm-logged-in-broadcaster"
+              command="firefm-recent-station-cmd">
+              <menupopup />
+            </menu>
+            <menuseparator />
+            <menu label="&firefm.myStations.label;"
+              accesskey="&firefm.myStations.accesskey;"
+              observes="firefm-logged-in-broadcaster">
+              <menupopup>
+                <menuitem label="&firefm.myLibrary.label;"
+                  accesskey="&firefm.myLibrary.accesskey;"
+                  oncommand=
+                    "FireFMChrome.BrowserOverlay.startMyLibrary(event);" />
+                <menuitem label="&firefm.recommendations.label;"
+                  accesskey="&firefm.recommendations.accesskey;"
+                  oncommand=
+                    "FireFMChrome.BrowserOverlay.startRecommendations(event);" />
+                <menuitem label="&firefm.neighborhood.label;"
+                  accesskey="&firefm.neighborhood.accesskey;"
+                  oncommand=
+                    "FireFMChrome.BrowserOverlay.startNeighborhood(event);" />
+              </menupopup>
+            </menu>
+            <menuseparator />
+            <menu id="firefm-mm-station-similar-artists"
+              label="&firefm.similarArtists.label;"
+              accesskey="&firefm.similarArtists.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startArtistStation(event);" />
+            <menu id="firefm-mm-station-top-artists"
+              label="&firefm.topArtists.label;"
+              accesskey="&firefm.topArtists.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startArtistStation(event);" />
+            <menu id="firefm-mm-station-friends" label="&firefm.friends.label;"
+              accesskey="&firefm.friends.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startUserStation(event);" />
+            <menu id="firefm-mm-station-neighbors"
+              label="&firefm.neighbors.label;"
+              accesskey="&firefm.neighbors.accesskey;"
+              observes="firefm-logged-in-broadcaster"
+              oncommand=
+                "FireFMChrome.BrowserOverlay.startUserStation(event);" />
+            <menuseparator />
+            <menu label="&firefm.onThisPage.label;"
+              accesskey="&firefm.onThisPage.accesskey;"
+              observes="firefm-logged-in-broadcaster">
+              <menupopup
+                onpopupshowing=
+                  "FireFMChrome.BrowserOverlay.loadAudioMicroformats(this);" />
+            </menu>
+          </menupopup>
+        </menu>
+        <menuseparator />
+        <menuitem id="firefm-play-stop-menu" command="firefm-play-stop-cmd" />
+        <menuitem label="&firefm.skip.label;"
+          accesskey="&firefm.skip.accesskey;" command="firefm-skip-cmd" />
+        <menuseparator />
+        <menu label="&firefm.volume.label;"
+          accesskey="&firefm.volume.accesskey;"
+          observes="firefm-volume-broadcaster">
+          <menupopup
+            onpopupshowing=
+              "FireFMChrome.BrowserOverlay.checkVolumeItem(event);">
+            <menuitem label="100" accesskey="0" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(100, true);" />
+            <menuitem label="90" accesskey="9" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(90, true);" />
+            <menuitem label="80" accesskey="8" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(80, true);" />
+            <menuitem label="70" accesskey="7" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(70, true);" />
+            <menuitem label="60" accesskey="6" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(60, true);" />
+            <menuitem label="50" accesskey="5" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(50, true);" />
+            <menuitem label="40" accesskey="4" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(40, true);" />
+            <menuitem label="30" accesskey="3" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(30, true);" />
+            <menuitem label="20" accesskey="2" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(20, true);" />
+            <menuitem label="10" accesskey="1" type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(10, true);" />
+            <menuitem label="&firefm.volume.mute.label;"
+              accesskey="&firefm.volume.mute.accesskey;"
+              type="radio" name="firefm-vol"
+              oncommand="FireFMChrome.BrowserOverlay.setVolume(0, true);" />
+          </menupopup>
+        </menu>
+        <menuseparator />
+        <menuitem command="firefm-preferences-cmd" />
+      </menupopup>
+    </menu>
+  </menupopup>
+</overlay>

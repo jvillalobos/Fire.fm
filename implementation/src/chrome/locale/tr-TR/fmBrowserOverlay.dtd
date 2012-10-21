@@ -1,0 +1,55 @@
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Last.fm Anasayfa">
+<!ENTITY firefm.home.tooltip "Last.fm&apos; in Anasayfasina git">
+<!ENTITY firefm.home.accesskey "H">
+<!ENTITY firefm.station.label "Kanal">
+<!ENTITY firefm.station.tooltip "Çalmak için bir kanal seçiniz">
+<!ENTITY firefm.station.accesskey "t">
+<!ENTITY firefm.startStation.label "Bir kanal aç">
+<!ENTITY firefm.startStation.accesskey "S">
+<!ENTITY firefm.recommendations.label "Tavsiyelerim">
+<!ENTITY firefm.recommendations.accesskey "M">
+<!ENTITY firefm.myLibrary.label "Kütüphanem">
+<!ENTITY firefm.myLibrary.accesskey "L">
+<!ENTITY firefm.friends.label "Arkadaşlar">
+<!ENTITY firefm.friends.accesskey "F">
+<!ENTITY firefm.neighbors.label "Komşular">
+<!ENTITY firefm.neighbors.accesskey "N">
+<!ENTITY firefm.topArtists.label "Beğendiğim Sanatçılar">
+<!ENTITY firefm.topArtists.accesskey "T">
+<!ENTITY firefm.similarArtists.label "Benzer Sanatçılar">
+<!ENTITY firefm.similarArtists.accesskey "i">
+<!ENTITY firefm.onThisPage.label "Bu sayfadaki sanatçılar">
+<!ENTITY firefm.onThisPage.accesskey "p">
+<!ENTITY firefm.recentStations.label "Az önce dinlenen kanallar">
+<!ENTITY firefm.recentStations.accesskey "R">
+<!ENTITY firefm.play.label "Çal">
+<!ENTITY firefm.skip.label "Atla">
+<!ENTITY firefm.skip.accesskey "k">
+<!ENTITY firefm.volume.label "Ses">
+<!ENTITY firefm.volume.tooltip "Sesi ayarla">
+<!ENTITY firefm.volume.accesskey "u">
+<!ENTITY firefm.volume.mute.label "Kıs">
+<!ENTITY firefm.volume.mute.accesskey "M">
+<!ENTITY firefm.tag.label "Etiket">
+<!ENTITY firefm.tag.accesskey "g">
+<!ENTITY firefm.love.label "Aşk">
+<!ENTITY firefm.love.accesskey "v">
+<!ENTITY firefm.ban.label "Engelle">
+<!ENTITY firefm.ban.accesskey "B">
+<!ENTITY firefm.feed.fullList.label "Tüm listeyi gör">
+<!ENTITY firefm.feed.fullList.accesskey "f">
+<!ENTITY firefm.nowPlaying.label "Çalan">
+<!ENTITY firefm.nowPlaying.accesskey "N">
+<!ENTITY firefm.nowPlaying.track.label "Parça&apos; nın Last.fm&apos; deki sayfası">
+<!ENTITY firefm.nowPlaying.track.accesskey "T">
+<!ENTITY firefm.nowPlaying.artist.label "Sanatçının Last.fm&apos; deki sayfası">
+<!ENTITY firefm.nowPlaying.artist.accesskey "A">
+<!ENTITY firefm.nowPlaying.album.label "Albümün Last.fm&apos; deki sayfası">
+<!ENTITY firefm.nowPlaying.album.accesskey "b">
+<!ENTITY firefm.nowPlaying.downloadFree.label "Bu parçayı ücretsiz olarak indir">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "D">
+<!ENTITY firefm.extensionDescription.label "Last.fm&apos;den günlük müzik tavsiyeleri alın.">

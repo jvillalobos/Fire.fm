@@ -1,0 +1,8 @@
+<!---->
+<!ENTITY firefm.account.dialog.title "Engadir unha conta">
+<!ENTITY firefm.account.enter.label "Introduce a información para identificarte en Last.fm">
+<!ENTITY firefm.account.privacy.label "A túa contrasinal usarase unicamente para verificar a identidade en Last.fm e non será almacenada nin compartida.">
+<!ENTITY firefm.account.username.label "Nome do usuario:">
+<!ENTITY firefm.account.password.label "Contrasinal:">
+<!ENTITY firefm.account.donthave.label "Non tes un nome de usuario?">
+<!ENTITY firefm.account.create.label "Crear unha conta en Last.fm">

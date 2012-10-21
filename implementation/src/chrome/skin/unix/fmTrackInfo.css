@@ -1,0 +1,214 @@
+/**
+ * Copyright (c) 2008, Jose Enrique Bolanos, Jorge Villalobos
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *  * Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ *  * Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ *  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+ *    of its contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+ * OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ **/
+
+/* General style. */
+
+fmtrackinfo {
+  -moz-box-align: center;
+  min-width: 7em;
+}
+
+fmtrackinfo[small="true"] .firefm-info-message,
+fmtrackinfo[small="true"] .firefm-track-info,
+fmtrackinfo[small="true"] .buffering-label {
+  display: none;
+}
+
+fmtrackinfo:not([small="true"]) {
+  min-width: 27em;
+}
+
+fmtrackinfo .text-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+fmtrackinfo .text-link:hover:not([disabled]) {
+  text-decoration: underline !important;
+}
+
+fmtrackinfo panel:-moz-lwtheme {
+  /* Personas compatibility. */
+  color: black;
+}
+
+/* Player viewer */
+
+.firefm-info-outer-box {
+  -moz-box-flex: 1;
+  -moz-box-align: center;
+  -moz-border-radius: 0.3em 0.3em 0.3em 0.3em;
+  border: solid 1px #857D74;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  height: 14px;
+  background: url("chrome://firefm-os/skin/progressBack.png") repeat-x;
+}
+
+fmtrackinfo[small="true"] .firefm-info-outer-box {
+  margin: 0em;
+}
+
+fmtrackinfo[small="true"] .firefm-info-panel-button {
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+fmtrackinfo[small="true"] .firefm-info-throbber {
+  list-style-image: url("chrome://global/skin/icons/loading_16.png");
+  margin-left: 1em;
+  width: 12px;
+  height: 12px;
+}
+
+.firefm-info-deck {
+  font-size: 0.7em;
+}
+
+.firefm-info-deck > hbox {
+  -moz-box-align: center;
+}
+
+.firefm-info-deck label {
+  margin-top: 0em !important;
+  margin-bottom: 0em !important;
+}
+
+.firefm-track-info {
+  margin: 0em !important;
+}
+
+.firefm-buffering-deck > hbox {
+  -moz-box-flex: 1;
+}
+
+.firefm-buffering-deck > hbox > label {
+  margin-right: 0.5em !important;
+  margin-left: 0em !important;
+}
+
+.firefm-info-progress-box {
+  height: 0.9em;
+}
+
+.firefm-info-progress-elapsed {
+  background-color: #F7C093;
+}
+
+.firefm-info-progress-playhead {
+  width: 2px;
+  background-color: #99602F;
+}
+
+/* XXX: this is just a hack so that the playhead doesn't cover the border. */
+.firefm-info-progress-space {
+  width: 0.1em;
+}
+
+.infoBox {
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  -moz-box-align: center;
+}
+
+.buffering-label {
+  font-size: 85%;
+}
+
+.freeLabel,
+.timeLabel {
+  font-size: 85%;
+}
+
+.freeLabel {
+  font-weight: bold;
+}
+
+/* Track info panel */
+
+.firefm-info-panel-button {
+  -moz-appearance: none;
+  border: none;
+}
+
+.firefm-info-panel-outer-box {
+  padding: 0.5em;
+}
+
+.firefm-info-panel-image-box {
+  width: 100px;
+  -moz-box-pack: start;
+  -moz-box-align: center;
+}
+
+.firefm-info-panel-image-box > image {
+  background-image: url("chrome://firefm/skin/logo100.png");
+  width: 100px;
+  height: 100px;
+  border: thin solid #CCCCCC;
+}
+
+.firefm-info-panel-info-box {
+  width: 27em;
+}
+
+.firefm-info-panel-track {
+  font-size: 1.6em;
+  margin-bottom: 0.5em;
+}
+
+.firefm-info-panel-artist {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.firefm-info-panel-album {
+  font-size: 1.2em;
+}
+
+.firefm-info-panel-amazon {
+  font-size: 1.2em;
+  font-weight: bold;
+  -moz-box-align: center;
+}
+
+.firefm-info-panel-amazon > image {
+  list-style-image: url("chrome://firefm-os/skin/toolbar.png");
+  -moz-image-region: rect(0px, 192px, 16px, 176px);
+  height: 16px;
+  width: 16px;
+}
+
+.firefm-info-panel-free {
+  font-size: 1.2em;
+  font-weight: bold;
+}

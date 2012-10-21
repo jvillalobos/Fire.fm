@@ -1,0 +1,7 @@
+<!ENTITY firefm.account.dialog.title "הוספת חשבון">
+<!ENTITY firefm.account.enter.label "הזנת המידע אשר בשימוש בהתחברות לLast.fm.">
+<!ENTITY firefm.account.privacy.label "הססמה משמשת רק כדי לוודא את זהותך עם Last.fm, הססמה לא תאוחסן או תשותף עם מישהו.">
+<!ENTITY firefm.account.username.label "שם משתמש:">
+<!ENTITY firefm.account.password.label "ססמה:">
+<!ENTITY firefm.account.donthave.label "אין שם משתמש?">
+<!ENTITY firefm.account.create.label "יצירת חשבון Last.fm">

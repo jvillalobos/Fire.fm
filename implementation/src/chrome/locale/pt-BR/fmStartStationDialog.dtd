@@ -1,0 +1,6 @@
+<!ENTITY firefm.startStation.artist.label "Artista">
+<!ENTITY firefm.startStation.tag.label "Tag">
+<!ENTITY firefm.startStation.user.label "Nome do usuário">
+<!ENTITY firefm.startStation.chooseArtist.label "Para iniciar, digite seu artista favorito">
+<!ENTITY firefm.startStation.chooseTag.label "Digite uma tag (um gênero ou palavra-chave)">
+<!ENTITY firefm.startStation.chooseUser.label "Digite um nome do usuário do Last.fm">

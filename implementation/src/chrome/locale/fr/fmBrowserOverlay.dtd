@@ -1,0 +1,70 @@
+<!--  -->
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Accueil de Last.fm">
+<!ENTITY firefm.home.tooltip "Atteindre la page Web de Last.fm">
+<!ENTITY firefm.home.accesskey "W">
+<!ENTITY firefm.station.label "Station">
+<!ENTITY firefm.station.tooltip "Choisissez une station à diffuser">
+<!ENTITY firefm.station.accesskey "t">
+<!ENTITY firefm.startStation.label "Diffuser une station">
+<!ENTITY firefm.startStation.accesskey "D">
+<!ENTITY firefm.myStations.label "Mes stations">
+<!ENTITY firefm.myStations.accesskey "s">
+<!ENTITY firefm.recommendations.label "Mes recommandations">
+<!ENTITY firefm.recommendations.accesskey "M">
+<!ENTITY firefm.myLibrary.label "Ma bibliothèque">
+<!ENTITY firefm.myLibrary.accesskey "b">
+<!ENTITY firefm.neighborhood.label "Mon voisinage">
+<!ENTITY firefm.neighborhood.accesskey "g">
+<!ENTITY firefm.friends.label "Amis">
+<!ENTITY firefm.friends.accesskey "A">
+<!ENTITY firefm.neighbors.label "Voisins">
+<!ENTITY firefm.neighbors.accesskey "V">
+<!ENTITY firefm.topArtists.label "Mes artistes favoris">
+<!ENTITY firefm.topArtists.accesskey "v">
+<!ENTITY firefm.similarArtists.label "Artistes similaires">
+<!ENTITY firefm.similarArtists.accesskey "i">
+<!ENTITY firefm.onThisPage.label "Artistes sur cette page">
+<!ENTITY firefm.onThisPage.accesskey "p">
+<!ENTITY firefm.recentStations.label "Stations récentes">
+<!ENTITY firefm.recentStations.accesskey "r">
+<!ENTITY firefm.loginLogout.label "Se connecter/déconnecter">
+<!ENTITY firefm.loginLogout.accesskey "n">
+<!ENTITY firefm.play.label "Écouter">
+<!ENTITY firefm.manageAccounts.label "Gestion des comptes…">
+<!ENTITY firefm.manageAccounts.accesskey "c">
+<!ENTITY firefm.skip.label "Passer">
+<!ENTITY firefm.skip.accesskey "P">
+<!ENTITY firefm.volume.label "Volume">
+<!ENTITY firefm.volume.tooltip "Régler le volume">
+<!ENTITY firefm.volume.accesskey "l">
+<!ENTITY firefm.volume.mute.label "Muet">
+<!ENTITY firefm.volume.mute.accesskey "M">
+<!ENTITY firefm.amazon.label "Acheter sur Amazon">
+<!ENTITY firefm.amazon.accesskey "z">
+<!ENTITY firefm.tag.label "Marqueur">
+<!ENTITY firefm.tag.accesskey "q">
+<!ENTITY firefm.love.label "Amour">
+<!ENTITY firefm.love.accesskey "m">
+<!ENTITY firefm.ban.label "Bannir">
+<!ENTITY firefm.ban.accesskey "B">
+<!ENTITY firefm.feed.fullList.label "Afficher la liste complète…">
+<!ENTITY firefm.feed.fullList.accesskey "c">
+<!ENTITY firefm.welcomeMessage2.label "Bienvenue ! Connectez-vous et lancez une station pour commencer.">
+<!ENTITY firefm.nowPlaying.label "En cours de diffusion">
+<!ENTITY firefm.nowPlaying.accesskey "E">
+<!ENTITY firefm.nowPlaying.track.label "Page des titres sur Last.fm">
+<!ENTITY firefm.nowPlaying.track.accesskey "T">
+<!ENTITY firefm.nowPlaying.artist.label "Page des artistes sur Last.fm">
+<!ENTITY firefm.nowPlaying.artist.accesskey "a">
+<!ENTITY firefm.nowPlaying.album.label "Page des albums sur Last.fm">
+<!ENTITY firefm.nowPlaying.album.accesskey "b">
+<!ENTITY firefm.nowPlaying.downloadFree.label "Télécharger ce titre gratuitement">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "T">
+<!ENTITY firefm.customize.label "Personnaliser…">
+<!ENTITY firefm.customize.accesskey "P">
+<!--  -->
+<!ENTITY firefm.extensionDescription.label "Prenez votre dose de musique quotidienne en écoutant Last.fm.">

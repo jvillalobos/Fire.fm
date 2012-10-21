@@ -1,0 +1,167 @@
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Trebuchet MS,Arial,sans-serif;
+}
+
+h1, h2, h2 > a, h3 {
+  color: #C12B10;
+}
+
+h2 > a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 0em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+div.spotlight {
+  text-align: center;
+}
+
+#all {
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  margin: 1em 0em 1em 0em;
+}
+
+#message {
+  border: solid medium red;
+  background-color: #FFCFC9;
+  padding: 0em 0.5em 0em 0.5em;
+  color: black;
+  font-size: small;
+  margin-bottom: 0.7em;
+}
+
+#content {
+  margin: 0em;
+  padding: 1.2em;
+  background-color: white;
+  color: black;
+  border: solid thick #777777;
+}
+
+#guide-steps > img {
+  display: inline;
+  border: solid thin black;
+  padding: 0.8em;
+  width: 200px;
+  height: 200px;
+}
+
+#authors {
+  width: 38em;
+  margin: auto;
+  -moz-column-width: 15em;
+  -moz-column-gap: 8em;
+  text-align: left;
+}
+
+#extend-fx3-image {
+  background: url("../skin/ff3-ext-pattern.jpg") repeat-x;
+}
+
+#extend-fx3-image > div {
+  padding: 0.6em;
+  height: 105px;
+  background: url("../skin/ff3-ext-header.jpg") scroll no-repeat right top;
+}
+
+#extend-fx3-image img {
+  border: none;
+}
+
+ul.index {
+  margin: 0em;
+  padding: 0em;
+}
+
+ul.index > li {
+  background: url("../skin/logo32.png") no-repeat;
+  padding: 0.6em 0em 0.6em 40px;
+  margin-right: 2em;
+  display: inline;
+}
+
+ul.index > li.selected {
+  color: #F0D052;
+}
+
+ul.page-index-list,
+ul.page-indexed-list {
+  font-family: Verdana,Arial,sans-serif;
+  font-size: 0.9em;
+}
+
+ul.page-index-list > li {
+  margin-bottom: 0.3em;
+}
+
+ul.page-indexed-list {
+  list-style: none;
+  margin: 0em;
+  padding: 0em;
+}
+
+ul.page-index-list {
+  padding: 0em;
+  margin-left: 1em;
+}
+
+ul.about-list {
+  list-style: none;
+  padding: 0em;
+  margin-left: 1em;
+}
+
+ul.about-list > li > a {
+  color: black;
+  text-decoration: none;
+}
+
+ul.about-list > li > a:hover {
+  color: #DBAF00;
+  text-decoration: none;
+}
+
+.index-link {
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.index-link:hover {
+  color: #F0D052;
+}
+
+a.disabled,
+a.disabled:hover {
+  color: #dddddd;
+  text-decoration: line-through;
+}
+
+img.firefm {
+  border: none;
+}
+
+p.note {
+  font-size: 0.8em;
+}
+
+.index-section {
+  font-weight: bold;
+}

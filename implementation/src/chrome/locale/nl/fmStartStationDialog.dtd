@@ -1,0 +1,6 @@
+<!ENTITY firefm.startStation.artist.label "Artiest">
+<!ENTITY firefm.startStation.tag.label "Label">
+<!ENTITY firefm.startStation.user.label "Gebruikersnaam">
+<!ENTITY firefm.startStation.chooseArtist.label "Voer uw favoriete artiest in om te beginnen">
+<!ENTITY firefm.startStation.chooseTag.label "Voer een label in (een genre of een trefwoord)">
+<!ENTITY firefm.startStation.chooseUser.label "Voer een Last.fm-gebruikersnaam in">

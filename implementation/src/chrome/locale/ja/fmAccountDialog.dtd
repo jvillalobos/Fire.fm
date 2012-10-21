@@ -1,0 +1,7 @@
+<!ENTITY firefm.account.dialog.title "アカウント追加">
+<!ENTITY firefm.account.enter.label "Last.fm にログインするために使用する情報を入力してください。">
+<!ENTITY firefm.account.privacy.label "パスワードは Last.fm で認証するためだけに利用され、記録や共有されることはありません。">
+<!ENTITY firefm.account.username.label "ユーザー名:">
+<!ENTITY firefm.account.password.label "パスワード:">
+<!ENTITY firefm.account.donthave.label "ユーザー名をお持ちでありませんか？">
+<!ENTITY firefm.account.create.label "Last.fm アカウントを作成する">

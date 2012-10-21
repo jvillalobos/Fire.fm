@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+
+<!--
+  - Copyright (c) 2008-2011, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{6F0976E6-26F3-4AFE-BBEC-9E99E27E4DF3}</em:id>
+    <em:name>Fire.fm</em:name>
+    <em:description>Get your daily music fix from Last.fm.</em:description>
+    <em:version>1.4.15</em:version>
+    <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+    <em:developer>Jose Enrique Bolaños</em:developer>
+    <em:developer>Jorge Villalobos</em:developer>
+    <em:contributor>Entropiou[S]</em:contributor>
+    <em:contributor>Carl DeVaughn</em:contributor>
+    <em:homepageURL>http://firefm.sourceforge.net</em:homepageURL>
+    <em:optionsURL>chrome://firefm/content/fmPreferencesWindow.xul</em:optionsURL>
+    <em:iconURL>chrome://firefm/skin/logo64.png</em:iconURL>
+    <!-- XXX: We use the Flash player path to generate the permissions file! -->
+    <em:unpack>true</em:unpack>
+    <!--<em:updateURL></em:updateURL>-->
+    <em:type>2</em:type>
+
+    <!-- Mozilla Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>16.0</em:minVersion>
+        <em:maxVersion>18.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <!-- SeaMonkey -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+        <em:minVersion>2.13</em:minVersion>
+        <em:maxVersion>2.15.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Localized versions of the description-->
+     <em:localized>
+      <Description>
+        <em:locale>bg-BG</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Вашата дневна доза музика от Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>Fingli, mohandas (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>de</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Holen Sie sich Ihre tägliche Musik von Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>/usr/bin/tux (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>en-GB</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Get your daily music fix from Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>es-AR</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Escucha la música que quieres de Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>es-CL</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Escucha la música que quieres de Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>es-ES</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Escucha la música que quieres de Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>fi-FI</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Hae päivittäinen musiikkiannoksesi Last.fm:stä.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>AtteL (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>fr</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Prenez votre dose de musique quotidienne en écoutant Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>jojaba (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>gl-ES</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Consigue a túa dose cotián de música de Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>lois (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>he-IL</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>השגת ההזרקה המוזיקלית היומית מLast.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>SiiiE (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>hu</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Szerezze be a napi zeneadagját a Last.fm-ről!</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>WonderCsabo (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>nl</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Krijg uw dagelijkse muziekkick van Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>markh,vaisha (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ja</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Last.fm から日々音楽を聴こう。</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>drry (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>pl</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Twoja dzienna dawka muzyki z Last.fm w przeglądarce.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>Wacław Jacek (Babelzilla), Thermalcake (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>pt-BR</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Tenha sua música diária do Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>Alberto Eidh (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ru-RU</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Получи свою ежедневную дозу музыки с Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>Quicksilver tears (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sr</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Узмите своју дневну дозу музике са Last.fm-а.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>3kornepenal, DakSrbija (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sv-SE</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Få din dagliga musikdos från Last.fm.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>Mikael Hiort af Ornäs (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>tr-TR</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>Last.fm&apos;den günlük müzik tavsiyeleri alın.</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>smg (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>zh-CN</em:locale>
+        <em:name>Fire.fm</em:name>
+        <em:description>从 Last.fm 获得您的日常音乐安排。</em:description>
+        <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
+        <em:developer>Jose Enrique Bolaños</em:developer>
+        <em:developer>Jorge Villalobos</em:developer>
+        <em:homepageURL>http://sourceforge.net/projects/firefm/</em:homepageURL>
+        <em:translator>BruceH (Babelzilla)</em:translator>
+      </Description>
+    </em:localized>
+  </Description>
+</RDF>

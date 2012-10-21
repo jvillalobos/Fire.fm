@@ -1,0 +1,13 @@
+<!---->
+<!ENTITY firefm.error.dialog.title "Informe de erro de Fire.fm">
+<!ENTITY firefm.error.accept.label "Enviar informe do erro">
+<!ENTITY firefm.error.accept.accesskey "S">
+<!ENTITY firefm.error.cancel.label "Continuar sen o enviar">
+<!ENTITY firefm.error.cancel.accesskey "C">
+<!ENTITY firefm.error.header "Sentímolo">
+<!ENTITY firefm.error.unableToLoad "Fire.fm was non puido cargar correctamente. Pode probar a reiniciar &brandShortName; e recargar o reprodutor.">
+<!ENTITY firefm.error.sendReport "Para nos axudar a definir e arranxar o problema pode enviarnos un informe do erro.">
+<!ENTITY firefm.error.comment.label "Engada todos os comentarios que poidan axudarnos a solucionar este erro:">
+<!ENTITY firefm.error.exception.label "Información do erro:">
+<!ENTITY firefm.error.email.label "Notificarme por correo-e a información dispoñible sobre este erro">
+<!ENTITY firefm.error.email.help "Insira o seu enderezo de correo-e aquí">

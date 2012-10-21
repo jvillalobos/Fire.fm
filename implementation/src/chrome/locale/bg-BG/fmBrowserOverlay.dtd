@@ -1,0 +1,70 @@
+<!--  -->
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Начална страница на Last.fm">
+<!ENTITY firefm.home.tooltip "Отваряне на сайта Last.fm">
+<!ENTITY firefm.home.accesskey "Н">
+<!ENTITY firefm.station.label "Радиостанция">
+<!ENTITY firefm.station.tooltip "Изберете радиостанция">
+<!ENTITY firefm.station.accesskey "Р">
+<!ENTITY firefm.startStation.label "Нова радиостанция">
+<!ENTITY firefm.startStation.accesskey "С">
+<!ENTITY firefm.myStations.label "Моите радиостанции">
+<!ENTITY firefm.myStations.accesskey "М">
+<!ENTITY firefm.recommendations.label "Моите препоръки">
+<!ENTITY firefm.recommendations.accesskey "М">
+<!ENTITY firefm.myLibrary.label "Моята библиотека">
+<!ENTITY firefm.myLibrary.accesskey "б">
+<!ENTITY firefm.neighborhood.label "Моите съседи">
+<!ENTITY firefm.neighborhood.accesskey "с">
+<!ENTITY firefm.friends.label "Приятели">
+<!ENTITY firefm.friends.accesskey "П">
+<!ENTITY firefm.neighbors.label "Съседи">
+<!ENTITY firefm.neighbors.accesskey "С">
+<!ENTITY firefm.topArtists.label "Моите любими изпълнители">
+<!ENTITY firefm.topArtists.accesskey "л">
+<!ENTITY firefm.similarArtists.label "Подобни изпълнители">
+<!ENTITY firefm.similarArtists.accesskey "и">
+<!ENTITY firefm.onThisPage.label "Изпълнители от тази страница">
+<!ENTITY firefm.onThisPage.accesskey "р">
+<!ENTITY firefm.recentStations.label "Скорошни радиостанции">
+<!ENTITY firefm.recentStations.accesskey "р">
+<!ENTITY firefm.loginLogout.label "Вписване/отписване">
+<!ENTITY firefm.loginLogout.accesskey "В">
+<!ENTITY firefm.play.label "Изпълнение">
+<!ENTITY firefm.manageAccounts.label "Управление на профилите...">
+<!ENTITY firefm.manageAccounts.accesskey "У">
+<!ENTITY firefm.skip.label "Прескачане">
+<!ENTITY firefm.skip.accesskey "к">
+<!ENTITY firefm.volume.label "Звук">
+<!ENTITY firefm.volume.tooltip "Регулиране на звука">
+<!ENTITY firefm.volume.accesskey "у">
+<!ENTITY firefm.volume.mute.label "Без звук">
+<!ENTITY firefm.volume.mute.accesskey "Б">
+<!ENTITY firefm.amazon.label "Купуване от Amazon">
+<!ENTITY firefm.amazon.accesskey "К">
+<!ENTITY firefm.tag.label "Етикет">
+<!ENTITY firefm.tag.accesskey "е">
+<!ENTITY firefm.love.label "Добавяне в Любими">
+<!ENTITY firefm.love.accesskey "Л">
+<!ENTITY firefm.ban.label "Добавяне в Блокирани">
+<!ENTITY firefm.ban.accesskey "Б">
+<!ENTITY firefm.feed.fullList.label "Целият списък...">
+<!ENTITY firefm.feed.fullList.accesskey "Ц">
+<!ENTITY firefm.welcomeMessage2.label "Добре дошли! Впишете се и създайте радиостанция">
+<!ENTITY firefm.nowPlaying.label "В момента свири">
+<!ENTITY firefm.nowPlaying.accesskey "В">
+<!ENTITY firefm.nowPlaying.track.label "Страница за песента в Last.fm">
+<!ENTITY firefm.nowPlaying.track.accesskey "п">
+<!ENTITY firefm.nowPlaying.artist.label "Страница на изпълнителя в Last.fm">
+<!ENTITY firefm.nowPlaying.artist.accesskey "и">
+<!ENTITY firefm.nowPlaying.album.label "Страница на албума в Last.fm">
+<!ENTITY firefm.nowPlaying.album.accesskey "а">
+<!ENTITY firefm.nowPlaying.downloadFree.label "Безплатно сваляне на тази песен">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "с">
+<!ENTITY firefm.customize.label "Настройки...">
+<!ENTITY firefm.customize.accesskey "Н">
+<!--  -->
+<!ENTITY firefm.extensionDescription.label "Вашата дневна доза музика от Last.fm.">

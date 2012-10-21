@@ -1,0 +1,12 @@
+<!ENTITY firefm.error.dialog.title "Fire.fm-foutrapportage">
+<!ENTITY firefm.error.accept.label "Foutrapport versturen">
+<!ENTITY firefm.error.accept.accesskey "S">
+<!ENTITY firefm.error.cancel.label "Doorgaan zonder versturen">
+<!ENTITY firefm.error.cancel.accesskey "D">
+<!ENTITY firefm.error.header "Sorry">
+<!ENTITY firefm.error.unableToLoad "Fire.fm is niet juist geladen. Probeer het nogmaals door &brandShortName; opnieuw te starten.">
+<!ENTITY firefm.error.sendReport "Om ons te helpen het probleem te vinden en repareren kunt u ons een foutverslag sturen.">
+<!ENTITY firefm.error.comment.label "Voeg alle informatie bij die ons zou kunnen helpen dit probleem te verhelpen:">
+<!ENTITY firefm.error.exception.label "Informatie over de fout:">
+<!ENTITY firefm.error.email.label "Stuur mij een e-mail als er meer informatie beschikbaar is over deze fout">
+<!ENTITY firefm.error.email.help "Voer hier uw e-mailadres in">

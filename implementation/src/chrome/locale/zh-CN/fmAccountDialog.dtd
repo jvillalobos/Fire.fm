@@ -1,0 +1,7 @@
+<!ENTITY firefm.account.dialog.title "添加账户">
+<!ENTITY firefm.account.enter.label "输入 Last.fm 登录信息。">
+<!ENTITY firefm.account.privacy.label "您的密码只是用来验证您的 Last.fm 身份，将不会被储存或与任何人分享。">
+<!ENTITY firefm.account.username.label "用户名：">
+<!ENTITY firefm.account.password.label "密码：">
+<!ENTITY firefm.account.donthave.label "还没有用户名？">
+<!ENTITY firefm.account.create.label "创建一个 Last.fm 账户">

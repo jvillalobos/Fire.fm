@@ -1,0 +1,12 @@
+<!ENTITY firefm.error.dialog.title "Fire.fm 错误报告">
+<!ENTITY firefm.error.accept.label "发送错误报告(S)">
+<!ENTITY firefm.error.accept.accesskey "S">
+<!ENTITY firefm.error.cancel.label "继续而不发送(C)">
+<!ENTITY firefm.error.cancel.accesskey "C">
+<!ENTITY firefm.error.header "很抱歉">
+<!ENTITY firefm.error.unableToLoad "Fire.fm 无法正确加载。您可以尝试通过重新启动 &brandShortName; 来重新加载播放器.">
+<!ENTITY firefm.error.sendReport "为了帮助我们诊断和解决此问题，您可以向我们发送错误报告.">
+<!ENTITY firefm.error.comment.label "增加您的任何评论将有可能帮助我们修正此错误:">
+<!ENTITY firefm.error.exception.label "错误信息：">
+<!ENTITY firefm.error.email.label "当有关于这个错误的更详细的信息时，请发 Email 给我">
+<!ENTITY firefm.error.email.help "请在这里输入您的 email 地址">

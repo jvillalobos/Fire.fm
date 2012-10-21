@@ -1,0 +1,8 @@
+<!ENTITY firefm.trackInfo.dropdown.tooltip "Показать информацию о треке">
+<!ENTITY firefm.trackInfo.buffering.label "Буферизация...">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "Перейти на страницу трека на Last.fm">
+<!ENTITY firefm.trackInfo.artist.tooltip "Перейти на страницу артиста на Last.fm">
+<!ENTITY firefm.trackInfo.album.tooltip "Перейти на страницу альбома на Last.fm">
+<!ENTITY firefm.trackInfo.free.label "Бесплатный файл">
+<!ENTITY firefm.trackInfo.free.tooltip "Скачать этот бесплатный трек">
+<!ENTITY firefm.trackInfo.amazon.label "Купить этот трек на Amazon">

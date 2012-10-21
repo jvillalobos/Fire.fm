@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+
+<!--
+  - Copyright (c) 2008, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://browser/skin/preferences/preferences.css" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://firefm-os/skin/fmPreferencesWindow.css" ?>
+
+<!DOCTYPE prefwindow [
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+  <!ENTITY % fmOverlayDTD SYSTEM "chrome://firefm/locale/fmBrowserOverlay.dtd">
+  %fmOverlayDTD;
+  <!ENTITY % fmPrefDTD SYSTEM "chrome://firefm/locale/fmPreferencesWindow.dtd">
+  %fmPrefDTD;
+]>
+
+<prefwindow id="firefm-preferences-window"
+  buttons="accept, cancel"
+  ondialogaccept="FireFMChrome.PreferencesWindow.accept(event);"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/javascript"
+    src="chrome://global/content/contentAreaUtils.js" />
+  <script type="application/x-javascript"
+    src="chrome://firefm/content/fmPreferencesWindow.js" />
+
+  <broadcasterset id="firefm-preference-broadcasterset">
+    <broadcaster id="firefm-statusbar-broadcaster" />
+  </broadcasterset>
+
+  <prefpane id="firefm-main-pane"
+    label="&firefm.preferences.pane.main.title;">
+    <preferences>
+      <preference id="firefm-preference-autoplay"
+        name="extensions.firefm.autoplay" type="bool" />
+      <preference id="firefm-preference-scrobble"
+        name="extensions.firefm.scrobble" type="bool" />
+      <preference id="firefm-preference-store-history"
+        name="extensions.firefm.storeHistory" type="bool" />
+      <preference id="firefm-preference-recent-history"
+        name="extensions.firefm.recent.enabled" type="bool" />
+      <preference id="firefm-preference-enable-private-mode"
+        name="extensions.firefm.enablePrivateMode" type="bool" />
+      <preference id="firefm-preference-notifications-mode"
+        name="extensions.firefm.notifications.mode" type="int" />
+      <preference id="firefm-preference-volume-mode"
+        name="extensions.firefm.volume.mode" type="int" />
+    </preferences>
+
+    <groupbox>
+      <caption label="&firefm.preferences.playback.label;" />
+      <checkbox preference="firefm-preference-autoplay"
+        label="&firefm.preferences.autoplay.label;"
+        accesskey="&firefm.preferences.autoplay.accesskey;" />
+      <hbox class="firefm-preference-row">
+        <checkbox preference="firefm-preference-scrobble"
+          label="&firefm.preferences.scrobble.label;"
+          accesskey="&firefm.preferences.scrobble.accesskey;" />
+        <label class="text-link" value="&firefm.preferences.learnMore.label;"
+          accesskey="&firefm.preferences.learnMore.accesskey;"
+          onclick="FireFMChrome.PreferencesWindow.openScrobblePage(event);" />
+      </hbox>
+      <hbox class="firefm-preference-row">
+        <label control="firefm-pref-volume-mode"
+          value="&firefm.preferences.volume.mode.label;"
+          accesskey="&firefm.preferences.volume.mode.accesskey;" />
+        <menulist id="firefm-pref-volume-mode"
+          preference="firefm-preference-volume-mode"
+          value="&firefm.preferences.volume.mode.label;">
+          <menupopup>
+            <menuitem value="0"
+              label="&firefm.preferences.volume.mode.simple;" />
+            <menuitem value="1"
+              label="&firefm.preferences.volume.mode.advanced;" />
+          </menupopup>
+        </menulist>
+      </hbox>
+
+    </groupbox>
+
+    <groupbox>
+      <caption label="&firefm.preferences.history.label;" />
+      <hbox>
+        <checkbox preference="firefm-preference-store-history"
+          label="&firefm.preferences.storeArtists.label;"
+          accesskey="&firefm.preferences.storeArtists.accesskey;" />
+        <spacer flex="1" />
+        <button label="&firefm.preferences.clearPlaces.label;"
+          accesskey="&firefm.preferences.clearPlaces.accesskey;"
+          oncommand="FireFMChrome.PreferencesWindow.clearPlacesHistory(event)"/>
+      </hbox>
+      <hbox>
+        <checkbox preference="firefm-preference-recent-history"
+          label="&firefm.preferences.recentHistory.label;"
+          accesskey="&firefm.preferences.recentHistory.accesskey;" />
+        <spacer flex="1" />
+        <button id="firefm-pref-clear-recent"
+          label="&firefm.preferences.clearRecent.label;"
+          accesskey="&firefm.preferences.clearRecent.accesskey;"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.clearRecentHistory(event);" />
+      </hbox>
+      <checkbox preference="firefm-preference-enable-private-mode"
+        label="&firefm.preferences.enablePrivateMode.label;"
+        accesskey="&firefm.preferences.enablePrivateMode.accesskey;" />
+    </groupbox>
+
+    <groupbox>
+      <caption label="&firefm.preferences.notifications.title;" />
+      <grid>
+        <columns>
+          <column/>
+          <column/>
+        </columns>
+        <rows>
+          <row align="center">
+            <label control="firefm-pref-notifications"
+              value="&firefm.preferences.notifications.mode.label;"
+              accesskey="&firefm.preferences.notifications.mode.accesskey;" />
+            <menulist id="firefm-pref-notifications"
+              preference="firefm-preference-notifications-mode"
+              value="&firefm.preferences.notifications.mode.label;">
+              <menupopup>
+                <menuitem value="0"
+                  label="&firefm.preferences.notifications.mode.off;" />
+                <menuitem value="2"
+                  label="&firefm.preferences.notifications.mode.focus;" />
+                <menuitem value="1"
+                  label="&firefm.preferences.notifications.mode.on;" />
+              </menupopup>
+            </menulist>
+          </row>
+        </rows>
+      </grid>
+    </groupbox>
+  </prefpane>
+
+  <prefpane id="firefm-accounts-pane"
+    label="&firefm.preferences.pane.accounts.title;">
+    <vbox>
+      <label value="&firefm.preferences.pane.accounts.title;"/>
+      <listbox id="firefm-accounts-list" flex="1"
+        onselect="FireFMChrome.PreferencesWindow.updateRemoveAccountButton();" />
+      <hbox>
+        <button id="firefm-accounts-remove" disabled="true"
+          label="&firefm.preferences.removeAccount.label;"
+          accesskey="&firefm.preferences.removeAccount.accesskey;"
+          oncommand="FireFMChrome.PreferencesWindow.removeAccount();"/>
+        <spacer flex="1"/>
+        <button label="&firefm.preferences.addAccount.label;"
+          accesskey="&firefm.preferences.addAccount.accesskey;"
+          oncommand="FireFMChrome.PreferencesWindow.addAccount();"/>
+      </hbox>
+    </vbox>
+  </prefpane>
+
+  <prefpane id="firefm-appearance-pane"
+    label="&firefm.preferences.pane.appearance.title;">
+    <preferences>
+      <preference id="firefm-preference-show-statusbar"
+        name="extensions.firefm.showInStatusBar" type="bool"
+        onchange="FireFMChrome.PreferencesWindow.toggleStatusChecks(event);" />
+      <preference id="firefm-preference-statusbar-buttons"
+        name="extensions.firefm.statusBarButtons" type="string"
+        onchange=
+          "FireFMChrome.PreferencesWindow.updateStatusbarChecks(event);" />
+    </preferences>
+    <groupbox>
+      <checkbox id="firefm-show-toolbar"
+        label="&firefm.preferences.showToolbar.label;"
+        accesskey="&firefm.preferences.showToolbar.accesskey;"
+        oncommand="FireFMChrome.PreferencesWindow.toggleToolbar(event);" />
+      <checkbox preference="firefm-preference-show-statusbar"
+        label="&firefm.preferences.showStatusbar.label;"
+        accesskey="&firefm.preferences.showStatusbar.accesskey;" />
+      <vbox id="firefm-status-check-container" class="indent">
+        <checkbox id="firefm-status-home-button"
+          label="&firefm.home.label;" accesskey="&firefm.home.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-login-logout-button"
+          label="&firefm.loginLogout.label;"
+          accesskey="&firefm.loginLogout.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-station-button"
+          label="&firefm.station.label;" accesskey="&firefm.station.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-play-stop-button"
+          label="&firefm.preferences.status.play.label;"
+          accesskey="&firefm.preferences.status.play.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-skip-button"
+          label="&firefm.skip.label;" accesskey="&firefm.skip.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-track-info"
+          label="&firefm.nowPlaying.label;"
+          accesskey="&firefm.nowPlaying.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-track-info-size" class="indent"
+          label="&firefm.preferences.smallSize.label;"
+          accesskey="&firefm.preferences.smallSize.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-volume-button"
+          label="&firefm.volume.label;" accesskey="&firefm.volume.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-amazon-button"
+          label="&firefm.amazon.label;" accesskey="&firefm.amazon.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-tag-button"
+          label="&firefm.tag.label;" accesskey="&firefm.tag.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-love-button"
+          label="&firefm.love.label;" accesskey="&firefm.love.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+        <checkbox id="firefm-status-ban-button"
+          label="&firefm.ban.label;" accesskey="&firefm.ban.accesskey;"
+          observes="firefm-statusbar-broadcaster"
+          oncommand=
+            "FireFMChrome.PreferencesWindow.customizeStatusbar(event);" />
+      </vbox>
+    </groupbox>
+  </prefpane>
+
+  <prefpane id="firefm-advanced-pane"
+    label="&firefm.preferences.pane.advanced.title;">
+    <preferences>
+      <preference id="firefm-preference-use-gestures"
+        name="extensions.firefm.useGestures" type="bool" />
+    </preferences>
+
+    <groupbox>
+      <hbox class="firefm-preference-row">
+        <checkbox preference="firefm-preference-use-gestures"
+          label="&firefm.preferences.enableGestures.label;"
+          accesskey="&firefm.preferences.enableGestures.accesskey;" />
+        <label class="text-link" value="&firefm.preferences.learnMore.label;"
+          accesskey="&firefm.preferences.learnMore.accesskey;"
+          onclick="FireFMChrome.PreferencesWindow.openGesturesPage(event);" />
+      </hbox>
+    </groupbox>
+  </prefpane>
+</prefwindow>

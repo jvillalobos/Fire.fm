@@ -1,0 +1,41 @@
+<!--
+  - Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution och use in source och binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions och the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions och the following disclaimer in the documentation
+  -    och/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  
+-->
+<!ENTITY firefm.error.dialog.title "Felrapportören för Fire.fm">
+<!ENTITY firefm.error.accept.label "Skicka felrapport">
+<!ENTITY firefm.error.accept.accesskey "S">
+<!ENTITY firefm.error.cancel.label "Fortsätt utan att skicka">
+<!ENTITY firefm.error.cancel.accesskey "F">
+<!ENTITY firefm.error.header "Vi ber om ursäkt">
+<!ENTITY firefm.error.unableToLoad "Fire.fm kunde inte ladda på ett korrekt sätt. Du kan försöka att uppdatera spelaren genom att starta om &brandShortName;.">
+<!ENTITY firefm.error.sendReport "För att hjälpa oss att diagnostisera och laga problemet kan du skicka in en felrapport till oss.">
+<!ENTITY firefm.error.comment.label "Lägg till alla kommentarer du har, som kan hjälpa oss att laga det här felet:">
+<!ENTITY firefm.error.exception.label "Felinformation:">
+<!ENTITY firefm.error.email.label "E-posta mig när mer information om det här felet finns tillgängligt">
+<!ENTITY firefm.error.email.help "Ange din e-postadress här">

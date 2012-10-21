@@ -1,0 +1,79 @@
+<!--
+  - Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  
+-->
+<!-- Main pane -->
+<!ENTITY firefm.preferences.pane.main.title "Általános">
+<!ENTITY firefm.preferences.playback.label "Lejátszás">
+<!ENTITY firefm.preferences.autoplay.label "Utoljára hallgatott állomás automatikus lejátszása &brandShortName; indításakor">
+<!ENTITY firefm.preferences.autoplay.accesskey "a">
+<!ENTITY firefm.preferences.scrobble.label "Minden lejátszott szám közzététele (Scrobble)">
+<!ENTITY firefm.preferences.scrobble.accesskey "S">
+<!ENTITY firefm.preferences.learnMore.label "Tudjon meg többet…">
+<!ENTITY firefm.preferences.learnMore.accesskey "T">
+<!ENTITY firefm.preferences.volume.mode.label "A hangerő gombra kattintáskor:">
+<!ENTITY firefm.preferences.volume.mode.accesskey "h">
+<!ENTITY firefm.preferences.volume.mode.simple "Hangerőszabályzó mutatása">
+<!ENTITY firefm.preferences.volume.mode.advanced "Némítás">
+<!ENTITY firefm.preferences.history.label "Előzmények">
+<!ENTITY firefm.preferences.storeArtists.label "Hallgatott előadók és állomások tárolása a böngészési előzményekben">
+<!ENTITY firefm.preferences.storeArtists.accesskey "e">
+<!ENTITY firefm.preferences.clearPlaces.label "Fire.fm előzményeinek törlése">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "r">
+<!ENTITY firefm.preferences.recentHistory.label "Nemrég lejátszott csatornák tárolása az Állomás menüben">
+<!ENTITY firefm.preferences.recentHistory.accesskey "c">
+<!ENTITY firefm.preferences.clearRecent.label "Nemrég lejátszott csatornák törlése">
+<!ENTITY firefm.preferences.clearRecent.accesskey "l">
+<!ENTITY firefm.preferences.enablePrivateMode.label "Állomás előzmények és közzététel (Scrobble) kikapcsolása amikor a &brandShortName; privát böngészésben van">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "k">
+<!ENTITY firefm.preferences.notifications.title "Értesítések">
+<!ENTITY firefm.preferences.notifications.mode.label "Értesítsen zeneszám lejátszásakor:">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "z">
+<!ENTITY firefm.preferences.notifications.mode.off "Soha">
+<!ENTITY firefm.preferences.notifications.mode.focus "Amikor a &brandShortName; ablak nem aktív">
+<!ENTITY firefm.preferences.notifications.mode.on "Mindig">
+<!-- Appearance pane -->
+<!ENTITY firefm.preferences.pane.appearance.title "Megjelenés">
+<!ENTITY firefm.preferences.showToolbar.label "Fire.fm eszköztár mutatása">
+<!ENTITY firefm.preferences.showToolbar.accesskey "e">
+<!ENTITY firefm.preferences.showStatusbar.label "Gombok megjelenítése az állapotsoron">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "G">
+<!ENTITY firefm.preferences.status.play.label "Lejátszás / Megállítás">
+<!ENTITY firefm.preferences.status.play.accesskey "L">
+<!ENTITY firefm.preferences.smallSize.label "Kis méret">
+<!ENTITY firefm.preferences.smallSize.accesskey "m">
+<!-- Accounts pane -->
+<!ENTITY firefm.preferences.pane.accounts.title "Fiókok">
+<!ENTITY firefm.preferences.removeAccount.label "Fiók eltávolítása…">
+<!ENTITY firefm.preferences.removeAccount.accesskey "e">
+<!ENTITY firefm.preferences.addAccount.label "Fiók hozzáadása…">
+<!ENTITY firefm.preferences.addAccount.accesskey "h">
+<!-- Advanced pane -->
+<!ENTITY firefm.preferences.pane.advanced.title "Haladó">
+<!ENTITY firefm.preferences.enableGestures.label "Egérgesztusok engedélyezése (újraindítást igényel)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "g">

@@ -1,0 +1,12 @@
+<!ENTITY firefm.error.dialog.title "Генератор отчёта об ошибке Fire.fm">
+<!ENTITY firefm.error.accept.label "Отправить сообщение об ошибке">
+<!ENTITY firefm.error.accept.accesskey "О">
+<!ENTITY firefm.error.cancel.label "Продолжить без отправки сообщения">
+<!ENTITY firefm.error.cancel.accesskey "П">
+<!ENTITY firefm.error.header "Приносим извинения">
+<!ENTITY firefm.error.unableToLoad "Fire.fm не может корректно загрузиться. Вы можете попытаться включить плеер заново с помощью перезапуска &brandShortName;.">
+<!ENTITY firefm.error.sendReport "Чтобы помочь нам диагностировать и исправить проблему, вы можете отправить нам сообщение об ошибке.">
+<!ENTITY firefm.error.comment.label "Добавьте любые комментарии, которые могут помочь нам исправить эту ошибку:">
+<!ENTITY firefm.error.exception.label "Информация об ошибке:">
+<!ENTITY firefm.error.email.label "Отправьте мне электронное письмо, когда информации об этой ошибке будет больше">
+<!ENTITY firefm.error.email.help "Введите ваш адрес электронной почты">

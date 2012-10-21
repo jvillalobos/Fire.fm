@@ -1,0 +1,7 @@
+<!ENTITY firefm.account.dialog.title "Добавление учётной записи">
+<!ENTITY firefm.account.enter.label "Введите информацию, которую вы используете для входа на Last.fm.">
+<!ENTITY firefm.account.privacy.label "Ваш пароль используется только для подтверждения вашей личности на Last.fm и не будет сохранён где-либо или предоставлен кому-либо.">
+<!ENTITY firefm.account.username.label "Имя пользователя:">
+<!ENTITY firefm.account.password.label "Пароль:">
+<!ENTITY firefm.account.donthave.label "Нет учётной записи?">
+<!ENTITY firefm.account.create.label "Создать учётную запись на Last.fm">

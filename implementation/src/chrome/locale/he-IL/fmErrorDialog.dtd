@@ -1,0 +1,12 @@
+<!ENTITY firefm.error.dialog.title "מדווח שגיאות Fire.fm">
+<!ENTITY firefm.error.accept.label "שליחת דוח שגיאה">
+<!ENTITY firefm.error.accept.accesskey "ש">
+<!ENTITY firefm.error.cancel.label "המשך ללא שליחה">
+<!ENTITY firefm.error.cancel.accesskey "ל">
+<!ENTITY firefm.error.header "עמנו הסליחה">
+<!ENTITY firefm.error.unableToLoad "Fire.fm איננו מסוגל להיטען בצורה נכונה. אפשרי לנסות לרענן את הנגן על ידי אתחול &brandShortName;.">
+<!ENTITY firefm.error.sendReport "כדי לעזור לנו לאבחן ולתקן בעיות ניתן לשלוח לנו דוח שגיאה.">
+<!ENTITY firefm.error.comment.label "הוספת כל תגובה שיש שעשויה לעזור לתיקון השגיאה:">
+<!ENTITY firefm.error.exception.label "מידע על השגיאה:">
+<!ENTITY firefm.error.email.label "שליחת אימייל אליי כאשר מידע נוסף על שגיאה זו זמין">
+<!ENTITY firefm.error.email.help "הכנסת כתובת הדוא&quot;ל שלך כאן">

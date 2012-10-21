@@ -1,0 +1,93 @@
+<!--
+  - Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<!-- Main pane -->
+
+<!ENTITY firefm.preferences.pane.main.title   "General">
+
+<!ENTITY firefm.preferences.playback.label         "Playback">
+<!ENTITY firefm.preferences.autoplay.label         "Auto-play most recent station when &brandShortName; starts">
+<!ENTITY firefm.preferences.autoplay.accesskey     "A">
+<!ENTITY firefm.preferences.scrobble.label         "Scrobble all tracks I play">
+<!ENTITY firefm.preferences.scrobble.accesskey     "b">
+<!ENTITY firefm.preferences.learnMore.label        "Learn more...">
+<!ENTITY firefm.preferences.learnMore.accesskey    "L">
+<!ENTITY firefm.preferences.volume.mode.label      "When I click the volume button:">
+<!ENTITY firefm.preferences.volume.mode.accesskey  "v">
+<!ENTITY firefm.preferences.volume.mode.simple     "Show volume control">
+<!ENTITY firefm.preferences.volume.mode.advanced   "Mute sound">
+
+<!ENTITY firefm.preferences.history.label               "History">
+<!ENTITY firefm.preferences.storeArtists.label          "Store artists and stations I play on my browser history">
+<!ENTITY firefm.preferences.storeArtists.accesskey      "h">
+<!ENTITY firefm.preferences.clearPlaces.label           "Clear Fire.fm History">
+<!ENTITY firefm.preferences.clearPlaces.accesskey       "C">
+<!ENTITY firefm.preferences.recentHistory.label         "Store my most recently played stations in the Station menu">
+<!ENTITY firefm.preferences.recentHistory.accesskey     "t">
+<!ENTITY firefm.preferences.clearRecent.label           "Clear Recent Stations">
+<!ENTITY firefm.preferences.clearRecent.accesskey       "R">
+<!ENTITY firefm.preferences.enablePrivateMode.label     "Disable station history and Scrobble when &brandShortName; is in Private Mode">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "P">
+
+<!ENTITY firefm.preferences.notifications.title           "Notifications">
+<!ENTITY firefm.preferences.notifications.mode.label      "Notify me when a track is playing:">
+<!ENTITY firefm.preferences.notifications.mode.accesskey  "N">
+<!ENTITY firefm.preferences.notifications.mode.off        "Never">
+<!ENTITY firefm.preferences.notifications.mode.focus      "When &brandShortName; is not focused">
+<!ENTITY firefm.preferences.notifications.mode.on         "Always">
+
+<!-- Appearance pane -->
+
+<!ENTITY firefm.preferences.pane.appearance.title   "Appearance">
+
+<!ENTITY firefm.preferences.showToolbar.label          "Show Fire.fm toolbar">
+<!ENTITY firefm.preferences.showToolbar.accesskey      "h">
+<!ENTITY firefm.preferences.showStatusbar.label        "Show buttons in the Status Bar">
+<!ENTITY firefm.preferences.showStatusbar.accesskey    "S">
+
+<!ENTITY firefm.preferences.status.play.label       "Play / Stop">
+<!ENTITY firefm.preferences.status.play.accesskey   "P">
+<!ENTITY firefm.preferences.smallSize.label         "Small size">
+<!ENTITY firefm.preferences.smallSize.accesskey     "m">
+
+<!-- Accounts pane -->
+
+<!ENTITY firefm.preferences.pane.accounts.title   "Accounts">
+
+<!ENTITY firefm.preferences.removeAccount.label      "Remove account...">
+<!ENTITY firefm.preferences.removeAccount.accesskey  "R">
+<!ENTITY firefm.preferences.addAccount.label      "Add account...">
+<!ENTITY firefm.preferences.addAccount.accesskey  "A">
+
+<!-- Advanced pane -->
+
+<!ENTITY firefm.preferences.pane.advanced.title   "Advanced">
+
+<!ENTITY firefm.preferences.enableGestures.label      "Enable mouse gestures (requires restart)">
+<!ENTITY firefm.preferences.enableGestures.accesskey  "g">

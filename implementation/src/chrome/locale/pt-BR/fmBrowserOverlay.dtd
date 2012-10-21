@@ -1,0 +1,49 @@
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Página do Last.fm">
+<!ENTITY firefm.home.tooltip "Ir para a página do Last.fm">
+<!ENTITY firefm.home.accesskey "H">
+<!ENTITY firefm.station.label "Estação">
+<!ENTITY firefm.station.tooltip "Pegue uma estação para tocar">
+<!ENTITY firefm.station.accesskey "t">
+<!ENTITY firefm.startStation.label "Iniciar uma estação">
+<!ENTITY firefm.startStation.accesskey "S">
+<!ENTITY firefm.recommendations.label "Minhas recomendações">
+<!ENTITY firefm.recommendations.accesskey "M">
+<!ENTITY firefm.friends.label "Amigos">
+<!ENTITY firefm.friends.accesskey "F">
+<!ENTITY firefm.neighbors.label "Vizinhos">
+<!ENTITY firefm.neighbors.accesskey "N">
+<!ENTITY firefm.topArtists.label "Meu artistas favoritos">
+<!ENTITY firefm.topArtists.accesskey "T">
+<!ENTITY firefm.similarArtists.label "Artistas semelhantes">
+<!ENTITY firefm.similarArtists.accesskey "i">
+<!ENTITY firefm.onThisPage.label "Aristas nesta página">
+<!ENTITY firefm.onThisPage.accesskey "p">
+<!ENTITY firefm.recentStations.label "Estações recentes">
+<!ENTITY firefm.recentStations.accesskey "R">
+<!ENTITY firefm.play.label "Tocar">
+<!ENTITY firefm.skip.label "Pular">
+<!ENTITY firefm.skip.accesskey "k">
+<!ENTITY firefm.volume.label "Volume">
+<!ENTITY firefm.volume.tooltip "Ajustar volume">
+<!ENTITY firefm.volume.accesskey "u">
+<!ENTITY firefm.volume.mute.label "Mudo">
+<!ENTITY firefm.volume.mute.accesskey "M">
+<!ENTITY firefm.love.label "Love">
+<!ENTITY firefm.love.accesskey "v">
+<!ENTITY firefm.ban.label "Ban">
+<!ENTITY firefm.ban.accesskey "B">
+<!ENTITY firefm.feed.fullList.label "Ver lista completa…">
+<!ENTITY firefm.feed.fullList.accesskey "f">
+<!ENTITY firefm.nowPlaying.label "Agora tocando">
+<!ENTITY firefm.nowPlaying.accesskey "N">
+<!ENTITY firefm.nowPlaying.track.label "Página da faixa na Last.fm">
+<!ENTITY firefm.nowPlaying.track.accesskey "T">
+<!ENTITY firefm.nowPlaying.artist.label "Página do artista no Last.fm">
+<!ENTITY firefm.nowPlaying.artist.accesskey "A">
+<!ENTITY firefm.nowPlaying.album.label "Página do álbum no Last.fm">
+<!ENTITY firefm.nowPlaying.album.accesskey "b">
+<!ENTITY firefm.extensionDescription.label "Tenha sua música diária do Last.fm.">

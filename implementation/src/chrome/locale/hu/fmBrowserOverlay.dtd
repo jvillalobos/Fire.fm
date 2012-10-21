@@ -1,0 +1,101 @@
+<!--
+  - Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  
+-->
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Last.fm Kezdőlap">
+<!ENTITY firefm.home.tooltip "Ugrás a Last.fm kezdőlapjára">
+<!ENTITY firefm.home.accesskey "k">
+<!ENTITY firefm.station.label "Állomás">
+<!ENTITY firefm.station.tooltip "Lejátszandó állomás kiválasztása">
+<!ENTITY firefm.station.accesskey "l">
+<!ENTITY firefm.startStation.label "Állomás indítása">
+<!ENTITY firefm.startStation.accesskey "s">
+<!ENTITY firefm.myStations.label "Saját állomások">
+<!ENTITY firefm.myStations.accesskey "m">
+<!ENTITY firefm.recommendations.label "Saját ajánlatok">
+<!ENTITY firefm.recommendations.accesskey "a">
+<!ENTITY firefm.myLibrary.label "Saját könyvtár">
+<!ENTITY firefm.myLibrary.accesskey "j">
+<!ENTITY firefm.neighborhood.label "Szomszédság">
+<!ENTITY firefm.neighborhood.accesskey "z">
+<!ENTITY firefm.friends.label "Barátok">
+<!ENTITY firefm.friends.accesskey "B">
+<!ENTITY firefm.neighbors.label "Szomszédok">
+<!ENTITY firefm.neighbors.accesskey "S">
+<!ENTITY firefm.topArtists.label "Leghallgatottabb előadók">
+<!ENTITY firefm.topArtists.accesskey "h">
+<!ENTITY firefm.similarArtists.label "Hasonló előadók">
+<!ENTITY firefm.similarArtists.accesskey "e">
+<!ENTITY firefm.onThisPage.label "Előadok ezen az oldalon">
+<!ENTITY firefm.onThisPage.accesskey "o">
+<!ENTITY firefm.recentStations.label "Nemrég hallgatott állomások">
+<!ENTITY firefm.recentStations.accesskey "N">
+<!ENTITY firefm.loginLogout.label "Bejelentkezés / kijelentkezés">
+<!ENTITY firefm.loginLogout.accesskey "B">
+<!ENTITY firefm.play.label "Lejátszás">
+<!ENTITY firefm.manageAccounts.label "Fiókok kezelése…">
+<!ENTITY firefm.manageAccounts.accesskey "F">
+<!ENTITY firefm.skip.label "Kihagyás">
+<!ENTITY firefm.skip.accesskey "K">
+<!ENTITY firefm.volume.label "Hangerő">
+<!ENTITY firefm.volume.tooltip "Hangerő beállítása">
+<!ENTITY firefm.volume.accesskey "H">
+<!ENTITY firefm.volume.mute.label "Némítás">
+<!ENTITY firefm.volume.mute.accesskey "N">
+<!ENTITY firefm.amazon.label "Megvétel az Amazonon">
+<!ENTITY firefm.amazon.accesskey "A">
+<!ENTITY firefm.tag.label "Címkézés">
+<!ENTITY firefm.tag.accesskey "C">
+<!ENTITY firefm.love.label "Kedvelés">
+<!ENTITY firefm.love.accesskey "K">
+<!ENTITY firefm.ban.label "Tiltás">
+<!ENTITY firefm.ban.accesskey "T">
+<!ENTITY firefm.feed.fullList.label "Teljes lista megtekintése…">
+<!ENTITY firefm.feed.fullList.accesskey "l">
+<!ENTITY firefm.welcomeMessage2.label "Üdvözöljük! Jelentkezzen be és indítson el egy állomást a kezdéshez">
+<!ENTITY firefm.nowPlaying.label "Most játszott">
+<!ENTITY firefm.nowPlaying.accesskey "M">
+<!ENTITY firefm.nowPlaying.track.label "Zeneszám oldala a Last.fm-en">
+<!ENTITY firefm.nowPlaying.track.accesskey "o">
+<!ENTITY firefm.nowPlaying.artist.label "Előadó oldala a Last.fm-en">
+<!ENTITY firefm.nowPlaying.artist.accesskey "E">
+<!ENTITY firefm.nowPlaying.album.label "Album oldala a Last.fm-en">
+<!ENTITY firefm.nowPlaying.album.accesskey "A">
+<!ENTITY firefm.nowPlaying.downloadFree.label "Zeneszám letöltése ingyen">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "i">
+<!ENTITY firefm.customize.label "Testreszabás…">
+<!ENTITY firefm.customize.accesskey "T">
+<!-- XXX we do this because Babelzilla doesn't support the install.rdf way of
+     localizing extension descriptions. This way we can get the string and use
+     it in install.rdf. 
+-->
+<!ENTITY firefm.extensionDescription.label "Szerezze be a napi zeneadagját a Last.fm-ről!">

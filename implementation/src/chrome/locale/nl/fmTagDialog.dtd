@@ -1,0 +1,6 @@
+<!ENTITY firefm.tag.acceptButton.label "Label">
+<!ENTITY firefm.tag.acceptButton.accesskey "L">
+<!ENTITY firefm.tag.typeMenu.artist "Artiest labellen">
+<!ENTITY firefm.tag.typeMenu.track "Nummer labellen">
+<!ENTITY firefm.tag.typeMenu.album "Album labellen">
+<!ENTITY firefm.tag.help "Gebruik komma’s om labels van elkaar te scheiden">

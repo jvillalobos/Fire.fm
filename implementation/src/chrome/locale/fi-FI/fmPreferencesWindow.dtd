@@ -1,0 +1,43 @@
+<!--  -->
+<!--  -->
+<!ENTITY firefm.preferences.playback.label "Toisto">
+<!ENTITY firefm.preferences.autoplay.label "Avaa edellinen asema, kun &brandShortName; alkaa">
+<!ENTITY firefm.preferences.autoplay.accesskey "A">
+<!ENTITY firefm.preferences.scrobble.label "Lisää kaikki soitetut kappaleet profiiliini">
+<!ENTITY firefm.preferences.scrobble.accesskey "b">
+<!ENTITY firefm.preferences.learnMore.label "Opasta lisää...">
+<!ENTITY firefm.preferences.learnMore.accesskey "L">
+<!ENTITY firefm.preferences.volume.mode.label "Klikattaessa voimakkuuspainiketta:">
+<!ENTITY firefm.preferences.volume.mode.accesskey "v">
+<!ENTITY firefm.preferences.volume.mode.simple "Näytä voimakkuudensäätö">
+<!ENTITY firefm.preferences.volume.mode.advanced "Vaienna ääni">
+<!ENTITY firefm.preferences.history.label "Historia">
+<!ENTITY firefm.preferences.storeArtists.label "Tallenna artistit ja soitetut asemat selaimen sivuhistoriaan">
+<!ENTITY firefm.preferences.storeArtists.accesskey "h">
+<!ENTITY firefm.preferences.clearPlaces.label "Tyhjennä Fire.fm-historia">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "C">
+<!ENTITY firefm.preferences.recentHistory.label "Tallenna viimeksi kuuntelemani asemat Asema-valikkoon">
+<!ENTITY firefm.preferences.recentHistory.accesskey "t">
+<!ENTITY firefm.preferences.clearRecent.label "Tyhjennä viimeksi soitetut asemat">
+<!ENTITY firefm.preferences.clearRecent.accesskey "R">
+<!ENTITY firefm.preferences.enablePrivateMode.label "Poista käytöstä asemahistoria ja Scrobble-toiminto, kun &brandShortName; on yksityistilassa">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "p">
+<!ENTITY firefm.preferences.notifications.title "Muistutukset">
+<!ENTITY firefm.preferences.notifications.mode.label "Muistuta, kun kappaletta toistetaan:">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "N">
+<!ENTITY firefm.preferences.notifications.mode.off "Ei koskaan">
+<!ENTITY firefm.preferences.notifications.mode.focus "Kun &brandShortName; ei ole kohdistettu">
+<!ENTITY firefm.preferences.notifications.mode.on "Aina">
+<!--  -->
+<!ENTITY firefm.preferences.pane.appearance.title "Ulkoasu">
+<!ENTITY firefm.preferences.showToolbar.label "Näytä Fire.fm-työkalurivi">
+<!ENTITY firefm.preferences.showToolbar.accesskey "h">
+<!ENTITY firefm.preferences.showStatusbar.label "Näytä painikkeet tilapalkissa">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "S">
+<!ENTITY firefm.preferences.status.play.label "Toista / Pysäytä">
+<!ENTITY firefm.preferences.status.play.accesskey "P">
+<!ENTITY firefm.preferences.smallSize.label "Pienennä">
+<!ENTITY firefm.preferences.smallSize.accesskey "m">
+<!--  -->
+<!ENTITY firefm.preferences.enableGestures.label "Ota käyttöön hiiritoiminnot (vaatii uudelleen käynnistyksen)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "g">

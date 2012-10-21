@@ -1,0 +1,7 @@
+<!---->
+<!ENTITY firefm.tag.acceptButton.label "Tag">
+<!ENTITY firefm.tag.acceptButton.accesskey "T">
+<!ENTITY firefm.tag.typeMenu.artist "Marcar o artista">
+<!ENTITY firefm.tag.typeMenu.track "Marcar a pista">
+<!ENTITY firefm.tag.typeMenu.album "Marcar o albun">
+<!ENTITY firefm.tag.help "Empregar comas para separar as tags">

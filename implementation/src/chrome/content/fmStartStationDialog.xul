@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+<!--
+  - Copyright (c) 2008, Jose Enrique Bolanos, Jorge Villalobos
+  - All rights reserved.
+  -
+  - Redistribution and use in source and binary forms, with or without
+  - modification, are permitted provided that the following conditions are met:
+  -
+  -  * Redistributions of source code must retain the above copyright notice,
+  -    this list of conditions and the following disclaimer.
+  -  * Redistributions in binary form must reproduce the above copyright notice,
+  -    this list of conditions and the following disclaimer in the documentation
+  -    and/or other materials provided with the distribution.
+  -  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+  -    of its contributors may be used to endorse or promote products derived
+  -    from this software without specific prior written permission.
+  -
+  - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+  - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<!-- Note: some of this code is taken from
+     http://mxr.mozilla.org/mozilla/source/toolkit/content/commonDialog.xul
+     There's no MPL on this file. Odd... -->
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://global/content/commonDialog.css" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://firefm-os/skin/fmStartStationDialog.css" ?>
+
+<!DOCTYPE dialog SYSTEM "chrome://firefm/locale/fmStartStationDialog.dtd">
+
+<dialog id="commonDialog" buttons="accept,cancel" role="alert"
+  style="min-width: 29em; min-height: 8.5em; -moz-user-focus: ignore;"
+  buttonpack="center"
+  ondialogaccept="FireFMChrome.StartStationDialog.setStation();"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://firefm/content/fmStartStationDialog.js" />
+
+  <hbox>
+    <vbox id="fm-image-box">
+      <image class="spaced question-icon" />
+    </vbox>
+    <vbox id="infoContainer" flex="1">
+      <!-- Dialog title is inside dialog for OS X -->
+      <description id="info.title" class="dialogTitle" hidden="true" />
+      <tabbox id="fm-start-station-tabs" flex="1">
+        <tabs>
+          <tab id="fm-start-station-artist-tab"
+            label="&firefm.startStation.artist.label;" persist="selected" />
+          <tab id="fm-start-station-tag-tab"
+            label="&firefm.startStation.tag.label;" persist="selected" />
+          <tab id="fm-start-station-user-tab"
+            label="&firefm.startStation.user.label;" persist="selected" />
+        </tabs>
+        <tabpanels>
+          <tabpanel>
+            <description value="&firefm.startStation.chooseArtist.label;"
+              controls="start-station-input-artist" />
+            <textbox id="start-station-input-artist" clickSelectsAll="true"
+              newlines="replacewithspaces" />
+          </tabpanel>
+          <tabpanel>
+            <description value="&firefm.startStation.chooseTag.label;"
+              controls="start-station-input-tag" />
+            <textbox id="start-station-input-tag" clickSelectsAll="true"
+              newlines="replacewithspaces" />
+          </tabpanel>
+          <tabpanel>
+            <description value="&firefm.startStation.chooseUser.label;"
+              controls="start-station-input-user" />
+            <textbox id="start-station-input-user" clickSelectsAll="true"
+              newlines="replacewithspaces" />
+          </tabpanel>
+        </tabpanels>
+      </tabbox>
+    </vbox>
+  </hbox>
+</dialog>

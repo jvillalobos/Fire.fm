@@ -1,0 +1,13 @@
+<!--  -->
+<!ENTITY firefm.error.dialog.title "Fire.fm-Fehlerbericht">
+<!ENTITY firefm.error.accept.label "Fehlerbericht senden">
+<!ENTITY firefm.error.accept.accesskey "s">
+<!ENTITY firefm.error.cancel.label "Fortfahren, ohne zu senden">
+<!ENTITY firefm.error.cancel.accesskey "F">
+<!ENTITY firefm.error.header "Entschuldigung">
+<!ENTITY firefm.error.unableToLoad "Fire.fm konnte nicht korrekt geladen werden. Sie können versuchen, das Abspielprogramm durch das Neustarten von &brandShortName; neu zu laden.">
+<!ENTITY firefm.error.sendReport "Um uns zu helfen, das Problem zu beheben, können Sie uns einen Fehlerbericht senden.">
+<!ENTITY firefm.error.comment.label "Fügen Sie Kommentare hinzu, die uns bei der Diagnose helfen könnten:">
+<!ENTITY firefm.error.exception.label "Fehlerinformationen:">
+<!ENTITY firefm.error.email.label "Senden Sie mir eine E-Mail, wenn mehr Informationen verfügbar sind">
+<!ENTITY firefm.error.email.help "Geben Sie hier Ihre E-Mail-Adresse ein">

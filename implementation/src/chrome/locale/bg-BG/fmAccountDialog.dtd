@@ -1,0 +1,8 @@
+<!---->
+<!ENTITY firefm.account.dialog.title "Добавяне на профил">
+<!ENTITY firefm.account.enter.label "Въвеждане на данните за вписване в Last.fm">
+<!ENTITY firefm.account.privacy.label "Паролата се използва само за вписване в Last.fm и няма да бъде съхранявана или споделяна с никого.">
+<!ENTITY firefm.account.username.label "Потребителско име:">
+<!ENTITY firefm.account.password.label "Парола:">
+<!ENTITY firefm.account.donthave.label "Нямате потребителско име?">
+<!ENTITY firefm.account.create.label "Създаване на профил в Last.fm">

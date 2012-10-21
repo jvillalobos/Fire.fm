@@ -1,0 +1,46 @@
+<!ENTITY firefm.preferences.pane.main.title "Общие">
+<!ENTITY firefm.preferences.playback.label "Воспроизведение">
+<!ENTITY firefm.preferences.autoplay.label "Автоматически запускать самую последнюю радиостанцию при запуске &brandShortName;">
+<!ENTITY firefm.preferences.autoplay.accesskey "А">
+<!ENTITY firefm.preferences.scrobble.label "Скробблить все треки, которые я воспроизвожу">
+<!ENTITY firefm.preferences.scrobble.accesskey "б">
+<!ENTITY firefm.preferences.learnMore.label "Узнать больше...">
+<!ENTITY firefm.preferences.learnMore.accesskey "ш">
+<!ENTITY firefm.preferences.volume.mode.label "При нажатии на кнопку регулировки звука">
+<!ENTITY firefm.preferences.volume.mode.accesskey "з">
+<!ENTITY firefm.preferences.volume.mode.simple "показывать ползунок для изменения громкости">
+<!ENTITY firefm.preferences.volume.mode.advanced "приглушать звук">
+<!ENTITY firefm.preferences.history.label "Журнал">
+<!ENTITY firefm.preferences.storeArtists.label "Сохранять артистов и радиостанции, которые я слушаю, в журнале браузера">
+<!ENTITY firefm.preferences.storeArtists.accesskey "ж">
+<!ENTITY firefm.preferences.clearPlaces.label "Очистить журнал Fire.fm">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "ч">
+<!ENTITY firefm.preferences.recentHistory.label "Сохранять недавно проигранные радиостанции в меню Радиостанции">
+<!ENTITY firefm.preferences.recentHistory.accesskey "т">
+<!ENTITY firefm.preferences.clearRecent.label "Очистить список">
+<!ENTITY firefm.preferences.clearRecent.accesskey "О">
+<!ENTITY firefm.preferences.enablePrivateMode.label "Отключить журнал радиостанций и скробблинг, когда &brandShortName; работает в приватном режиме.">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "П">
+<!ENTITY firefm.preferences.notifications.title "Уведомления">
+<!ENTITY firefm.preferences.notifications.mode.label "Уведомлять меня, когда трек проигрывается">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "У">
+<!ENTITY firefm.preferences.notifications.mode.off "никогда">
+<!ENTITY firefm.preferences.notifications.mode.focus "когда фокус не на окне &brandShortName;">
+<!ENTITY firefm.preferences.notifications.mode.on "всегда">
+<!ENTITY firefm.preferences.pane.appearance.title "Внешний вид">
+<!ENTITY firefm.preferences.showToolbar.label "Показывать панель инструментов Fire.fm">
+<!ENTITY firefm.preferences.showToolbar.accesskey "з">
+<!ENTITY firefm.preferences.showStatusbar.label "Показывать кнопки в строке состояния">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "к">
+<!ENTITY firefm.preferences.status.play.label "Воспроизвести / Остановить">
+<!ENTITY firefm.preferences.status.play.accesskey "н">
+<!ENTITY firefm.preferences.smallSize.label "Отображать компактно">
+<!ENTITY firefm.preferences.smallSize.accesskey "М">
+<!ENTITY firefm.preferences.pane.accounts.title "Учётные записи">
+<!ENTITY firefm.preferences.removeAccount.label "Удалить учётную запись...">
+<!ENTITY firefm.preferences.removeAccount.accesskey "У">
+<!ENTITY firefm.preferences.addAccount.label "Добавить учётную запись...">
+<!ENTITY firefm.preferences.addAccount.accesskey "Д">
+<!ENTITY firefm.preferences.pane.advanced.title "Дополнительные">
+<!ENTITY firefm.preferences.enableGestures.label "Использовать жесты мышью (требуется перезапуск)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "ж">

@@ -1,0 +1,228 @@
+/**
+ * Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *  * Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ *  * Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ *  * Neither the name of Jose Enrique Bolanos, Jorge Villalobos nor the names
+ *    of its contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+ * OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ **/
+
+toolbarbutton.fm-button,
+window:not([active="true"]) toolbarbutton.fm-button,
+toolbar[iconsize="small"] toolbarbutton.fm-button {
+  list-style-image: url("chrome://firefm-os/skin/toolbar.png");
+  background: none !important;
+  border: none !important;
+  min-width: 16px !important;
+  -moz-box-shadow: none !important;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+toolbarbutton[type="menu-button"].fm-button > toolbarbutton {
+  -moz-box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+toolbarbutton[type="menu-button"].fm-button > dropmarker {
+  -moz-box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+}
+
+/* Do some juggling with alignment so that our icons look right. */
+#navigator-toolbox[mode="full"] > #nav-bar > toolbarbutton.fm-button,
+#navigator-toolbox[mode="full"] > #nav-bar > toolbarpaletteitem > toolbarbutton.fm-button {
+  padding-top: 7px;
+}
+
+#firefm-statusbar-toolbar {
+  -moz-appearance: none;
+  -moz-box-align: center;
+  background-color: transparent;
+  border: none;
+  height: 16px;
+  min-height: 16px !important;
+}
+
+#firefm-statusbar-toolbar > toolbarbutton.fm-button,
+#firefm-statusbar-toolbar > toolbarbutton.fm-button image {
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+#firefm-track-info {
+  min-width: 25em;
+}
+
+#firefm-status-track-info {
+  font-size: 0.8em;
+}
+
+#firefm-status-track-info .firefm-info-outer-box {
+  background: url("chrome://firefm-os/skin/progressBack2.png") repeat-x;
+}
+
+/* The wrapper is automatically created in the customize toolbar window. */
+#wrapper-firefm-track-info {
+  width: 20em;
+}
+
+/* Home button. */
+
+#firefm-home-button,
+#firefm-status-home-button {
+  -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+/* Log in / log out button. */
+
+#firefm-login-logout-button,
+#firefm-status-login-logout-button {
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+
+#firefm-login-logout-button[disabled="true"],
+#firefm-status-login-logout-button[disabled="true"] {
+  -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+
+/* Station button. */
+
+#firefm-station-button,
+#firefm-status-station-button {
+  -moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+
+#firefm-station-button[firstRun="true"],
+#firefm-status-station-button[firstRun="true"] {
+  list-style-image: url("chrome://firefm/skin/stationAnim.png");
+  -moz-image-region: auto;
+}
+
+#firefm-station-button[disabled="true"],
+#firefm-status-station-button[disabled="true"] {
+  -moz-image-region: rect(16px, 48px, 32px, 32px);
+}
+
+/* Play / stop button. */
+
+#firefm-play-stop-button,
+#firefm-status-play-stop-button {
+  -moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+
+#firefm-play-stop-button[playing="true"],
+#firefm-status-play-stop-button[playing="true"] {
+  -moz-image-region: rect(0px, 80px, 16px, 64px);
+}
+
+#firefm-play-stop-button[disabled="true"],
+#firefm-status-play-stop-button[disabled="true"] {
+  -moz-image-region: rect(16px, 64px, 32px, 48px);
+}
+
+/* Skip button. */
+
+#firefm-skip-button,
+#firefm-status-skip-button {
+  -moz-image-region: rect(0px, 96px, 16px, 80px);
+}
+
+#firefm-skip-button[disabled="true"],
+#firefm-status-skip-button[disabled="true"] {
+  -moz-image-region: rect(16px, 96px, 32px, 80px);
+}
+
+/* Volume button. */
+
+#firefm-volume-button,
+#firefm-status-volume-button {
+  -moz-image-region: rect(0px, 144px, 16px, 128px);
+}
+
+#firefm-volume-button[volume="low"],
+#firefm-status-volume-button[volume="low"] {
+  -moz-image-region: rect(0px, 128px, 16px, 112px);
+}
+
+#firefm-volume-button[volume="zero"],
+#firefm-status-volume-button[volume="zero"] {
+  -moz-image-region: rect(0px, 112px, 16px, 96px);
+}
+
+#firefm-volume-button[disabled="true"],
+#firefm-status-volume-button[disabled="true"] {
+  -moz-image-region: rect(16px, 112px, 32px, 96px);
+}
+
+/* Love button. */
+
+#firefm-love-button,
+#firefm-status-love-button {
+  -moz-image-region: rect(0px, 160px, 16px, 144px);
+}
+
+#firefm-love-button[disabled="true"],
+#firefm-status-love-button[disabled="true"] {
+  -moz-image-region: rect(16px, 160px, 32px, 144px);
+}
+
+/* Ban button. */
+
+#firefm-ban-button,
+#firefm-status-ban-button {
+  -moz-image-region: rect(0px, 176px, 16px, 160px);
+}
+
+#firefm-ban-button[disabled="true"],
+#firefm-status-ban-button[disabled="true"] {
+  -moz-image-region: rect(16px, 176px, 32px, 160px);
+}
+
+/* Amazon button. */
+
+#firefm-amazon-button,
+#firefm-status-amazon-button {
+  -moz-image-region: rect(0px, 240px, 16px, 224px);
+}
+
+#firefm-amazon-button[disabled="true"],
+#firefm-status-amazon-button[disabled="true"] {
+  -moz-image-region: rect(16px, 240px, 32px, 224px);
+}
+
+/* Tag button. */
+
+#firefm-tag-button,
+#firefm-status-tag-button {
+  -moz-image-region: rect(0px, 192px, 16px, 176px);
+}
+
+#firefm-tag-button[disabled="true"],
+#firefm-status-tag-button[disabled="true"] {
+  -moz-image-region: rect(16px, 192px, 32px, 176px);
+}

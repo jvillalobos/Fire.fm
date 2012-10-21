@@ -1,0 +1,46 @@
+<!ENTITY firefm.preferences.pane.main.title "常规">
+<!ENTITY firefm.preferences.playback.label "重播">
+<!ENTITY firefm.preferences.autoplay.label "当 &brandShortName; 启动时自动播放最近的电台(A)">
+<!ENTITY firefm.preferences.autoplay.accesskey "A">
+<!ENTITY firefm.preferences.scrobble.label "搜索我播放过的所有电台(b)">
+<!ENTITY firefm.preferences.scrobble.accesskey "b">
+<!ENTITY firefm.preferences.learnMore.label "了解更多...(L)">
+<!ENTITY firefm.preferences.learnMore.accesskey "L">
+<!ENTITY firefm.preferences.volume.mode.label "当我按下音量按钮时:(v)">
+<!ENTITY firefm.preferences.volume.mode.accesskey "v">
+<!ENTITY firefm.preferences.volume.mode.simple "显示音量控制">
+<!ENTITY firefm.preferences.volume.mode.advanced "静音">
+<!ENTITY firefm.preferences.history.label "历史记录">
+<!ENTITY firefm.preferences.storeArtists.label "在我的浏览器历史记录中储存播放过的艺术家和电台(h)">
+<!ENTITY firefm.preferences.storeArtists.accesskey "h">
+<!ENTITY firefm.preferences.clearPlaces.label "清除 Fire.fm 历史记录(C)">
+<!ENTITY firefm.preferences.clearPlaces.accesskey "C">
+<!ENTITY firefm.preferences.recentHistory.label "在电台菜单中最大限度的储存我最近播放过的电台(t)">
+<!ENTITY firefm.preferences.recentHistory.accesskey "t">
+<!ENTITY firefm.preferences.clearRecent.label "清除近期电台(R)">
+<!ENTITY firefm.preferences.clearRecent.accesskey "R">
+<!ENTITY firefm.preferences.enablePrivateMode.label "当 &brandShortName; 进入隐私浏览模式时,禁用站点历史记录和 Scrobble(P)">
+<!ENTITY firefm.preferences.enablePrivateMode.accesskey "P">
+<!ENTITY firefm.preferences.notifications.title "通知">
+<!ENTITY firefm.preferences.notifications.mode.label "当曲目正在播放时通知我:(N)">
+<!ENTITY firefm.preferences.notifications.mode.accesskey "N">
+<!ENTITY firefm.preferences.notifications.mode.off "从不">
+<!ENTITY firefm.preferences.notifications.mode.focus "当 &brandShortName; 不被聚焦时">
+<!ENTITY firefm.preferences.notifications.mode.on "总是">
+<!ENTITY firefm.preferences.pane.appearance.title "显示">
+<!ENTITY firefm.preferences.showToolbar.label "显示 Fir.fm 工具栏(h)">
+<!ENTITY firefm.preferences.showToolbar.accesskey "h">
+<!ENTITY firefm.preferences.showStatusbar.label "显示状态栏按钮(S)">
+<!ENTITY firefm.preferences.showStatusbar.accesskey "S">
+<!ENTITY firefm.preferences.status.play.label "播放/停止(P)">
+<!ENTITY firefm.preferences.status.play.accesskey "P">
+<!ENTITY firefm.preferences.smallSize.label "小尺寸(m)">
+<!ENTITY firefm.preferences.smallSize.accesskey "m">
+<!ENTITY firefm.preferences.pane.accounts.title "账户">
+<!ENTITY firefm.preferences.removeAccount.label "移除账户(R)...">
+<!ENTITY firefm.preferences.removeAccount.accesskey "R">
+<!ENTITY firefm.preferences.addAccount.label "添加账户(A)...">
+<!ENTITY firefm.preferences.addAccount.accesskey "A">
+<!ENTITY firefm.preferences.pane.advanced.title "高级">
+<!ENTITY firefm.preferences.enableGestures.label "启用鼠标手势（需要重启）(g)">
+<!ENTITY firefm.preferences.enableGestures.accesskey "g">

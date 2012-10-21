@@ -1,0 +1,5 @@
+<!ENTITY firefm.trackInfo.dropdown.tooltip "Parça bilgilerini göster">
+<!ENTITY firefm.trackInfo.buffering.label "Ara belleğe alıyor...">
+<!ENTITY firefm.trackInfo.trackTitle.tooltip "Parçanın Last.fm deki sayfasına git">
+<!ENTITY firefm.trackInfo.artist.tooltip "Sanatçının Last.fm deki sayfasına git">
+<!ENTITY firefm.trackInfo.album.tooltip "Albümün Last.fm deki sayfasına git">

@@ -1,0 +1,68 @@
+<!ENTITY firefm.toolbarName.label "Fire.fm">
+<!ENTITY firefm.toolbar.accesskey "F">
+<!ENTITY firefm.menu.label "Fire.fm">
+<!ENTITY firefm.menu.accesskey "F">
+<!ENTITY firefm.home.label "Домашняя страница Last.fm">
+<!ENTITY firefm.home.tooltip "Перейти на домашнюю страницу Last.fm">
+<!ENTITY firefm.home.accesskey "Д">
+<!ENTITY firefm.station.label "Радиостанция">
+<!ENTITY firefm.station.tooltip "Выбор радиостанции для проигрывания">
+<!ENTITY firefm.station.accesskey "р">
+<!ENTITY firefm.startStation.label "Включить радиостанцию">
+<!ENTITY firefm.startStation.accesskey "в">
+<!ENTITY firefm.myStations.label "Мои радиостанции">
+<!ENTITY firefm.myStations.accesskey "М">
+<!ENTITY firefm.recommendations.label "Мои рекомендации">
+<!ENTITY firefm.recommendations.accesskey "м">
+<!ENTITY firefm.myLibrary.label "Моя библиотека">
+<!ENTITY firefm.myLibrary.accesskey "б">
+<!ENTITY firefm.neighborhood.label "Мои соседи">
+<!ENTITY firefm.neighborhood.accesskey "и">
+<!ENTITY firefm.friends.label "Друзья">
+<!ENTITY firefm.friends.accesskey "Д">
+<!ENTITY firefm.neighbors.label "Соседи">
+<!ENTITY firefm.neighbors.accesskey "С">
+<!ENTITY firefm.topArtists.label "Мои любимые артисты">
+<!ENTITY firefm.topArtists.accesskey "л">
+<!ENTITY firefm.similarArtists.label "Похожие артисты">
+<!ENTITY firefm.similarArtists.accesskey "ж">
+<!ENTITY firefm.onThisPage.label "Артисты на этой странице">
+<!ENTITY firefm.onThisPage.accesskey "э">
+<!ENTITY firefm.recentStations.label "Недавние радиостанции">
+<!ENTITY firefm.recentStations.accesskey "Н">
+<!ENTITY firefm.loginLogout.label "Войти/Выйти">
+<!ENTITY firefm.loginLogout.accesskey "В">
+<!ENTITY firefm.play.label "Воспроизвести">
+<!ENTITY firefm.manageAccounts.label "Управление учётными записями...">
+<!ENTITY firefm.manageAccounts.accesskey "п">
+<!ENTITY firefm.skip.label "Пропустить">
+<!ENTITY firefm.skip.accesskey "о">
+<!ENTITY firefm.volume.label "Звук">
+<!ENTITY firefm.volume.tooltip "Регулировка звука">
+<!ENTITY firefm.volume.accesskey "з">
+<!ENTITY firefm.volume.mute.label "Без звука">
+<!ENTITY firefm.volume.mute.accesskey "б">
+<!ENTITY firefm.amazon.label "Купить на Amazon">
+<!ENTITY firefm.amazon.accesskey "у">
+<!ENTITY firefm.tag.label "Тег">
+<!ENTITY firefm.tag.accesskey "г">
+<!ENTITY firefm.love.label "Одобрить">
+<!ENTITY firefm.love.accesskey "д">
+<!ENTITY firefm.ban.label "Запретить">
+<!ENTITY firefm.ban.accesskey "з">
+<!ENTITY firefm.feed.fullList.label "Посмотреть полный список...">
+<!ENTITY firefm.feed.fullList.accesskey "и">
+<!ENTITY firefm.welcomeMessage2.label "Добро пожаловать! Авторизуйтесь и выберите радиостанцию">
+<!ENTITY firefm.nowPlaying.label "Сейчас играет">
+<!ENTITY firefm.nowPlaying.accesskey "й">
+<!ENTITY firefm.nowPlaying.track.label "Страница трека на Last.fm">
+<!ENTITY firefm.nowPlaying.track.accesskey "е">
+<!ENTITY firefm.nowPlaying.artist.label "Страница артиста на Last.fm">
+<!ENTITY firefm.nowPlaying.artist.accesskey "ц">
+<!ENTITY firefm.nowPlaying.album.label "Страница альбома на Last.fm">
+<!ENTITY firefm.nowPlaying.album.accesskey "б">
+<!ENTITY firefm.nowPlaying.downloadFree.label "Загрузить бесплатно этот трек">
+<!ENTITY firefm.nowPlaying.downloadFree.accesskey "з">
+<!ENTITY firefm.customize.label "Настроить...">
+<!ENTITY firefm.customize.accesskey "Н">
+<!ENTITY firefm.extensionDescription.label "Получи свою ежедневную дозу музыки с Last.fm.">

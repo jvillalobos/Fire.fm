@@ -1,0 +1,8 @@
+<!---->
+<!ENTITY firefm.account.dialog.title "Додај налог">
+<!ENTITY firefm.account.enter.label "Унесите информације које користите за пријављивање на Last.fm.">
+<!ENTITY firefm.account.privacy.label "Ваша лозинка ће се користити искључиво за потврду вашег идентитета на Last.fm. Неће бити сачувана, нити подељена ни са ким.">
+<!ENTITY firefm.account.username.label "Корисничко име:">
+<!ENTITY firefm.account.password.label "Лозинка:">
+<!ENTITY firefm.account.donthave.label "Немате корисничко име?">
+<!ENTITY firefm.account.create.label "Направи налог на Last.fm">

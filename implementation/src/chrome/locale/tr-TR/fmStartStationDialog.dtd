@@ -1,0 +1,6 @@
+<!ENTITY firefm.startStation.artist.label "Sanatçı">
+<!ENTITY firefm.startStation.tag.label "Etiket">
+<!ENTITY firefm.startStation.user.label "Kullanıcı Adı">
+<!ENTITY firefm.startStation.chooseArtist.label "Başlamak için, sevdiğiniz sanatçının adını yazın">
+<!ENTITY firefm.startStation.chooseTag.label "Bir etiket yazın (bir tarz veya anahtar kelime)">
+<!ENTITY firefm.startStation.chooseUser.label "Bir Last.fm kullanıcı adı yazın">
