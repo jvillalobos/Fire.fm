@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2008-2011, Jose Enrique Bolanos, Jorge Villalobos
+ * Copyright (c) 2013, Jose Enrique Bolanos, Jorge Villalobos
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -432,7 +432,7 @@ FireFMChrome.UIState = {
       amazonCmd.tooltipText =
         FireFM.overlayBundle.GetStringFromName("firefm.amazon.tooltip");
 
-      if (this._stationPlaying && !FireFM.Private.isPrivate) {
+      if (this._stationPlaying) {
         amazonCmd.removeAttribute("disabled");
       }
     } else {
@@ -455,7 +455,7 @@ FireFMChrome.UIState = {
       tagCmd.tooltipText =
         FireFM.overlayBundle.GetStringFromName("firefm.tag.tooltip");
 
-      if (this._stationPlaying && !FireFM.Private.isPrivate) {
+      if (this._stationPlaying) {
         tagCmd.removeAttribute("disabled");
       }
     } else {
@@ -475,7 +475,7 @@ FireFMChrome.UIState = {
     loveCmd.setAttribute("disabled", true);
 
     if (this._onLine && (null != this._currentUser)) {
-      if (this._stationPlaying && !FireFM.Private.isPrivate) {
+      if (this._stationPlaying) {
         if (!this._loved) {
           if (!this._lovedError) {
             loveCmd.tooltipText =
@@ -516,7 +516,7 @@ FireFMChrome.UIState = {
       banCmd.tooltipText =
         FireFM.overlayBundle.GetStringFromName("firefm.ban.tooltip");
 
-      if (this._stationPlaying && !FireFM.Private.isPrivate) {
+      if (this._stationPlaying) {
         banCmd.removeAttribute("disabled");
       }
     } else {

@@ -759,7 +759,7 @@ FireFM.Remote = {
 
       let apiKey = FireFM.Secret.API_KEY;
       let sessionKey = FireFM.Login.apiSession;
-      let isScrobbling = (this._scrobbleActive && !FireFM.Private.isPrivate);
+      let isScrobbling = this._scrobbleActive;
 
       // set parameters to obtain signature
       paramsSig = paramsSig.replace(/\$\(API_KEY\)/, apiKey);
@@ -1522,8 +1522,7 @@ FireFM.Remote = {
   _sendNowPlaying : function(aTrack) {
     this._logger.debug("_sendNowPlaying");
 
-    if (this._scrobbleActive && (null != this._scrobbleSessionId) &&
-        !FireFM.Private.isPrivate) {
+    if (this._scrobbleActive && (null != this._scrobbleSessionId)) {
       const PARAMS_SCROBBLE_PLAYING =
         "s=$(SCROBBLE_KEY)&a=$(ARTIST)&t=$(TRACK)&b=$(ALBUM)&l=&n=&m=";
 
@@ -1558,7 +1557,7 @@ FireFM.Remote = {
 
     let track = (aTrack ? aTrack : this._toBeScrobbled);
 
-    if (this._scrobbleActive && (null != track) && !FireFM.Private.isPrivate) {
+    if (this._scrobbleActive && (null != track)) {
       const PARAMS_SCROBBLE_SUBMIT =
         [ "s", "a[0]", "t[0]", "b[0]", "o[0]", "m[0]", "n[0]", "l[0]", "i[0]",
           "r[0]" ];

@@ -57,5 +57,4 @@ pref("extensions.firefm.banGestureTime", 2000);
 pref("extensions.firefm.notifications.mode", 1);
 pref("extensions.firefm.volume.mode", 0);
 pref("extensions.firefm.volumeLevel", 100);
-pref("extensions.firefm.enablePrivateMode", true);
 pref("extensions.firefm.lastUser", "");

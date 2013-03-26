@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2008-2011, Jose Enrique Bolanos, Jorge Villalobos
+ * Copyright (c) 2013, Jose Enrique Bolanos, Jorge Villalobos
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -92,7 +92,6 @@ FireFMChrome.BrowserOverlay = {
               Components.utils.import("resource://firefm/fmPlayer.js");
               Components.utils.import("resource://firefm/fmStation.js");
               Components.utils.import("resource://firefm/fmLogin.js");
-              Components.utils.import("resource://firefm/fmPrivate.js");
 
               // XXX: we log in first to make sure we can autoplay once the
               // player is ready.

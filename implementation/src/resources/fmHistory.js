@@ -162,7 +162,7 @@ FireFM.History = {
   _recordStation : function(aStation, aImagePath) {
     this._logger.trace("_recordStation");
 
-    if (this._storeInPlacesPref.value && !FireFM.Private.isPrivate) {
+    if (this._storeInPlacesPref.value) {
       let stationURI = null;
       let title = null;
       let imageURI = null;
@@ -227,8 +227,7 @@ FireFM.History = {
   _storeRecentStation : function(aStation) {
     this._logger.trace("_storeRecentStation");
 
-    if (this._historyPref.value && !FireFM.Private.isPrivate &&
-        (0 < this._historySize)) {
+    if (this._historyPref.value && (0 < this._historySize)) {
       let recentCount = this._stationHistory.length;
       let recent;
       let newPrefValue;
