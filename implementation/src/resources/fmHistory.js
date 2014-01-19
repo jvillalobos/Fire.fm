@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2008-2010, Jose Enrique Bolanos, Jorge Villalobos
+ * Copyright (c) 2014, Jose Enrique Bolanos, Jorge Villalobos
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -36,6 +36,7 @@ const Ce = Components.Exception;
 Components.utils.import("resource://firefm/fmCommon.js");
 Components.utils.import("resource://firefm/fmPlayer.js");
 Components.utils.import("resource://firefm/fmStation.js");
+Components.utils.import("resource://gre/modules/PlacesUtils.jsm");
 
 /**
  * FireFM History. Creates history entries for artists when tracks are loaded.
@@ -44,10 +45,6 @@ FireFM.History = {
 
   /* Logger for this object. */
   _logger : null,
-  /* History service */
-  _historyService : null,
-  /* Favicon service */
-  _faviconService : null,
   /* History toggle preference object. */
   _historyPref : null,
   /* History size preference object. */
@@ -67,13 +64,6 @@ FireFM.History = {
   init : function() {
     this._logger = FireFM.getLogger("FireFM.History");
     this._logger.debug("init");
-
-    this._historyService =
-      Cc["@mozilla.org/browser/nav-history-service;1"].
-        getService(Ci.nsIGlobalHistory2);
-    this._faviconService =
-      Cc["@mozilla.org/browser/favicon-service;1"].
-        getService(Ci.nsIFaviconService);
 
     this._historyPref =
       FireFM.Application.prefs.get(FireFM.PREF_BRANCH + "recent.enabled");
@@ -126,17 +116,20 @@ FireFM.History = {
     let uris;
 
     try {
-      this._historyService.QueryInterface(Ci.nsINavHistoryService);
 
-      query = this._historyService.getNewQuery();
-      queryOptions = this._historyService.getNewQueryOptions();
+      let historyService =
+        Cc["@mozilla.org/browser/nav-history-service;1"].
+          getService(Ci.nsINavHistoryService);
+
+      query = historyService.getNewQuery();
+      queryOptions = historyService.getNewQueryOptions();
 
       query.uri = FireFM.createURI("firefm://");
       query.uriIsPrefix = true;
 
-      result = this._historyService.executeQuery(query, queryOptions).root;
+      result = historyService.executeQuery(query, queryOptions).root;
 
-      this._historyService.QueryInterface(Ci.nsIBrowserHistory);
+      historyService.QueryInterface(Ci.nsIBrowserHistory);
 
       uris = new Array();
 
@@ -147,7 +140,7 @@ FireFM.History = {
       result.containerOpen = false;
 
       for (var i = uris.length - 1; 0 <= i; i--) {
-        this._historyService.removePage(FireFM.createURI(uris[i]));
+        historyService.removePage(FireFM.createURI(uris[i]));
       }
     } catch (e) {
       this._logger.warn("Error clearing the places history: " + e);
@@ -204,17 +197,22 @@ FireFM.History = {
           "firefm.station.listenTo.label", [ aStation.title ], 1);
 
       if (null != stationURI) {
-        this._historyService.QueryInterface(Ci.nsIGlobalHistory2);
-
-        if (!this._historyService.isVisited(stationURI)) {
-          this._historyService.addURI(stationURI, false, true, null);
-        }
-
-        this._historyService.setPageTitle(stationURI, title);
+        PlacesUtils.asyncHistory.updatePlaces([
+          {
+            uri : stationURI,
+            title : title,
+            visits : [
+              {
+                transitionType : Ci.nsINavHistoryService.TRANSITION_LINK,
+                visitDate : (new Date()).getTime(),
+                referrerURI : null
+              }]
+          }]);
 
         if (null != imageURI) {
-          this._faviconService.setAndLoadFaviconForPage(
-            stationURI, imageURI, true);
+          PlacesUtils.favicons.setAndFetchFaviconForPage(
+            stationURI, imageURI, true,
+            Ci.nsIFaviconService.FAVICON_LOAD_NON_PRIVATE);
         }
       }
     }
@@ -315,9 +313,6 @@ FireFM.History = {
     }
 
     newPrefValue += " ]";
-
-    this._logger.debug(
-      "_setRecentHistoryPreference. Preference value: " + newPrefValue);
     // store the new value in the preference.
     this._stationHistoryPref.value = newPrefValue;
   },
