@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <!--
-  - Copyright (c) 2013, Jose Enrique Bolanos, Jorge Villalobos
+  - Copyright (c) 2014, Jose Enrique Bolanos, Jorge Villalobos
   - All rights reserved.
   -
   - Redistribution and use in source and binary forms, with or without
@@ -36,7 +36,7 @@
     <em:id>{6F0976E6-26F3-4AFE-BBEC-9E99E27E4DF3}</em:id>
     <em:name>Fire.fm</em:name>
     <em:description>Get your daily music fix from Last.fm.</em:description>
-    <em:version>1.4.16</em:version>
+    <em:version>1.5</em:version>
     <em:creator>Jose Enrique Bolaños &amp; Jorge Villalobos</em:creator>
     <em:developer>Jose Enrique Bolaños</em:developer>
     <em:developer>Jorge Villalobos</em:developer>
@@ -45,24 +45,22 @@
     <em:homepageURL>http://firefm.sourceforge.net</em:homepageURL>
     <em:optionsURL>chrome://firefm/content/fmPreferencesWindow.xul</em:optionsURL>
     <em:iconURL>chrome://firefm/skin/logo64.png</em:iconURL>
-    <!-- XXX: We use the Flash player path to generate the permissions file! -->
-    <em:unpack>true</em:unpack>
     <em:type>2</em:type>
 
     <!-- Mozilla Firefox -->
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>20.0</em:minVersion>
-        <em:maxVersion>22.*</em:maxVersion>
+        <em:minVersion>27.0</em:minVersion>
+        <em:maxVersion>28.*</em:maxVersion>
       </Description>
     </em:targetApplication>
     <!-- SeaMonkey -->
     <em:targetApplication>
       <Description>
         <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
-        <em:minVersion>2.17</em:minVersion>
-        <em:maxVersion>2.19.*</em:maxVersion>
+        <em:minVersion>2.24</em:minVersion>
+        <em:maxVersion>2.25.*</em:maxVersion>
       </Description>
     </em:targetApplication>
 

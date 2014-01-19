@@ -1,5 +1,5 @@
 ###
-# Copyright (c) 2008, Jose Enrique Bolanos, Jorge Villalobos
+# Copyright (c) 2014, Jose Enrique Bolanos, Jorge Villalobos
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -31,7 +31,7 @@
 extension_name := firefm
 
 # The UUID of the extension.
-extension_uuid := 6F0976E6-26F3-4AFE-BBEC-9E99E27E4DF3
+extension_uuid := {6F0976E6-26F3-4AFE-BBEC-9E99E27E4DF3}
 
 # The name of the profile dir where the extension can be installed.
 profile_dir := firefm-dev
@@ -39,11 +39,8 @@ profile_dir := firefm-dev
 # The zip application to be used.
 ZIP := zip
 
-# The target location of the build and build files.
-bin_dir := ../bin
-
 # The target XPI file.
-xpi_file := $(bin_dir)/$(extension_name).xpi
+xpi_file := ../bin/$(extension_name).xpi
 
 # The type of operating system this make command is running on.
 os_type := $(patsubst darwin%,darwin,$(shell echo $(OSTYPE)))
@@ -51,40 +48,16 @@ os_type := $(patsubst darwin%,darwin,$(shell echo $(OSTYPE)))
 # The location of the extension profile.
 ifeq ($(os_type), darwin)
   profile_location := \
-    ~/Library/Application\ Support/Firefox/Profiles/$(profile_dir)/extensions/\{$(extension_uuid)\}
+    ~/Library/Application\ Support/Firefox/Profiles/$(profile_dir)/extensions/
 else
   ifeq ($(os_type), linux-gnu)
     profile_location := \
-      ~/.mozilla/firefox/$(profile_dir)/extensions/\{$(extension_uuid)\}
+      ~/.mozilla/firefox/$(profile_dir)/extensions/
   else
     profile_location := \
-      "$(subst \,\\,$(APPDATA))\\Mozilla\\Firefox\\Profiles\\$(profile_dir)\\extensions\\{$(extension_uuid)}"
+      "$(subst \,\\,$(APPDATA))\\Mozilla\\Firefox\\Profiles\\$(profile_dir)\\extensions\\"
   endif
 endif
-
-# The temporary location where the extension tree will be copied and built.
-build_dir := $(bin_dir)/build
-
-# The install.rdf file.
-install_rdf := install.rdf
-
-# The chrome.manifest file.
-chrome_manifest := chrome.manifest
-
-# The default icon file.
-default_icon := icon.png
-
-# The defaults dir.
-defaults_dir := defaults
-
-# The resources dir.
-resources_dir := resources
-
-# The search plugins dir.
-search_plugins_dir := searchplugins
-
-# The preferences dir.
-preferences_dir := $(defaults_dir)/preferences
 
 # This builds the extension XPI file.
 .PHONY: all
@@ -99,97 +72,37 @@ all: $(xpi_file)
 # This cleans all temporary files and directories created by 'make'.
 .PHONY: clean
 clean:
-	@rm -rf $(build_dir)
 	@rm -f $(xpi_file)
 	@echo "Cleanup is done."
 
-# The includes are added after the targets because we want this file to contain
-# the default (first) target.
-include chrome/Makefile.in
-include resources/Makefile.in
-include searchplugins/Makefile.in
-include components/Makefile.in
+# The sources for the XPI file.
+xpi_built := install.rdf \
+             chrome.manifest \
+             icon.png \
+             $(wildcard content/*.js) \
+             $(wildcard content/*.xul) \
+             $(wildcard content/*.xml) \
+             $(wildcard content/*.css) \
+             $(wildcard content/*.html) \
+             $(wildcard skin/*/*.css) \
+             $(wildcard skin/*/*.png) \
+             $(wildcard locale/*/*.dtd) \
+             $(wildcard locale/*/*.properties) \
+             $(wildcard components/*.js) \
+             $(wildcard resources/*.js) \
+             defaults/preferences/$(extension_name).js \
 
-# The sources for the XPI file. Uses variables defined in the included
-# Makefiles.
-xpi_built := $(build_dir)/$(install_rdf) \
-             $(build_dir)/$(chrome_manifest) \
-             $(build_dir)/$(default_icon) \
-             $(chrome_jar_file) \
-             $(build_dir)/$(preferences_dir) \
-             $(build_dir)/$(defaults_dir)/$(extension_name).swf \
-             $(build_dir)/$(preferences_dir)/$(extension_name).js \
-             $(addprefix $(build_dir)/,$(resources_sources)) \
-             $(build_dir)/$(resources_dir)/fmSecret.js \
-             $(addprefix $(build_dir)/,$(search_plugins_sources)) \
-             $(components_js_targets) \
-#             $(components_xpt) \
+$(xpi_file): $(xpi_built)
+	@echo "Creating XPI file."
+	@$(ZIP) $(xpi_file) $(xpi_built)
+	@echo "Creating XPI file. Done!"
 
-
-xpi_built_no_dir := $(subst $(build_dir)/,,$(xpi_built))
-
-# This builds everything except for the actual XPI, and then it copies it to the
-# specified profile directory, allowing a quick update that requires no install.
 .PHONY: install
-install: $(build_dir) $(xpi_built)
+install: $(xpi_file)
 	@echo "Installing in profile folder: $(profile_location)"
-	@cp -Rf $(build_dir)/* $(profile_location)
+	@cp -fL $(xpi_file) $(profile_location)/$(extension_uuid).xpi
 	@echo "Installing in profile folder. Done!"
 	@echo
 	@echo "                                 I was a creature before I could stand"
 	@echo "                                       I will remember before I forget"
 	@echo "                                           - Before I Forget, Slipknot"
-
-$(xpi_file): $(build_dir) $(xpi_built)
-	@echo "Creating XPI file."
-	@cd $(build_dir); $(ZIP) -D ../$(xpi_file) $(xpi_built_no_dir) $(defaults_dir)
-	@echo "Creating XPI file. Done!"
-
-$(build_dir)/$(resources_dir)/fmSecret.js: $(bin_dir)/fmSecret.js $(build_dir)/$(resources_dir)
-	@cp -f $< $@
-
-$(build_dir)/$(resources_dir)/%: $(resources_dir)/% $(build_dir)/$(resources_dir)
-	@cp -f $< $@
-
-$(build_dir)/$(search_plugins_dir)/%: $(search_plugins_dir)/% $(build_dir)/$(search_plugins_dir)
-	@cp -f $< $@
-
-$(build_dir)/$(defaults_dir)/%: $(defaults_dir)/% $(build_dir)/$(defaults_dir)
-	@cp -f $< $@
-
-$(build_dir)/$(preferences_dir)/%: \
-  $(preferences_dir)/% $(build_dir)/$(preferences_dir)
-	@cp -f $< $@
-
-$(build_dir)/%: %
-	@cp -f $< $@
-
-$(build_dir):
-	@if [ ! -x $(build_dir) ]; \
-  then \
-    mkdir $(build_dir); \
-  fi
-
-$(build_dir)/$(resources_dir):
-	@if [ ! -x $(build_dir)/$(resources_dir) ]; \
-  then \
-    mkdir $(build_dir)/$(resources_dir); \
-  fi
-
-$(build_dir)/$(search_plugins_dir):
-	@if [ ! -x $(build_dir)/$(search_plugins_dir) ]; \
-  then \
-    mkdir $(build_dir)/$(search_plugins_dir); \
-  fi
-
-$(build_dir)/$(defaults_dir):
-	@if [ ! -x $(build_dir)/$(defaults_dir) ]; \
-  then \
-    mkdir $(build_dir)/$(defaults_dir); \
-  fi
-
-$(build_dir)/$(preferences_dir): $(build_dir)/$(defaults_dir)
-	@if [ ! -x $(build_dir)/$(preferences_dir) ]; \
-  then \
-    mkdir $(build_dir)/$(preferences_dir); \
-  fi

@@ -27,42 +27,42 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ###
 
-content   firefm              jar:chrome/firefm.jar!/content/
+content   firefm              content/
 
 # We have a common skin and then os-specific skins.
-skin      firefm     classic/1.0 jar:chrome/firefm.jar!/skin/all/
+skin      firefm     classic/1.0 skin/all/
 # The default OS theme is the Unix theme.
-skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/unix/
-skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/win/   os=WINNT
-skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/win/   os=OS2
-skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/win/   os=BeOS
-skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/win/   os=riscos
-skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/win/   os=NTO
-skin      firefm-os  classic/1.0 jar:chrome/firefm.jar!/skin/mac/     os=Darwin
+skin      firefm-os  classic/1.0 skin/unix/
+skin      firefm-os  classic/1.0 skin/win/   os=WINNT
+skin      firefm-os  classic/1.0 skin/win/   os=OS2
+skin      firefm-os  classic/1.0 skin/win/   os=BeOS
+skin      firefm-os  classic/1.0 skin/win/   os=riscos
+skin      firefm-os  classic/1.0 skin/win/   os=NTO
+skin      firefm-os  classic/1.0 skin/mac/     os=Darwin
 
-locale    firefm  bg-BG       jar:chrome/firefm.jar!/locale/bg-BG/
-locale    firefm  de          jar:chrome/firefm.jar!/locale/de/
-locale    firefm  en-GB       jar:chrome/firefm.jar!/locale/en-GB/
-locale    firefm  en-US       jar:chrome/firefm.jar!/locale/en-US/
-locale    firefm  es-AR       jar:chrome/firefm.jar!/locale/es-ES/
-locale    firefm  es-CL       jar:chrome/firefm.jar!/locale/es-ES/
-locale    firefm  es-ES       jar:chrome/firefm.jar!/locale/es-ES/
-#locale    firefm  fi-FI       jar:chrome/firefm.jar!/locale/fi-FI/
-locale    firefm  fr          jar:chrome/firefm.jar!/locale/fr/
-locale    firefm  gl-ES          jar:chrome/firefm.jar!/locale/gl-ES/
-locale    firefm  he-IL       jar:chrome/firefm.jar!/locale/he-IL/
-locale    firefm  hu          jar:chrome/firefm.jar!/locale/hu/
-#locale    firefm  id-ID       jar:chrome/firefm.jar!/locale/id-ID/
-locale    firefm  nl          jar:chrome/firefm.jar!/locale/nl/
-#locale    firefm  ja          jar:chrome/firefm.jar!/locale/ja/
-locale    firefm  pl          jar:chrome/firefm.jar!/locale/pl-PL/
-#locale    firefm  pt-BR       jar:chrome/firefm.jar!/locale/pt-BR/
-#locale    firefm  ro-RO       jar:chrome/firefm.jar!/locale/ro-RO/
-locale    firefm  ru-RU       jar:chrome/firefm.jar!/locale/ru-RU/
-locale    firefm  sr          jar:chrome/firefm.jar!/locale/sr/
-locale    firefm  sv-SE       jar:chrome/firefm.jar!/locale/sv-SE/
-#locale    firefm  tr-TR       jar:chrome/firefm.jar!/locale/tr-TR/
-locale    firefm  zh-CN       jar:chrome/firefm.jar!/locale/zh-CN/
+locale    firefm  bg-BG       locale/bg-BG/
+locale    firefm  de          locale/de/
+locale    firefm  en-GB       locale/en-GB/
+locale    firefm  en-US       locale/en-US/
+locale    firefm  es-AR       locale/es-ES/
+locale    firefm  es-CL       locale/es-ES/
+locale    firefm  es-ES       locale/es-ES/
+#locale    firefm  fi-FI       locale/fi-FI/
+locale    firefm  fr          locale/fr/
+locale    firefm  gl-ES          locale/gl-ES/
+locale    firefm  he-IL       locale/he-IL/
+locale    firefm  hu          locale/hu/
+#locale    firefm  id-ID       locale/id-ID/
+locale    firefm  nl          locale/nl/
+#locale    firefm  ja          locale/ja/
+locale    firefm  pl          locale/pl-PL/
+#locale    firefm  pt-BR       locale/pt-BR/
+#locale    firefm  ro-RO       locale/ro-RO/
+locale    firefm  ru-RU       locale/ru-RU/
+locale    firefm  sr          locale/sr/
+locale    firefm  sv-SE       locale/sv-SE/
+#locale    firefm  tr-TR       locale/tr-TR/
+locale    firefm  zh-CN       locale/zh-CN/
 
 resource  firefm              resources/
 
