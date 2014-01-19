@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Audio test</title>
+    <script type="text/javascript">
+    /* <![CDATA[ */
+      function play() {
+        var a = document.getElementById('audio');
+
+        a.src = "https://ia601504.us.archive.org/0/items/Strapawnz-12554/k9d_-_01_-_Pretense.mp3";
+        a.addEventListener("canplay", function(){ a.play(); });
+        a.load();
+      }
+    /* ]]> */
+    </script>
+  </head>
+  <body>
+    <h1>Audio Test</h1>
+    <audio id="audio" preload="auto"></audio>
+    <button type="button" onclick="play()">Play</button>
+  </body>
+</html>

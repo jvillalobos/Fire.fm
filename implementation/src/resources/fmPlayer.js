@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2008-2011, Jose Enrique Bolanos, Jorge Villalobos
+ * Copyright (c) 2014, Jose Enrique Bolanos, Jorge Villalobos
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -94,24 +94,42 @@ FireFM.Player = {
   },
 
   /**
-   * Sets the values of the player (flash player object, status).
-   * @param aFlashObject Reference to the loaded flash player object. Null if
-   * the player was not loaded correctly.
+   * Sets the internal player.
+   * @param aAudio the <audio> node that will play the sound.
    */
-  setPlayer : function(aFlashObject) {
+  setPlayer : function(aAudio) {
     this._logger.info("setPlayer");
 
-    this._playerObj = aFlashObject;
+    let that = this;
+
+    this._playerObj = aAudio;
+    this._playerObj.addEventListener(
+      "canplay", function(aEvent) { that.onTrackLoaded(aEvent); });
+    this._playerObj.addEventListener(
+      "ended", function(aEvent) { that.onTrackFinished(aEvent); });
+    this._playerObj.addEventListener(
+      "error", function(aEvent) { that.onLoadError(aEvent); });
   },
 
   /**
-   * Event fired by the flash object when a track has finished loading.
-   * @param aSuccess Whether the track was loaded successfully.
+   * Event fired when a track has been loaded and is ready to play.
    */
-  onTrackLoaded : function(aSuccess) {
-    this._logger.debug("onTrackLoaded: Success=" + aSuccess);
+  onTrackLoaded : function(aEvent) {
+    this._logger.debug("onTrackLoaded");
 
-    if (!aSuccess) {
+    this._logger.info("onTrackLoaded: PLAY");
+    this._playerObj.play();
+  },
+
+  /**
+   * Event fired by the player when a track has failed loading.
+   */
+  onLoadError : function(aEvent) {
+    this._logger.debug("onLoadError");
+
+    this._logger.info("onTrackLoaded: ERROR");
+
+    if (this._isPlaying) {
       this._loadFailureCount++;
 
       if (MAX_LOAD_FAILURES <= this._loadFailureCount) {
@@ -126,10 +144,12 @@ FireFM.Player = {
   },
 
   /**
-   * Event fired by the flash object when a track has finished playing.
+   * Event fired by the player when a track has finished playing.
    */
-  onTrackFinished : function() {
+  onTrackFinished : function(aEvent) {
     this._logger.debug("onTrackFinished");
+
+    this._logger.info("onTrackLoaded: FINISHED");
     this.skip();
   },
 
@@ -144,8 +164,11 @@ FireFM.Player = {
       this._volumeBeforeLoad = this.volume;
     }
 
-    this._playerObj.stop();
-    this._playerObj.loadSound(aURL, true);
+    this._playerObj.pause();
+    this._playerObj.src = aURL;
+    this._playerObj.load();
+
+    this._logger.info("onTrackLoaded: LOAD: " + this._playerObj.src);
   },
 
   /**
@@ -159,8 +182,8 @@ FireFM.Player = {
     if (null != nextTrack) {
       this._track = nextTrack;
 
-      this._loadTrack(nextTrack.location);
       this._isPlaying = true;
+      this._loadTrack(nextTrack.location);
       nextTrack.startTime = Math.floor((new Date()).getTime() / 1000);
 
       FireFM.obsService.notifyObservers(
@@ -196,7 +219,7 @@ FireFM.Player = {
 
     // XXX: this can be called even if the player isn't loaded.
     if (null != this._playerObj) {
-      this._playerObj.stop();
+      this._playerObj.pause();
     }
   },
 
@@ -220,7 +243,7 @@ FireFM.Player = {
     if (null != this._volumeBeforeLoad) {
       volume = this._volumeBeforeLoad;
     } else {
-      volume = this._playerObj.getVolume();
+      volume = this._playerObj.volume * 100;
     }
 
     return volume;
@@ -236,7 +259,7 @@ FireFM.Player = {
 
     if (0 <= aVolumeValue && aVolumeValue <= 100) {
       if (this.isPlaying) {
-        this._playerObj.setVolume(aVolumeValue);
+        this._playerObj.volume = aVolumeValue / 100;
       } else {
         this._volumeBeforeLoad = aVolumeValue;
       }
@@ -280,12 +303,7 @@ FireFM.Player = {
   get rawElapsedTime() {
     this._logger.debug("rawElapsedTime[get]");
 
-    // XXX: Elapsed set to zero if stopped because we don't allow pause, and
-    // the flash player does not reset its position.
-    let  elapsed = this.isPlaying ? this._playerObj.getPosition() : 0;
-    if (isNaN(elapsed)) {
-      elapsed = 0;
-    }
+    let  elapsed = (this.isPlaying ? (this._playerObj.currentTime * 1000) : 0);
 
     return elapsed;
   },
@@ -297,24 +315,6 @@ FireFM.Player = {
   get rawTrackDuration() {
     this._logger.debug("rawTrackDuration[get]");
     return (null != this._track ? this._track.duration : 0);
-  },
-
-  /**
-   * Getter of the number of bytes loaded.
-   * @return The number of bytes loaded so far.
-   */
-  get bytesLoaded() {
-    this._logger.debug("bytesLoaded[get]");
-    return this._playerObj.getBytesLoaded();
-  },
-
-  /**
-   * Getter of the total number of bytes of the loaded track.
-   * @return The total number of bytes.
-   */
-  get bytesTotal() {
-    this._logger.debug("bytesTotal[get]");
-    return this._playerObj.getBytesTotal();
   },
 
   /**

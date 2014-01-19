@@ -6,3 +6,5 @@ implementation/src/Firefm.komodoproject
 site/Site.komodoproject
 
 .DS_Store
+
+implementation/src/resources/fmSecret.js
