@@ -1,6 +1,4 @@
 
-implementation/bin/fmSecret.js
-
 implementation/src/Firefm.komodoproject
 
 site/Site.komodoproject
@@ -8,3 +6,5 @@ site/Site.komodoproject
 .DS_Store
 
 implementation/src/resources/fmSecret.js
+
+*.xpi

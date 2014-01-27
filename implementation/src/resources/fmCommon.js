@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2008-2011, Jose Enrique Bolanos, Jorge Villalobos
+ * Copyright (c) 2014, Jose Enrique Bolanos, Jorge Villalobos
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -32,19 +32,7 @@ var EXPORTED_SYMBOLS = [ "FireFM" ];
 const Cc = Components.classes;
 const Ci = Components.interfaces;
 
-Components.utils.import("resource://firefm/log4moz.js");
-
-/**
- * XXX: Add support for the JSON object in Firefox 3.0.*
- * See https://developer.mozilla.org/En/Updating_extensions_for_Firefox_3.1#JSON
- */
-if (typeof(JSON) == "undefined") {
-  Components.utils.import("resource://gre/modules/JSON.jsm");
-  JSON.parse = JSON.fromString;
-  JSON.stringify = JSON.toString;
-
-  EXPORTED_SYMBOLS = [ "FireFM", "JSON" ];
-}
+Components.utils.import("resource://gre/modules/Log.jsm");
 
 /**
  * FireFM namespace.
@@ -83,28 +71,19 @@ if (typeof(FireFM) == 'undefined') {
      * Initialize this object.
      */
     init : function() {
-      // Setup logging. See http://wiki.mozilla.org/Labs/JS_Modules.
-
-      // The basic formatter will output lines like:
-      // DATE/TIME  LoggerName LEVEL  (log message)
-      let formatter = new Log4Moz.BasicFormatter();
-      let root = Log4Moz.repository.rootLogger;
+      let formatter = new BasicButNotUglyFormatter();
       let logFile = this.getFMDirectory();
-      let app;
+      let appender;
+
+      this._logger = Log.repository.getLogger("FireFM");
 
       logFile.append("log.txt");
-
-      // Loggers are hierarchical, lowering this log level will affect all
-      // output.
-      root.level = Log4Moz.Level["All"];
-
       // this appender will log to the file system.
-      app = new Log4Moz.RotatingFileAppender(logFile, formatter);
-      app.level = Log4Moz.Level["Warn"];
-      root.addAppender(app);
+      appender = new Log.BoundedFileAppender(logFile.path, formatter);
 
-      // get a Logger specifically for this object.
-      this._logger = this.getLogger("FireFM");
+      this._logger.level = Log.Level.All;
+      appender.level = Log.Level.Warn; // change this to adjust level.
+      this._logger.addAppender(appender);
       this._logger.debug("init");
 
       this.obsService =
@@ -147,9 +126,10 @@ if (typeof(FireFM) == 'undefined') {
      * @return the created logger.
      */
     getLogger : function(aName, aLevel) {
-      let logger = Log4Moz.repository.getLogger(aName);
+      let logger = Log.repository.getLogger(aName);
 
-      logger.level = Log4Moz.Level[(aLevel ? aLevel : "All")];
+      logger.level = (aLevel ? Log.Level[aLevel] : Log.Level.All);
+      logger.parent = this._logger;
 
       return logger;
     },
@@ -376,6 +356,36 @@ if (typeof(FireFM) == 'undefined') {
     }
   };
 }
+
+// Basic log formatter that shows decent dates.
+function BasicButNotUglyFormatter(aDateFormat) {
+  if (aDateFormat) {
+    this.dateFormat = aDateFormat;
+  }
+}
+BasicButNotUglyFormatter.prototype = {
+  _dateFormat : null,
+
+  get dateFormat() {
+    if (!this._dateFormat) {
+      this._dateFormat = "%Y-%m-%d %H:%M:%S";
+    }
+
+    return this._dateFormat;
+  },
+
+  set dateFormat(aFormat) {
+    this._dateFormat = aFormat;
+  },
+
+  format: function(aMessage) {
+    let date = new Date(aMessage.time);
+
+    return date.toLocaleFormat(this.dateFormat) + "\t" +
+      aMessage.loggerName + "\t" + aMessage.levelDesc + "\t" +
+      aMessage.message + "\n";
+  }
+};
 
 /**
  * FireFM constructor. This sets up logging for the rest of the extension.
